@@ -500,3 +500,16 @@ body.no-scroll { overflow: hidden; }
 
 .tag-pos { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
 .tag-unit { border-color: var(--accent); color: var(--accent); background: none; }
+
+/* 一覧の英語の意味（閉じている間は2行まで） */
+.word-def {
+  color: var(--muted);
+  font-size: .8rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.word-item.open .word-def { display: block; }

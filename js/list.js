@@ -50,6 +50,7 @@ const ListView = (() => {
           <span class="word-main">
             <span class="word-en">${UI.esc(w.word)}</span>
             <span class="word-ja">${UI.esc(w.ja)}</span>
+            ${w.en ? `<span class="word-def">${UI.esc(w.en)}</span>` : ''}
           </span>
           ${UI.memoryBadge(s.memory)}
         </button>
