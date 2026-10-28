@@ -107,10 +107,42 @@ const Store = (() => {
     save(KEY.prefs, prefs);
   }
 
+  // ---- バックアップ ----
+  // 書き出すのは学習状態とログ。辞書は Excel から入れ直せる
+  function exportData() {
+    return { app: 'eitango-card', version: 1, exportedAt: new Date().toISOString(), states, logs };
+  }
+
+  function importData(data) {
+    if (!data || !Array.isArray(data.logs) || typeof data.states !== 'object') {
+      throw new Error('このアプリのバックアップファイルではありません');
+    }
+    logs = data.logs;
+    states = logs.length ? rebuild(logs) : data.states;
+    save(KEY.logs, logs);
+    save(KEY.states, states);
+  }
+
+  // 学習状態が壊れたときの修復：ログから作り直す
+  function rebuildStates() {
+    states = rebuild(logs);
+    save(KEY.states, states);
+  }
+
+  function resetAll() {
+    Object.values(KEY).forEach(k => localStorage.removeItem(k));
+  }
+
+  // 保存量のおおよそ（localStorage は1文字2バイトで数える）
+  function usageBytes() {
+    return Object.values(KEY).reduce((sum, k) => sum + (localStorage.getItem(k) || '').length * 2, 0);
+  }
+
   return {
     wordList, word, upsertWords,
     state, viewCard, setMemory, answerQuiz,
     logCount: () => logs.length,
     pref, setPref,
+    exportData, importData, rebuildStates, resetAll, usageBytes,
   };
 })();

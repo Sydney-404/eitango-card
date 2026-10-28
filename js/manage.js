@@ -21,11 +21,37 @@ const ManageView = (() => {
       </section>
 
       <section class="panel">
+        <h2>バックアップ</h2>
+        <p class="muted">学習状態とログを JSON ファイルにします。機種変更やデータ消去に備えて、ときどき書き出してください。</p>
+        <div class="row">
+          <button type="button" class="btn" id="export-json">書き出す</button>
+          <label class="btn file-btn">
+            読み込む
+            <input type="file" id="import-json" accept=".json,application/json" hidden>
+          </label>
+        </div>
+      </section>
+
+      <section class="panel">
         <h2>いまの記録</h2>
-        <p>単語 <b>${Store.wordList().length}</b> 語 ／ 学習ログ <b>${Store.logCount()}</b> 件</p>
+        <p>単語 <b>${Store.wordList().length}</b> 語 ／ 学習ログ <b>${Store.logCount()}</b> 件<br>
+          <span class="muted">保存量 約 ${Math.ceil(Store.usageBytes() / 1024)} KB（ブラウザの上限はおよそ 5 MB）</span></p>
+        <div class="row">
+          <button type="button" class="btn" id="rebuild">ログから学習状態を作り直す</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>全リセット</h2>
+        <p class="muted">単語・学習状態・ログ・設定をすべて消します。元に戻せません。（words.xlsx を置いている場合、辞書だけは次の起動で読み直されます）</p>
+        <button type="button" class="btn danger block" id="reset-all">すべて消す</button>
       </section>`;
 
     el.querySelector('#import-file').addEventListener('change', onFile);
+    el.querySelector('#export-json').addEventListener('click', exportJson);
+    el.querySelector('#import-json').addEventListener('change', importJson);
+    el.querySelector('#rebuild').addEventListener('click', rebuild);
+    el.querySelector('#reset-all').addEventListener('click', resetAll);
     if (pending) {
       el.querySelector('#import-ok').addEventListener('click', confirmImport);
       el.querySelector('#import-cancel').addEventListener('click', () => { pending = null; render(); });
@@ -74,6 +100,46 @@ const ManageView = (() => {
     pending = null;
     UI.toast(`${n} 件を取り込みました`);
     App.dataChanged();
+  }
+
+  // ---- バックアップ ----
+  function exportJson() {
+    const blob = new Blob([JSON.stringify(Store.exportData())], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `eitango-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  }
+
+  async function importJson(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    try {
+      const data = JSON.parse(await file.text());
+      if (!confirm(`いまの学習状態とログを、このファイルの内容（ログ ${data.logs?.length ?? 0} 件）で置き換えます。よろしいですか？`)) return;
+      Store.importData(data);
+      UI.toast('バックアップを読み込みました');
+      App.dataChanged();
+    } catch (err) {
+      UI.toast(`読み込めませんでした：${err.message}`);
+    } finally {
+      e.target.value = '';
+    }
+  }
+
+  function rebuild() {
+    Store.rebuildStates();
+    UI.toast('ログから学習状態を作り直しました');
+    App.dataChanged();
+  }
+
+  // 確認を2回はさむ
+  function resetAll() {
+    if (!confirm('単語・学習状態・ログ・設定をすべて消します。よろしいですか？')) return;
+    if (!confirm('本当に消しますか？ この操作は元に戻せません。')) return;
+    Store.resetAll();
+    location.reload();
   }
 
   return { show };

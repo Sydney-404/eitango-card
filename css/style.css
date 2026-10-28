@@ -426,3 +426,4 @@ select {
 .score b { font-size: 2rem; }
 
 .miss-list { margin: 0; padding-left: 20px; }
+.row .file-btn { margin: 0; }
