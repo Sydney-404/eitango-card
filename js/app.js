@@ -1,8 +1,7 @@
 // 画面の切り替えと起動
 const App = (() => {
   const TITLES = { list: '単語一覧', card: 'カード', quiz: '四択', manage: 'データ管理' };
-  const Placeholder = { show(el) { el.innerHTML = '<p class="empty">この機能はこれから作ります</p>'; } };
-  const views = { list: ListView, card: CardView, quiz: Placeholder, manage: ManageView };
+  const views = { list: ListView, card: CardView, quiz: QuizView, manage: ManageView };
   let current = 'list';
 
   function show(name) {

@@ -387,3 +387,42 @@ select {
 .card-hint { text-align: center; margin-top: 24px; }
 
 .card-nav { display: grid; grid-template-columns: 1fr 1.6fr 1fr; gap: 8px; }
+
+/* ===== 定義四択 ===== */
+.gap { margin-top: 16px; }
+
+.quiz-prompt {
+  padding: 20px 16px;
+  margin-bottom: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.quiz-prompt .muted { margin: 0 0 4px; }
+.quiz-en { font-size: 1.15rem; margin: 0; }
+
+.options { display: grid; gap: 8px; margin-bottom: 12px; }
+
+.option {
+  min-height: 52px;
+  padding: 10px 14px;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  text-align: left;
+  cursor: pointer;
+}
+
+.option:disabled { cursor: default; opacity: .6; }
+.option.correct { border-color: var(--good); color: var(--good); font-weight: 600; opacity: 1; }
+.option.wrong { border-color: var(--bad); color: var(--bad); opacity: 1; }
+
+.verdict { font-size: 1.2rem; font-weight: 700; text-align: center; margin: 4px 0 12px; }
+.verdict.good { color: var(--good); }
+.verdict.bad { color: var(--bad); }
+
+.score { font-size: 1.1rem; margin: 0; }
+.score b { font-size: 2rem; }
+
+.miss-list { margin: 0; padding-left: 20px; }
