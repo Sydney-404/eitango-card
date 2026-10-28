@@ -21,17 +21,25 @@ const UI = (() => {
     return `<span class="mem mem-${m}">${m} ${MEMORY_LABELS[m]}</span>`;
   }
 
+  // 品詞・Unit・分類タグを、タグの見た目で1行に並べる
+  function wordTags(w) {
+    return `<div class="tags">
+      <span class="tag tag-pos">${esc(w.pos)}</span>
+      <span class="tag tag-unit">Unit ${esc(w.unit)}</span>
+      ${w.tags.map(t => `<span class="tag">#${esc(t)}</span>`).join('')}
+    </div>`;
+  }
+
   // 単語の全要素（英単語そのものは呼び出し側で見出しにする）
   function wordDetail(w) {
     const rows = [
       ['日本語の意味', w.ja],
       ['英語の意味', w.en],
-      ['品詞', w.pos],
-      ['Unit', w.unit],
       ['語の形', w.forms],
-      ['分類タグ', w.tags.join('、')],
     ].filter(([, v]) => v !== '' && v != null);
-    return `<dl class="detail">${rows.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>`;
+    return `
+      <dl class="detail">${rows.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
+      ${wordTags(w)}`;
   }
 
   // 記憶度ボタン。押したときの処理は呼び出し側が data-memory を見て行う

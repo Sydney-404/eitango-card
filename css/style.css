@@ -482,3 +482,21 @@ body.no-scroll { overflow: hidden; }
 }
 #btn-filter { font-size: 1.8rem; }
 .btn.small { min-height: 36px; padding: 0 14px; font-size: .9rem; }
+
+/* ===== 品詞・Unit・分類タグ ===== */
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+
+.tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: .78rem;
+  line-height: 1.6;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.tag-pos { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+.tag-unit { border-color: var(--accent); color: var(--accent); background: none; }
