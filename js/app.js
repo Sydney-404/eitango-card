@@ -96,7 +96,22 @@ const App = (() => {
   // オフラインで使えるようにする（ファイルを直接開いているときは動かない）
   function setupOffline() {
     if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-      navigator.serviceWorker.register('sw.js').catch(err => console.error(err));
+      const hadController = !!navigator.serviceWorker.controller;
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => {
+          // ホーム画面のアプリは閉じても裏で開いたままなので、戻ってくるたびに新しい版を確かめる
+          document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') reg.update().catch(() => {});
+          });
+        })
+        .catch(err => console.error(err));
+      // 新しい版に切り替わったら1回だけ読み直す（初めて入れたときは読み直さない）
+      let reloaded = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!hadController || reloaded) return;
+        reloaded = true;
+        location.reload();
+      });
     }
     // 容量が苦しくなっても、ブラウザが学習記録を勝手に消さないよう頼んでおく
     navigator.storage?.persist?.();

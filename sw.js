@@ -1,7 +1,8 @@
 // オフラインで使うための保存係（Service Worker）。
 // アプリの部品を端末に保存しておき、通信できないときは保存してあるものを出す。
-// 部品を足したら APP_FILES に加え、CACHE の番号を上げる
-const CACHE = 'eitango-v4';
+// 部品を足したら APP_FILES に加える。公開するたびに CACHE の番号を上げる
+// （sw.js が変わると端末が新しい版に気づき、開いているアプリが読み直される）
+const CACHE = 'eitango-v5';
 const APP_FILES = [
   './',
   'index.html',
@@ -42,11 +43,14 @@ self.addEventListener('activate', e => {
   );
 });
 
-// 通信できれば最新を取りに行き、保存も新しくする。できなければ保存してあるものを出す
+// 通信できれば最新を取りに行き、保存も新しくする。できなければ保存してあるものを出す。
+// 同じサイトのファイルは、ブラウザの控え（GitHub Pages は10分ほど持たせる）を使わず、毎回変わっていないか問い合わせる
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
+  const sameOrigin = new URL(e.request.url).origin === self.location.origin;
+  // ページを開く読み込み（navigate）の Request には指定を足せないので、同じサイトは URL で取り直す
   e.respondWith(
-    fetch(e.request)
+    (sameOrigin ? fetch(e.request.url, { cache: 'no-cache' }) : fetch(e.request))
       .then(res => {
         if (res.ok || res.type === 'opaque') {
           const copy = res.clone();
