@@ -10,7 +10,7 @@
   <header class="topbar">
     <button type="button" id="btn-manage" class="icon-btn" aria-label="データ管理">⚙</button>
     <h1 id="title">英単語カード</h1>
-    <span class="icon-btn"></span>
+    <button type="button" id="btn-filter" class="icon-btn" aria-label="絞り込み">≡</button>
   </header>
 
   <main>
@@ -26,12 +26,18 @@
     <button type="button" data-view="quiz"><span class="tab-icon">✓</span>四択</button>
   </nav>
 
+  <div id="filter-sheet" class="sheet" hidden>
+    <div class="sheet-backdrop"></div>
+    <div class="sheet-body" role="dialog" aria-label="絞り込み"></div>
+  </div>
+
   <div id="toast" role="status" aria-live="polite"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/store.js"></script>
   <script src="js/importer.js"></script>
+  <script src="js/filter.js"></script>
   <script src="js/list.js"></script>
   <script src="js/manage.js"></script>
   <script src="js/app.js"></script>

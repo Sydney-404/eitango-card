@@ -20,6 +20,7 @@ const App = (() => {
   // 3機能が対象にする単語（Unit → ID の順）
   function targetWords() {
     return Store.wordList()
+      .filter(w => Filter.matches(w))
       .sort((a, b) => a.unit - b.unit || UI.naturalCompare(a.id, b.id));
   }
 
@@ -48,6 +49,7 @@ const App = (() => {
   function boot() {
     document.querySelectorAll('.tabbar button').forEach(b => b.addEventListener('click', () => show(b.dataset.view)));
     document.getElementById('btn-manage').addEventListener('click', () => show('manage'));
+    Filter.init();
     show(Store.pref('tab', 'list'));
     autoLoad();
   }

@@ -280,3 +280,68 @@ select {
 
 .word-body { padding: 0 12px 14px 32px; }
 .word-body .muted { margin: 8px 0; }
+
+/* ===== 絞り込みパネル（下から出るシート） ===== */
+#btn-filter.active { color: var(--accent); }
+#btn-filter.active::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.sheet { position: fixed; inset: 0; z-index: 20; }
+.sheet[hidden] { display: none; }
+.sheet-backdrop { position: absolute; inset: 0; background: rgb(0 0 0 / .4); }
+
+.sheet-body {
+  position: absolute;
+  inset: auto 0 0 0;
+  max-width: 600px;
+  max-height: 85vh;
+  max-height: 85dvh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-radius: 16px 16px 0 0;
+}
+
+.sheet-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px 0 16px;
+}
+
+.sheet-head h2 { margin: 0; }
+
+.sheet-scroll { overflow-y: auto; padding: 0 16px 8px; }
+.sheet-scroll h3 { font-size: .85rem; color: var(--muted); margin: 14px 0 6px; }
+
+.sheet-foot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-top: 1px solid var(--line);
+}
+
+.sheet-foot span { flex: 1; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.chip {
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
