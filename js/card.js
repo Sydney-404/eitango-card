@@ -95,7 +95,7 @@ const CardView = (() => {
     const memBtn = e.target.closest('[data-memory]');
     const action = e.target.closest('[data-action]')?.dataset.action;
     if (memBtn) {
-      Store.setMemory(deck[index], Number(memBtn.dataset.memory));
+      Store.setMemory(deck[index], Number(memBtn.dataset.memory), { rated: true });
       go(1);
     } else if (action === 'flip') {
       flipped = true;

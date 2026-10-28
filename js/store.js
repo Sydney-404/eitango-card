@@ -87,9 +87,11 @@ const Store = (() => {
     record(id, 'card_view');
   }
 
-  function setMemory(id, to) {
+  // rated: カード・四択で「覚え具合をつけた」とき。同じ段階の押し直しも記録する
+  // （「確かめ直して、まだ覚えていた」は復習間隔の計算に使える。あとからは取り戻せない）
+  function setMemory(id, to, { rated = false } = {}) {
     const from = state(id).memory;
-    if (from !== to) record(id, 'memory_change', { from, to });
+    if (from !== to || rated) record(id, 'memory_change', { from, to });
   }
 
   // 四択に答えた

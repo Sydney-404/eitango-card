@@ -173,7 +173,7 @@ const QuizView = (() => {
       results.push({ id: q.id, correct });
       render();
     } else if (t.dataset.memory) {
-      Store.setMemory(questions[qi].id, Number(t.dataset.memory));
+      Store.setMemory(questions[qi].id, Number(t.dataset.memory), { rated: true });
       render();
     } else if (t.dataset.action === 'next') {
       qi++;
