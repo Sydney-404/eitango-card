@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- 背景（ホーム画面で角が丸く切られても欠けないよう、全面を塗る） -->
+  <rect width="512" height="512" fill="#1f6b45"/>
+  <!-- E -->
+  <path d="M168 128h184v52H226v50h112v52H226v50h126v52H168z" fill="#f6f1e3"/>
+  <!-- E の縦棒に巻きつくツタ -->
+  <path d="M150 412c70-14 92-44 60-70s-58-46 4-74 70-50 14-76-46-58 40-76"
+        fill="none" stroke="#9ed36a" stroke-width="14" stroke-linecap="round"/>
+  <!-- 葉 -->
+  <g fill="#9ed36a">
+    <ellipse cx="236" cy="336" rx="26" ry="13" transform="rotate(-30 236 336)"/>
+    <ellipse cx="170" cy="282" rx="24" ry="12" transform="rotate(25 170 282)"/>
+    <ellipse cx="248" cy="232" rx="26" ry="13" transform="rotate(-25 248 232)"/>
+    <ellipse cx="176" cy="170" rx="22" ry="11" transform="rotate(30 176 170)"/>
+    <ellipse cx="288" cy="108" rx="24" ry="12" transform="rotate(-20 288 108)"/>
+  </g>
+</svg>

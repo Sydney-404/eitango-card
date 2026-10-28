@@ -51,6 +51,16 @@ const App = (() => {
     Filter.init();
     show(Store.pref('tab', 'list'));
     autoLoad();
+    setupOffline();
+  }
+
+  // オフラインで使えるようにする（ファイルを直接開いているときは動かない）
+  function setupOffline() {
+    if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+      navigator.serviceWorker.register('sw.js').catch(err => console.error(err));
+    }
+    // 容量が苦しくなっても、ブラウザが学習記録を勝手に消さないよう頼んでおく
+    navigator.storage?.persist?.();
   }
 
   return { boot, show, targetWords, dataChanged };
