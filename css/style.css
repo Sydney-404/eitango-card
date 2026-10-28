@@ -344,6 +344,10 @@ select {
 .word-item.open .word-ja { white-space: normal; }
 .word-item.open .word-def { display: block; }
 
+/* 右側：記憶度と、その下に四択の正解数（正解/出題数） */
+.word-side { flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+.word-score { font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
 .seen-mark {
   flex: none;
   width: 10px;

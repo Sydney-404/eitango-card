@@ -73,6 +73,7 @@ const ListView = (() => {
   function itemHtml(w) {
     const s = Store.state(w.id);
     const open = w.id === openId;
+    const tried = s.correct + s.wrong; // 四択で出題された回数
     const last = s.lastStudied ? new Date(s.lastStudied).toLocaleString('ja-JP', { dateStyle: 'short', timeStyle: 'short' }) : '—';
     return `
       <li class="word-item${open ? ' open' : ''}" data-id="${UI.esc(w.id)}">
@@ -83,7 +84,10 @@ const ListView = (() => {
             <span class="word-ja">${UI.esc(w.ja)}</span>
             ${w.en ? `<span class="word-def">${UI.esc(w.en)}</span>` : ''}
           </span>
-          ${UI.memoryBadge(s.memory)}
+          <span class="word-side">
+            ${UI.memoryBadge(s.memory)}
+            ${tried ? `<span class="word-score">${s.correct}/${tried}</span>` : ''}
+          </span>
         </button>
         ${open ? `
           <div class="word-body">
