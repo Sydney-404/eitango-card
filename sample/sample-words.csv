@@ -1,0 +1,16 @@
+ID,英単語,日本語の意味,英語の意味,分類タグ,品詞,Unit,語の形
+1,cook,料理する,to prepare food by heating it,料理,動詞,1,cook - cooked - cooked
+2,boil,ゆでる・沸騰させる,to heat a liquid until it bubbles,料理,動詞,1,boil - boiled - boiled
+3,recipe,レシピ・作り方,a set of instructions for cooking a dish,料理;本,名詞,1,
+4,delicious,とてもおいしい,having a very pleasant taste,料理,形容詞,1,
+5,ingredient,材料,one of the foods used to make a dish,料理,名詞,1,
+6,go,行く,to move to another place,移動,動詞,2,go - went - gone
+7,arrive,到着する,to reach a place,移動,動詞,2,arrive - arrived - arrived
+8,station,駅,a place where trains stop,移動;建物,名詞,2,
+9,quickly,速く,at a fast speed,,副詞,2,
+10,ticket,切符,a piece of paper that lets you travel,移動,名詞,2,
+11,heavy,重い,weighing a lot,,形容詞,3,heavy - heavier - heaviest
+12,borrow,借りる,to take something and promise to return it,本,動詞,3,borrow - borrowed - borrowed
+13,library,図書館,a building where you can read or borrow books,本；建物,名詞,3,
+14,carefully,注意深く,,,副詞,3,
+15,,エラー確認用の行,,,名詞,3,

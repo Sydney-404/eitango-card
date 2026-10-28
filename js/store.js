@@ -1,0 +1,116 @@
+// 保存層。辞書（words）・学習状態（states）・学習ログ（logs）を localStorage に置く。
+// 学習状態は「ログを古い順に当てはめた結果」なので、いつでもログから作り直せる。
+const Store = (() => {
+  const KEY = { words: 'ewc.words', states: 'ewc.states', logs: 'ewc.logs', prefs: 'ewc.prefs' };
+
+  function load(key, fallback) {
+    try {
+      const raw = localStorage.getItem(key);
+      return raw ? JSON.parse(raw) : fallback;
+    } catch {
+      return fallback;
+    }
+  }
+
+  function save(key, value) {
+    try {
+      localStorage.setItem(key, JSON.stringify(value));
+    } catch (e) {
+      console.error(e);
+      UI.toast('保存できませんでした（容量不足の可能性があります）');
+    }
+  }
+
+  let words = load(KEY.words, {});   // { [ID]: 単語 }
+  let logs = load(KEY.logs, []);     // [{ at, id, type, detail }]
+  let states = load(KEY.states, null) || rebuild(logs); // { [ID]: 学習状態 }
+  let prefs = load(KEY.prefs, {});   // 並び順・最後に開いたタブなどの好み
+
+  function emptyState() {
+    return { seen: 0, memory: 1, lastStudied: null, correct: 0, wrong: 0 };
+  }
+
+  // ログ1件を学習状態に当てはめる。記録するときも作り直すときも、ここだけを通る
+  function applyLog(target, log) {
+    const s = target[log.id] || (target[log.id] = emptyState());
+    s.lastStudied = log.at;
+    switch (log.type) {
+      case 'card_view':
+        s.seen = 1;
+        break;
+      case 'memory_change':
+        s.memory = log.detail.to;
+        break;
+      case 'quiz_answer':
+        s.seen = 1;
+        if (log.detail.correct) s.correct++;
+        else s.wrong++;
+        break;
+    }
+  }
+
+  function rebuild(list) {
+    const target = {};
+    list.forEach(log => applyLog(target, log));
+    return target;
+  }
+
+  function record(id, type, detail = null) {
+    const log = { at: new Date().toISOString(), id, type, detail };
+    logs.push(log);
+    applyLog(states, log);
+    save(KEY.logs, logs);
+    save(KEY.states, states);
+  }
+
+  // ---- 辞書 ----
+  function wordList() {
+    return Object.values(words);
+  }
+
+  function word(id) {
+    return words[id];
+  }
+
+  function upsertWords(list) {
+    list.forEach(w => { words[w.id] = w; });
+    save(KEY.words, words);
+  }
+
+  // ---- 学習状態 ----
+  function state(id) {
+    return states[id] || emptyState();
+  }
+
+  // カードで「確認する」を押した
+  function viewCard(id) {
+    record(id, 'card_view');
+  }
+
+  function setMemory(id, to) {
+    const from = state(id).memory;
+    if (from !== to) record(id, 'memory_change', { from, to });
+  }
+
+  // 四択に答えた
+  function answerQuiz(id, correct, chosen) {
+    record(id, 'quiz_answer', { correct, chosen });
+  }
+
+  // ---- 好み ----
+  function pref(key, fallback) {
+    return key in prefs ? prefs[key] : fallback;
+  }
+
+  function setPref(key, value) {
+    prefs[key] = value;
+    save(KEY.prefs, prefs);
+  }
+
+  return {
+    wordList, word, upsertWords,
+    state, viewCard, setMemory, answerQuiz,
+    logCount: () => logs.length,
+    pref, setPref,
+  };
+})();
