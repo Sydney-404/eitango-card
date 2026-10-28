@@ -426,12 +426,19 @@ select {
 .sheet-foot span { flex: 1; }
 
 /* ===== カード閲覧 ===== */
-.flashcard {
+/* 上下のバーの間をちょうど埋める縦の並び。ボタンは下（親指の届く位置）に来る */
+.card-stage {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-height: 46vh;
-  min-height: 46dvh;
+  min-height: calc(100vh - var(--bar-h) - var(--tab-h) - 36px);
+  min-height: calc(100dvh - var(--bar-h) - var(--safe-top) - var(--tab-h) - var(--safe-bottom) - 36px);
+}
+
+.flashcard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
   padding: 24px 20px;
   margin-bottom: 12px;
   background: var(--surface);
@@ -442,8 +449,6 @@ select {
   user-select: none;
 }
 
-.flashcard.back { justify-content: flex-start; }
-
 .card-word {
   font-size: 2.2rem;
   font-weight: 700;
@@ -451,10 +456,18 @@ select {
   overflow-wrap: anywhere;
 }
 
+/* 表：単語をカードの真ん中に、案内を下端に */
+.flashcard.front .card-word { margin: auto 0; font-size: 2.8rem; }
+.card-hint { text-align: center; margin: 0; }
+
+/* 裏：辞書の見出しのように、上から読み下ろす */
+.flashcard.back .card-word { font-size: 2rem; text-align: left; margin-bottom: 8px; }
+.flashcard.back .detail dd { font-size: 1.2rem; margin-bottom: 14px; }
 .card-word.small { font-size: 1.6rem; margin-bottom: 16px; }
-.card-hint { text-align: center; margin-top: 24px; }
 
 .card-nav { display: grid; grid-template-columns: 1fr 1.6fr 1fr; gap: 8px; }
+.card-nav .btn { min-height: 52px; }
+.card-foot .muted { margin: 0 0 8px; }
 
 /* ===== 定義四択 ===== */
 .quiz-prompt {

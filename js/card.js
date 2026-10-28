@@ -45,7 +45,7 @@ const CardView = (() => {
           <button type="button" class="btn primary" data-action="restart">もう一度</button>
         </div>`;
     } else {
-      el.innerHTML = head + cardHtml(Store.word(deck[index]));
+      el.innerHTML = `<div class="card-stage">${head}${cardHtml(Store.word(deck[index]))}</div>`;
     }
 
     el.querySelector('#card-order').addEventListener('change', e => {
@@ -62,7 +62,7 @@ const CardView = (() => {
     const s = Store.state(w.id);
     if (!flipped) {
       return `
-        <div class="flashcard">
+        <div class="flashcard front">
           <div class="card-word">${UI.esc(w.word)}</div>
           <p class="muted card-hint">← スワイプで前後へ →</p>
         </div>
@@ -77,8 +77,10 @@ const CardView = (() => {
         <div class="card-word small">${UI.esc(w.word)}</div>
         ${UI.wordDetail(w)}
       </div>
-      <p class="muted center">覚え具合を押すと次へ進みます</p>
-      ${UI.memoryButtons(s.memory)}`;
+      <div class="card-foot">
+        <p class="muted center">覚え具合を押すと次へ進みます</p>
+        ${UI.memoryButtons(s.memory)}
+      </div>`;
   }
 
   function go(delta) {
