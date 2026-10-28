@@ -118,8 +118,8 @@ const ManageView = (() => {
     try {
       const data = JSON.parse(await file.text());
       if (!confirm(`いまの学習状態とログを、このファイルの内容（ログ ${data.logs?.length ?? 0} 件）で置き換えます。よろしいですか？`)) return;
-      Store.importData(data);
-      UI.toast('バックアップを読み込みました');
+      const skipped = Store.importData(data);
+      UI.toast(skipped ? `バックアップを読み込みました（形の正しくない記録 ${skipped} 件は除外）` : 'バックアップを読み込みました');
       App.dataChanged();
     } catch (err) {
       UI.toast(`読み込めませんでした：${err.message}`);

@@ -1,7 +1,7 @@
 // オフラインで使うための保存係（Service Worker）。
 // アプリの部品を端末に保存しておき、通信できないときは保存してあるものを出す。
 // 部品を足したら APP_FILES に加え、CACHE の番号を上げる
-const CACHE = 'eitango-v1';
+const CACHE = 'eitango-v2';
 const APP_FILES = [
   './',
   'index.html',
@@ -18,7 +18,7 @@ const APP_FILES = [
   'manifest.webmanifest',
   'icons/icon-192.png',
   'icons/apple-touch-icon.png',
-  'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js',
+  'https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js',
 ];
 
 self.addEventListener('install', e => {

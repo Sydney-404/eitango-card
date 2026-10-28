@@ -42,7 +42,10 @@
 
   <div id="toast" role="status" aria-live="polite"></div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <!-- integrity：配信元で中身がすり替えられていたら読み込まない（ハッシュは 0.20.3 のもの） -->
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"
+          integrity="sha384-EnyY0/GSHQGSxSgMwaIPzSESbqoOLSexfnSMN2AP+39Ckmn92stwABZynq1JyzdT"
+          crossorigin="anonymous"></script>
   <script src="js/ui.js"></script>
   <script src="js/store.js"></script>
   <script src="js/importer.js"></script>

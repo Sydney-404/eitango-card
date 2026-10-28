@@ -115,14 +115,28 @@ const Store = (() => {
     return { app: 'eitango-card', version: 1, exportedAt: new Date().toISOString(), states, logs };
   }
 
+  // 読み込むファイルは外から来るので、形の正しいログだけを受け入れる
+  // （記憶度などは画面の HTML に差し込まれるため、想定外の値を通さない）
+  function isValidLog(log) {
+    if (!log || typeof log.id !== 'string' || typeof log.at !== 'string') return false;
+    switch (log.type) {
+      case 'card_view': return true;
+      case 'memory_change': return [1, 2, 3, 4].includes(log.detail?.to);
+      case 'quiz_answer': return typeof log.detail?.correct === 'boolean';
+      default: return false;
+    }
+  }
+
+  // 学習状態はファイルの states を使わず、ログから作り直す。戻り値は除外したログの件数
   function importData(data) {
-    if (!data || !Array.isArray(data.logs) || typeof data.states !== 'object') {
+    if (!data || !Array.isArray(data.logs)) {
       throw new Error('このアプリのバックアップファイルではありません');
     }
-    logs = data.logs;
-    states = logs.length ? rebuild(logs) : data.states;
+    logs = data.logs.filter(isValidLog);
+    states = rebuild(logs);
     save(KEY.logs, logs);
     save(KEY.states, states);
+    return data.logs.length - logs.length;
   }
 
   // 学習状態が壊れたときの修復：ログから作り直す
