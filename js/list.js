@@ -2,6 +2,7 @@
 const ListView = (() => {
   const SORTS = {
     unit: { label: 'Unit順', compare: null }, // App.targetWords() の並びのまま
+    id: { label: 'ID順', compare: (a, b) => UI.naturalCompare(a.id, b.id) },
     abc: { label: 'ABC順', compare: (a, b) => a.word.localeCompare(b.word, 'en', { sensitivity: 'base' }) },
     memory: { label: '記憶度の低い順', compare: (a, b) => Store.state(a.id).memory - Store.state(b.id).memory },
   };
