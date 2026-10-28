@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1c2029" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="英単語カード">
+  <meta name="format-detection" content="telephone=no">
+  <title>英単語カード</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button type="button" id="btn-manage" class="icon-btn" aria-label="データ管理">⚙</button>
+    <h1 id="title">英単語カード</h1>
+    <button type="button" id="btn-filter" class="icon-btn" aria-label="絞り込み">≡</button>
+  </header>
+
+  <main>
+    <section id="view-list" class="view"></section>
+    <section id="view-card" class="view" hidden></section>
+    <section id="view-quiz" class="view" hidden></section>
+    <section id="view-manage" class="view" hidden></section>
+  </main>
+
+  <nav class="tabbar">
+    <button type="button" data-view="list"><span class="tab-icon">☰</span>一覧</button>
+    <button type="button" data-view="card"><span class="tab-icon">▭</span>カード</button>
+    <button type="button" data-view="quiz"><span class="tab-icon">✓</span>四択</button>
+  </nav>
+
+  <div id="filter-sheet" class="sheet" hidden>
+    <div class="sheet-backdrop"></div>
+    <div class="sheet-body" role="dialog" aria-label="絞り込み"></div>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!-- テスト用：このページ（file://）の記録を消して、まっさらな状態から始める -->
+  <script>Object.keys(localStorage).filter(k => k.startsWith("ewc.")).forEach(k => localStorage.removeItem(k));</script>
+<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js" integrity="sha384-EnyY0/GSHQGSxSgMwaIPzSESbqoOLSexfnSMN2AP+39Ckmn92stwABZynq1JyzdT" crossorigin="anonymous"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/store.js"></script>
+  <script src="../js/importer.js"></script>
+  <script src="../js/filter.js"></script>
+  <script src="../js/list.js"></script>
+  <script src="../js/card.js"></script>
+  <script src="../js/quiz.js"></script>
+  <script src="../js/manage.js"></script>
+  <script src="../js/app.js"></script>
+<pre id="out"></pre>
+<script>
+const out = [];
+const errs = [];
+window.addEventListener('error', e => errs.push(e.message));
+const log = (name, ok, extra='') => out.push((ok ? 'OK   ' : 'FAIL ') + name + ' ' + extra);
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+try {
+  log('SheetJS loaded', typeof XLSX !== 'undefined');
+  const csv = `ID,英単語,日本語の意味,英語の意味,分類タグ,品詞,Unit,語の形
+1,cook,料理する,to prepare food by heating it,料理,動詞,1,cook - cooked - cooked
+2,boil,ゆでる・沸騰させる,to heat a liquid until it bubbles,料理,動詞,1,boil - boiled - boiled
+3,recipe,レシピ・作り方,a set of instructions for cooking a dish,料理;本,名詞,1,
+4,delicious,とてもおいしい,having a very pleasant taste,料理,形容詞,1,
+5,ingredient,材料,one of the foods used to make a dish,料理,名詞,1,
+6,go,行く,to move to another place,移動,動詞,2,go - went - gone
+7,arrive,到着する,to reach a place,移動,動詞,2,arrive - arrived - arrived
+8,station,駅,a place where trains stop,移動;建物,名詞,2,
+9,quickly,速く,at a fast speed,,副詞,2,
+10,ticket,切符,a piece of paper that lets you travel,移動,名詞,2,
+11,heavy,重い,weighing a lot,,形容詞,3,heavy - heavier - heaviest
+12,borrow,借りる,to take something and promise to return it,本,動詞,3,borrow - borrowed - borrowed
+13,library,図書館,a building where you can read or borrow books,本；建物,名詞,3,
+14,carefully,注意深く,,,副詞,3,
+15,,エラー確認用の行,,,名詞,3,`;
+  const rows = Importer.parse(new TextEncoder().encode(csv).buffer, 'x.csv');
+  const r = Importer.analyze(rows);
+  log('analyze counts', r.added.length === 14 && r.errors.length === 1, JSON.stringify({a:r.added.length,u:r.updated.length,e:r.errors}));
+  log('tags split (full-width ;)', JSON.stringify(Store.word ? r.added[12].tags : '') === '["本","建物"]', JSON.stringify(r.added[12].tags));
+  Importer.apply(r); App.dataChanged();
+  const r2 = Importer.analyze(rows);
+  log('reimport unchanged', r2.added.length === 0 && r2.updated.length === 0 && r2.unchanged === 14);
+
+  App.show('list');
+  log('list rows', $$('.word-item').length === 14);
+  $('.word-row').click();
+  log('expand', !!$('.word-item.open .mem-buttons'));
+  $('.word-item.open [data-memory="3"]').click();
+  log('memory set from list', Store.state('1').memory === 3 && Store.logCount() === 1);
+
+  $('#btn-filter').click();
+  [...$$('.chip')].find(c => c.dataset.group === 'pos' && c.dataset.value === '名詞').click();
+  log('filter live count', $('.sheet-foot b').textContent === '5', $('.sheet-foot b').textContent);
+  $('[data-action="apply"]').click();
+  log('filter applied to list', $$('.word-item').length === 5 && $('#btn-filter').classList.contains('active'));
+  $('#btn-filter').click(); $('[data-action="reset"]').click(); $('[data-action="apply"]').click();
+  log('filter reset', $$('.word-item').length === 14);
+
+  App.show('card');
+  log('card front', $('.card-word').textContent === 'cook' && !$('.flashcard .detail'));
+  $('#view-card [data-action="flip"]').click();
+  log('card back + seen', !!$('.flashcard .detail') && Store.state('1').seen === 1);
+  $('#view-card [data-memory="2"]').click();
+  log('card next', $('#view-card .card-word').textContent === 'boil' && Store.state('1').memory === 2, $('main .view:not([hidden]) .progress-text').textContent);
+
+  App.show('quiz');
+  [...$$('.chip')].find(c => c.dataset.dir === 'reverse').click();
+  log('reverse pool excludes no-en', $('.panel p.gap b').textContent === '13');
+  [...$$('.chip')].find(c => c.dataset.dir === 'forward').click();
+  [...$$('.chip')].find(c => c.dataset.count === '5').click();
+  $('[data-action="start"]').click();
+  log('quiz question', $$('.option').length === 4, $('main .view:not([hidden]) .progress-text').textContent);
+  const texts = $$('.option').map(o => o.textContent);
+  log('options distinct', new Set(texts).size === 4, texts.join(' / '));
+  const realNow = Date.now; let off = 0; Date.now = () => realNow() + off;
+  $('#view-quiz .option').click(); const logsBefore = Store.logCount(); $('#view-quiz [data-memory]').click();
+  log('memory blocked right after answer', Store.logCount() === logsBefore && $$('#view-quiz .option:disabled').length === 4);
+  off += 1000; $('#view-quiz [data-memory="1"]').click();
+  log('memory press advances', $('main .view:not([hidden]) .progress-text').textContent.startsWith('2'));
+  for (let i = 1; i < 5; i++) { $('#view-quiz .option').click(); off += 1000; $('#view-quiz [data-memory="1"]').click(); }
+  log('quiz result', !!$('.score'), $('.score')?.textContent.replace(/\s+/g,' '));
+
+  App.show('list');
+  log('unit groups', $$('#view-list .group-unit').length === 3 && $$('#view-list .word-item').length === 14, $$('#view-list .group-unit').map(x=>x.textContent).join('|'));
+  log('tag groups', $$('#view-list .group-tag').map(x=>x.textContent).join('|') === '#料理|#移動|タグなし|#本|タグなし', $$('#view-list .group-tag').map(x=>x.textContent).join('|'));
+  log('en shown in row', $$('#view-list .word-def').length === 13);
+  App.show('quiz');
+  $('#view-quiz [data-action="setup"]').click();
+  [...$$('#view-quiz .chip')].find(c => c.dataset.dir === 'en').click();
+  $('#view-quiz [data-action="start"]').click();
+  const opts = $$('#view-quiz .option').map(o => o.textContent);
+  log('en-def question', opts.length === 4 && opts.every(t => /^[a-z ]+$/i.test(t)), opts.join(' / '));
+  window.confirm = () => true;
+  $('#view-quiz [data-action="quit"]').click();
+  log('quit back to setup', !!$('#view-quiz [data-action="start"]'));
+  window.confirm = () => false;
+  const before = JSON.stringify(Object.fromEntries(Store.wordList().map(w => [w.id, Store.state(w.id)])));
+  Store.rebuildStates();
+  const after = JSON.stringify(Object.fromEntries(Store.wordList().map(w => [w.id, Store.state(w.id)])));
+  log('rebuild from logs matches', before === after);
+  const data = Store.exportData();
+  Store.importData(JSON.parse(JSON.stringify(data)));
+  log('export/import roundtrip', Store.logCount() === data.logs.length, 'logs=' + data.logs.length);
+  const evil = { logs: [
+    { at: 'x', id: '1', type: 'memory_change', detail: { from: 1, to: '<img src=x onerror=alert(1)>' } },
+    { at: 'x', id: '2', type: 'hack' },
+    { at: 'x', id: '3', type: 'memory_change', detail: { from: 1, to: 4 } },
+  ], states: { '1': { memory: '<b>x</b>' } } };
+  const skipped = Store.importData(evil);
+  log('bad logs rejected', skipped === 2 && Store.state('1').memory === 1 && Store.state('3').memory === 4, 'skipped=' + skipped);
+  log('SheetJS version', XLSX.version === '0.20.3', XLSX.version);
+  App.show('manage');
+  log('manage renders', !!$('#reset-all'));
+} catch (e) { errs.push('EXC ' + e.stack); }
+document.getElementById('out').textContent = 'RESULT\n' + out.join('\n') + '\nERRORS: ' + JSON.stringify(errs);
+</script>
+</body></html>
