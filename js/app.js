@@ -54,7 +54,31 @@ const App = (() => {
     }
   }
 
+  // ---- 表示テーマ（auto / light / dark） ----
+  const THEME_COLORS = { light: '#ffffff', dark: '#1c2029' };
+
+  function theme() {
+    return Store.pref('theme', 'auto');
+  }
+
+  function setTheme(value) {
+    Store.setPref('theme', value);
+    applyTheme();
+  }
+
+  // 色は CSS の data-theme が切り替える。ここではスマホの上端（アドレスバー）の色も合わせる
+  function applyTheme() {
+    const t = theme();
+    const root = document.documentElement;
+    if (t === 'auto') delete root.dataset.theme;
+    else root.dataset.theme = t;
+    document.querySelectorAll('meta[name="theme-color"]').forEach(m => {
+      m.content = t === 'auto' ? THEME_COLORS[m.media.includes('dark') ? 'dark' : 'light'] : THEME_COLORS[t];
+    });
+  }
+
   function boot() {
+    applyTheme();
     document.querySelectorAll('.tabbar button').forEach(b => b.addEventListener('click', () => show(b.dataset.view)));
     document.getElementById('btn-manage').addEventListener('click', () => show('manage'));
     Filter.init();
@@ -72,7 +96,7 @@ const App = (() => {
     navigator.storage?.persist?.();
   }
 
-  return { boot, show, targetWords, dataChanged };
+  return { boot, show, targetWords, dataChanged, theme, setTheme };
 })();
 
 App.boot();

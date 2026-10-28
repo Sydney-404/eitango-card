@@ -14,6 +14,13 @@
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <title>英単語カード</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- 選んだ表示テーマを、画面を描く前に当てる（一瞬違う色で光らないように） -->
+  <script>
+    try {
+      const theme = JSON.parse(localStorage.getItem('ewc.prefs') || '{}').theme;
+      if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+    } catch {}
+  </script>
 </head>
 <body>
   <header class="topbar">

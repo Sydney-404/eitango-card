@@ -22,8 +22,9 @@
   color-scheme: light;
 }
 
+/* ダークの色。「自動」では端末の設定に合わせ、データ管理で選べば data-theme で固定する */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #12151b;
     --surface: #1c2029;
     --text: #e8ebf2;
@@ -38,6 +39,22 @@
     --mem-4: #3fbf76;
     color-scheme: dark;
   }
+}
+
+:root[data-theme="dark"] {
+  --bg: #12151b;
+  --surface: #1c2029;
+  --text: #e8ebf2;
+  --muted: #9aa3b5;
+  --line: #2c3240;
+  --accent: #5b8ff0;
+  --good: #3fbf76;
+  --bad: #ef6b6b;
+  --mem-1: #ef6b6b;
+  --mem-2: #f0a443;
+  --mem-3: #5b8ff0;
+  --mem-4: #3fbf76;
+  color-scheme: dark;
 }
 
 /* ===== 土台 ===== */

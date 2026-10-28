@@ -2,6 +2,7 @@
 const ManageView = (() => {
   let el;
   let pending = null; // プレビュー中の取り込み結果
+  const THEMES = { auto: '自動（端末に合わせる）', light: 'ライト', dark: 'ダーク' };
 
   function show(container) {
     el = container;
@@ -18,6 +19,12 @@ const ManageView = (() => {
           <input type="file" id="import-file" accept=".xlsx,.xls,.csv" hidden>
         </label>
         <div id="import-preview">${pending ? previewHtml(pending) : ''}</div>
+      </section>
+
+      <section class="panel">
+        <h2>表示</h2>
+        <div class="chips">${Object.entries(THEMES).map(([k, v]) =>
+          `<button type="button" class="chip" data-theme-choice="${k}" aria-pressed="${k === App.theme()}">${v}</button>`).join('')}</div>
       </section>
 
       <section class="panel">
@@ -52,6 +59,10 @@ const ManageView = (() => {
     el.querySelector('#import-json').addEventListener('change', importJson);
     el.querySelector('#rebuild').addEventListener('click', rebuild);
     el.querySelector('#reset-all').addEventListener('click', resetAll);
+    el.querySelectorAll('[data-theme-choice]').forEach(b => b.addEventListener('click', () => {
+      App.setTheme(b.dataset.themeChoice);
+      render();
+    }));
     if (pending) {
       el.querySelector('#import-ok').addEventListener('click', confirmImport);
       el.querySelector('#import-cancel').addEventListener('click', () => { pending = null; render(); });
