@@ -30,16 +30,16 @@ const UI = (() => {
     </div>`;
   }
 
-  // 単語の全要素（英単語そのものは呼び出し側で見出しにする）
-  function wordDetail(w) {
+  // 単語の全要素。品詞・Unit・分類タグを先頭に置く（英単語そのものは呼び出し側で見出しにする）
+  // meanings: false のときは意味を省く（一覧のように、行にすでに意味が出ている場合）
+  function wordDetail(w, { meanings = true } = {}) {
     const rows = [
-      ['日本語の意味', w.ja],
-      ['英語の意味', w.en],
+      ...(meanings ? [['日本語の意味', w.ja], ['英語の意味', w.en]] : []),
       ['語の形', w.forms],
     ].filter(([, v]) => v !== '' && v != null);
     return `
-      <dl class="detail">${rows.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
-      ${wordTags(w)}`;
+      ${wordTags(w)}
+      ${rows.length ? `<dl class="detail">${rows.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>` : ''}`;
   }
 
   // 記憶度ボタン。押したときの処理は呼び出し側が data-memory を見て行う

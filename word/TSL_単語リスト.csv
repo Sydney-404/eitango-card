@@ -1,0 +1,1251 @@
+﻿ID,英単語,日本語の意味,英語の意味,分類タグ,品詞,Unit,語の形
+1,mister,〜さん、〜氏（男性への敬称）,a form of address for a man,人・職業,名詞,1,
+2,vacation,休暇,a holiday or break from work,旅行・交通・配送;生活・社会・家庭,名詞,1,
+3,client,顧客、依頼人,someone who pays for a service,人・職業;会社・経営・組織,名詞,1,
+4,e-book,電子書籍,a book in electronic form that you read on a screen [Claude],機器・IT・通信;伝達・文書・情報,名詞,1,複合語（2語の合体）
+5,airport,空港,the place where you go to get on a plane,旅行・交通・配送;建物・設備,名詞,1,複合語（2語の合体）
+6,memo,メモ、社内連絡,a written reminder to do somethng,伝達・文書・情報;仕事・業務,名詞,1,
+7,reservation,予約,"to put something on hold for use later, e.g. car, hotel room",旅行・交通・配送,名詞,1,
+8,logical,論理的な,to do with reason,思考・判断,形容詞,1,
+9,fax,ファックスで送る,to send using a fax machine,機器・IT・通信;伝達・文書・情報,動詞,1,
+10,o'clock,〜時（ちょうど）,the hour of the day,時間・頻度・順序,副詞,1,
+11,sincerely,心から、誠実に,with honesty,気持ち・態度,副詞,1,
+12,sometime,いつか,at some unknown point in time,時間・頻度・順序,副詞,1,複合語（2語の合体）
+13,supervisor,監督者、上司,the person who is in charge,人・職業;仕事・業務,名詞,1,上・超過（over-/super-/up-）;〜する人（-er/-or/-ist/-ant/-ian/-man）
+14,refund,返金する,give back money that has already been paid,お金・売買,動詞,1,re-（再び・元に）
+15,goods,商品、品物,resources or things bought or sold,お金・売買;日用品・道具・衣類,名詞,1,
+16,workshop,作業場、工房,a building or room where things are made or repaired,建物・設備;仕事・業務,名詞,1,複合語（2語の合体）
+17,downtown,中心街、繁華街,the business or central part of a city or town,場所・位置・方向,名詞,1,複合語（2語の合体）
+18,deadline,締め切り,when something must be finished,時間・頻度・順序;仕事・業務,名詞,1,複合語（2語の合体）
+19,invoice,請求書、送り状,a written request for payment for the goods and services listed,お金・売買;伝達・文書・情報,名詞,1,
+20,brochure,パンフレット,a small paper book that gives information about a product or service,伝達・文書・情報,名詞,1,
+21,noon,正午,the middle of the day,時間・頻度・順序,名詞,1,
+22,accountant,会計士、経理担当者,a person responsible for the money in a business,人・職業;お金・売買,名詞,1,〜する人（-er/-or/-ist/-ant/-ian/-man）
+23,clerk,事務員、店員,someone who works at a counter,人・職業;仕事・業務,名詞,1,
+24,lobby,ロビー,the main area of a hotel just inside the entrance,建物・設備,名詞,1,
+25,publish,出版する,to print and distribute,伝達・文書・情報,動詞,1,
+26,résumé,履歴書,"a written summary of your education and work experience, used when applying for a job [Claude]",仕事・業務;伝達・文書・情報,名詞,1,
+27,enclose,囲む、同封する,to surround fully,動作・変化,動詞,1,
+28,applicant,応募者、申請者,"a person who submits papers in order to do something, e.g. job applicant",人・職業;仕事・業務,名詞,1,〜する人（-er/-or/-ist/-ant/-ian/-man）
+29,seminar,セミナー、講習会,"a discussion session or class led by a teacher, or expert",教育・学問・研究,名詞,1,
+30,technician,技術者,someone who is trained with special skills to do practical work,人・職業;機器・IT・通信,名詞,1,〜する人（-er/-or/-ist/-ant/-ian/-man）
+31,cloth,布,a piece of thin material,日用品・道具・衣類,名詞,1,
+32,fare,運賃,"the cost for a ride, e.g. bus, or taxi",旅行・交通・配送;お金・売買,名詞,1,
+33,receipt,領収書,proof of payment,お金・売買;伝達・文書・情報,名詞,1,
+34,traveler,旅行者,a tourist or adventurer who visits many countries,人・職業;旅行・交通・配送,名詞,1,〜する人（-er/-or/-ist/-ant/-ian/-man）
+35,caller,電話をかけてくる人、訪問者,the person that is phoning you,人・職業;伝達・文書・情報,名詞,1,〜する人（-er/-or/-ist/-ant/-ian/-man）
+36,subway,地下道（英）、地下鉄（米）,a tunnel under the road for people to walk through,旅行・交通・配送;建物・設備,名詞,1,下・不足・副（under-/sub-/vice-）
+37,luggage,手荷物,Bags and cases that you carry your clothes in when you go on a journey,旅行・交通・配送;日用品・道具・衣類,名詞,1,
+38,shipment,発送、積み荷,"delivery of goods, e.g. carried by a large vehicle",旅行・交通・配送,名詞,1,
+39,infer,推測する,to guess something with given information,思考・判断,動詞,1,
+40,waiter,ウェイター、給仕係,a man whose job it is to bring meals to your table in a restaurant or cafe,人・職業;食べ物・料理,名詞,1,〜する人（-er/-or/-ist/-ant/-ian/-man）
+41,rental,賃貸、レンタル,the act of paying for the use of something (as an apartment or house or car),お金・売買,名詞,1,
+42,warranty,保証（書）,the promise to repair or replace a product if it ceases to work properly,規則・法律・手続き;日用品・道具・衣類,名詞,1,
+43,cafeteria,カフェテリア（セルフ式の食堂）,a restaurant where you serve yourself and pay a cashier,食べ物・料理;建物・設備,名詞,1,
+44,chef,料理人、シェフ,a person who cooks for a living,人・職業;食べ物・料理,名詞,1,
+45,elevator,エレベーター,a machine that takes people to different floors in a building,建物・設備;機器・IT・通信,名詞,1,〜する物・道具（-er/-or）
+46,reception,受付、歓迎,the act of greeting people,仕事・業務;建物・設備,名詞,1,
+47,correctly,正しく,to do something the right way,性質・評価,副詞,1,
+48,lease,賃借する、リースする,to rent,お金・売買,動詞,1,
+49,bicycle,自転車,a vehicle with two wheels and pedals,旅行・交通・配送,名詞,1,数（uni-/bi-/tri-/multi-）
+50,notify,知らせる、通知する,officially tell someone some information,伝達・文書・情報,動詞,1,〜にする（-ize/-ify/-en）
+51,preview,下見、試写,a chance to see something before it becomes generally available,伝達・文書・情報,名詞,1,前・後（pre-/pro-/fore-/post-）
+52,attendant,係員、付き添い,someone who waits on or tends to the needs of another,人・職業,名詞,1,〜する人（-er/-or/-ist/-ant/-ian/-man）
+53,subscription,定期購読（料）、会費,the amount of money that you pay to receive a service or product regularly,お金・売買,名詞,1,
+54,convenient,便利な,to be easy to do,性質・評価,形容詞,1,
+55,manual,手引書、説明書,a book that explains how to do something,伝達・文書・情報,名詞,1,
+56,clue,手がかり、ヒント,"a hint, a tip",思考・判断,名詞,1,
+57,garage,車庫、ガレージ,a place where you keep your car,建物・設備;旅行・交通・配送,名詞,1,
+58,obtain,手に入れる,to get,動作・変化,動詞,1,
+59,oval,楕円形,A shape that looks like an egg,数量・大きさ・形,名詞,1,
+60,inventory,在庫目録、一覧表,detailed list of everything included,会社・経営・組織;伝達・文書・情報,名詞,1,
+61,outdoor,屋外の,outside in the open air,場所・位置・方向,形容詞,1,複合語（2語の合体）
+62,suitcase,スーツケース,A large bag like container for carrying clothes when traveling,旅行・交通・配送;日用品・道具・衣類,名詞,1,複合語（2語の合体）
+63,destination,目的地、行き先,the place you want to be at the end of a journey,旅行・交通・配送;場所・位置・方向,名詞,1,
+64,occupation,職業,profession or job,仕事・業務;人・職業,名詞,1,
+65,postpone,延期する,put off until a later time,時間・頻度・順序,動詞,1,前・後（pre-/pro-/fore-/post-）
+66,contradict,矛盾する、反論する,to say the opposite of,伝達・文書・情報;思考・判断,動詞,1,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+67,umbrella,傘のように包括するもの（統括組織など）,"something, like an organization, that covers a  similar range of things",会社・経営・組織,名詞,1,
+68,inference,推論,the act of guessing something with given information,思考・判断,名詞,1,
+69,cellphone,携帯電話,phone that connects to the system by radio so that you can use it anywhere,機器・IT・通信;伝達・文書・情報,名詞,1,複合語（2語の合体）
+70,compact,小型の、ぎっしり詰まった,tightly packed in a small size,数量・大きさ・形,形容詞,1,
+71,merchandise,商品,goods for sale,お金・売買;日用品・道具・衣類,名詞,1,
+72,receptionist,受付係,"someone who works at the front desk, e.g. secretary",人・職業;仕事・業務,名詞,1,〜する人（-er/-or/-ist/-ant/-ian/-man）
+73,dentist,歯科医,a person who looks after your teeth for a living,人・職業;健康・医療,名詞,1,〜する人（-er/-or/-ist/-ant/-ian/-man）
+74,identification,身分証明書,"a document that shows who a person is,  e.g. passport, driver's licence",規則・法律・手続き,名詞,1,
+75,coupon,クーポン、割引券,a piece of paper that you can use to buy goods or to get them at a reduced price,お金・売買,名詞,1,
+76,depart,出発する,to leave,旅行・交通・配送;動作・変化,動詞,1,
+77,reschedule,予定を変更する,to set a new time for something,時間・頻度・順序;仕事・業務,動詞,1,re-（再び・元に）
+78,tactic,戦術、作戦,like a plan or scheme,思考・判断;会社・経営・組織,名詞,1,
+79,renovation,改装、修復,the process of being restored to a previous or better condition,建物・設備,名詞,1,re-（再び・元に）
+80,upgrade,改良する、格上げする,to improve what was old or outdated,動作・変化,動詞,1,上・超過（over-/super-/up-）
+81,precede,先に起こる、先行する,to happen before something else,時間・頻度・順序,動詞,1,前・後（pre-/pro-/fore-/post-）
+82,replacement,交換、取り替え,to put something/someone in place of something/someone else,動作・変化,名詞,1,re-（再び・元に）
+83,dine,食事をする,have supper; eat dinner,食べ物・料理,動詞,1,
+84,passport,パスポート,"official document containing information about you, that allows you to enter other countries",旅行・交通・配送;規則・法律・手続き,名詞,1,複合語（2語の合体）
+85,coworker,同僚,a person that works with you in the same workplace,人・職業;仕事・業務,名詞,1,共に（co-/com-）;〜する人（-er/-or/-ist/-ant/-ian/-man）
+86,upcoming,近く起こる、今度の,happening soon,時間・頻度・順序,形容詞,1,複合語（2語の合体）
+87,cabinet,戸棚、キャビネット,a piece of furniture with shelves to store things,日用品・道具・衣類,名詞,1,
+88,appliance,電化製品、器具,a machine or device that does a particular task,機器・IT・通信;日用品・道具・衣類,名詞,1,
+89,explanatory,説明的な,to explain or make clear,伝達・文書・情報,形容詞,1,
+90,instructor,講師、指導員,someon who teaches for a living,人・職業;教育・学問・研究,名詞,1,〜する人（-er/-or/-ist/-ant/-ian/-man）
+91,keyboard,キーボード,the part of computer that you type on,機器・IT・通信,名詞,1,複合語（2語の合体）
+92,media,メディア、報道機関,"related to different forms of communication, e.g. radio, TV, newspapers etc.",伝達・文書・情報,名詞,1,
+93,supermarket,スーパーマーケット,a large self-service store selling food and household items,お金・売買;建物・設備,名詞,1,上・超過（over-/super-/up-）
+94,valid,正当な、有効な,"just, fair, right",性質・評価;規則・法律・手続き,形容詞,1,
+95,admission,入場（許可）、入学,entrance into something,規則・法律・手続き,名詞,1,
+96,laptop,ノートパソコン,a computer small enough to carry and to use in your lap,機器・IT・通信,名詞,1,複合語（2語の合体）
+97,underline,強調する、下線を引く,to call attention to,伝達・文書・情報,動詞,1,下・不足・副（under-/sub-/vice-）
+98,electrical,電気の,to do with electricity,機器・IT・通信,形容詞,1,
+99,airplane,飛行機,a powered vehicle that flys through the air to its destination,旅行・交通・配送,名詞,1,複合語（2語の合体）
+100,assignment,任務、課題,a project or task,仕事・業務;教育・学問・研究,名詞,1,
+101,exit,出る、退出する,to leave,動作・変化;場所・位置・方向,動詞,1,
+102,attendee,出席者,someone present (at a meeting or event),人・職業,名詞,1,〜される人（-ee）
+103,cruise,船旅、クルーズ,"a long, relaxing holiday on a ship",旅行・交通・配送;娯楽・趣味・スポーツ,名詞,1,
+104,birthday,誕生日,the day in the year on which a person was born,生活・社会・家庭,名詞,1,複合語（2語の合体）
+105,café,カフェ、喫茶店,a small restaurant that serves drinks and light meals [Claude],食べ物・料理;建物・設備,名詞,1,
+106,comprehension,理解（力）,the act of understanding,思考・判断;教育・学問・研究,名詞,1,
+107,mall,ショッピングモール,very large building containing lots of stores and restaurants,建物・設備;お金・売買,名詞,1,
+108,medication,薬、薬物治療,a substance used to make an illness or condition get better,健康・医療,名詞,1,
+109,recycle,再利用する、リサイクルする,to find another use for something that is going to be put in the trash,自然・天気・環境;動作・変化,動詞,1,re-（再び・元に）
+110,renew,更新する、新しくする,to make something new again,動作・変化;規則・法律・手続き,動詞,1,re-（再び・元に）
+111,tenant,賃借人、テナント,someone who pays rent for the use of property like land or rooms,人・職業;建物・設備,名詞,1,
+112,sandwich,サンドイッチ,"two pieces of bread with a filling inside, e.g. meat or jam",食べ物・料理,名詞,1,
+113,departure,出発,the act of leaving,旅行・交通・配送,名詞,1,
+114,mini,小型の,smaller than is usual for a particular type of thing,数量・大きさ・形,形容詞,1,
+115,fitness,健康、体力,the state of being healthy,健康・医療,名詞,1,
+116,inconvenience,不便、迷惑,something that causes trouble or discomfort,性質・評価,名詞,1,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+117,banquet,宴会、祝宴,a formal meal given for a lot of people,食べ物・料理;娯楽・趣味・スポーツ,名詞,1,
+118,closet,クローゼット、押し入れ,a small cupboard,建物・設備;日用品・道具・衣類,名詞,1,
+119,unreal,非現実的な,not true to life,性質・評価,形容詞,1,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+120,distractor,（多肢選択の）誤答の選択肢,an incorrect option offered in a multiple choice question,教育・学問・研究,名詞,1,〜する物・道具（-er/-or）
+121,expire,期限が切れる,Come to an end,時間・頻度・順序;規則・法律・手続き,動詞,1,
+122,folder,フォルダー、紙ばさみ,a file or covering to keep papers in,日用品・道具・衣類,名詞,1,〜する物・道具（-er/-or）
+123,photocopy,コピー、複写,an exact copy of a document made with a photographic machine,機器・IT・通信;伝達・文書・情報,名詞,1,複合語（2語の合体）
+124,renovate,改装する、修復する,restore to a previous or better condition,建物・設備;動作・変化,動詞,1,re-（再び・元に）
+125,sunny,晴れた,a day with no clouds or rain just sunshine,自然・天気・環境,形容詞,1,
+126,calendar,カレンダー,something you hang on the wall that has the months of the year on it,時間・頻度・順序;日用品・道具・衣類,名詞,2,
+127,donation,寄付（金）,the money that is given to a cause or charity,お金・売買;生活・社会・家庭,名詞,2,
+128,feedback,意見、評価、フィードバック,information given to the provider about how good or bad the goods or services were,伝達・文書・情報,名詞,2,複合語（2語の合体）
+129,shortly,まもなく,very soon,時間・頻度・順序,副詞,2,
+130,snack,軽食、おやつ,Small amount of food eaten between meals,食べ物・料理,名詞,2,
+131,warehouse,倉庫,a building where a large number of things are stored while they are waiting to be sold,建物・設備;旅行・交通・配送,名詞,2,複合語（2語の合体）
+132,copier,コピー機,a machine that makes paper copies,機器・IT・通信,名詞,2,〜する物・道具（-er/-or）
+133,provider,養う人、供給者,"someone who takes care of others with money, food, home",人・職業,名詞,2,〜する人（-er/-or/-ist/-ant/-ian/-man）
+134,beverage,飲み物,any liquid suitable for drinking,食べ物・料理,名詞,2,
+135,hungry,空腹の,"in need of food, needing to eat",食べ物・料理;健康・医療,形容詞,2,
+136,inspection,検査、点検,a formal or official examination of something,規則・法律・手続き;仕事・業務,名詞,2,
+137,recipient,受取人,the person who receives something,人・職業,名詞,2,〜する人（-er/-or/-ist/-ant/-ian/-man）
+138,aisle,通路,long narrow area for walking between rows of something,建物・設備;場所・位置・方向,名詞,2,
+139,inspect,検査する、点検する,look over carefully,規則・法律・手続き;仕事・業務,動詞,2,
+140,mechanic,整備士、修理工,a person who fixes machinery for a living,人・職業;機器・IT・通信,名詞,2,
+141,merger,合併,when one company buys another company to create one big company,会社・経営・組織,名詞,2,
+142,soccer,サッカー,ball game played by two teams who try to score goals without handling the ball,娯楽・趣味・スポーツ,名詞,2,
+143,sweater,セーター,"a warm item of clothing worn over the arms and upper body, made of wool,",日用品・道具・衣類,名詞,2,
+144,ingredient,材料、成分,"something listed in a recipe, e.g. flour, sugar",食べ物・料理,名詞,2,
+145,rewrite,書き直す,to write again differently,伝達・文書・情報,動詞,2,re-（再び・元に）
+146,itinerary,旅程（表）,a detailed plan of what will happen on a journey,旅行・交通・配送,名詞,2,
+147,workplace,職場,the location where you do your job,仕事・業務;建物・設備,名詞,2,複合語（2語の合体）
+148,architect,建築家,someone who designs buildings,人・職業;建物・設備,名詞,2,
+149,convenience,便利さ,the state of being easy,性質・評価,名詞,2,
+150,eligible,資格のある、選ばれる資格がある,able to be chosen,規則・法律・手続き,形容詞,2,
+151,indoor,屋内の,inside a house or building,場所・位置・方向,形容詞,2,複合語（2語の合体）
+152,baggage,手荷物,travel bags,旅行・交通・配送;日用品・道具・衣類,名詞,2,
+153,dial,電話をかける、ダイヤルする,to make a phone call by pressing the buttons,機器・IT・通信;伝達・文書・情報,動詞,2,
+154,container,容器、入れ物,something that holds things,日用品・道具・衣類,名詞,2,〜する物・道具（-er/-or）
+155,drawer,引き出し,a sliding compartment you keep things in,日用品・道具・衣類,名詞,2,〜する物・道具（-er/-or）
+156,lab,実験室、研究室,where you do experiments,教育・学問・研究;建物・設備,名詞,2,
+157,submission,提出（物）,"the act of formally delivering a document, for a decision to be made about it",仕事・業務;規則・法律・手続き,名詞,2,
+158,bulletin,短いニュース、会報,a short news report,伝達・文書・情報,名詞,2,
+159,certificate,証明書、修了証,a piece of paper stating you did something,規則・法律・手続き;伝達・文書・情報,名詞,2,
+160,gym,ジム、体育館,building with equipment you can use to exercise your body,娯楽・趣味・スポーツ;建物・設備,名詞,2,
+161,highway,幹線道路、高速道路,a major road connecting cities,旅行・交通・配送,名詞,2,複合語（2語の合体）
+162,respondent,回答者,someone who replies to something,人・職業,名詞,2,〜する人（-er/-or/-ist/-ant/-ian/-man）
+163,jewelry,宝石類、装飾品,"gold, silver, stones etc. you wear for decoration, e.g. necklace",日用品・道具・衣類,名詞,2,
+164,overtime,残業、時間外勤務,work done in addition to regular working hours,仕事・業務;時間・頻度・順序,名詞,2,上・超過（over-/super-/up-）
+165,battery,電池,something that produces electric energy,機器・IT・通信,名詞,2,
+166,donate,寄付する,to give money to a cause or charity,お金・売買;生活・社会・家庭,動詞,2,
+167,outstanding,未払いの、未解決の,not yet completed,仕事・業務;お金・売買,形容詞,2,見た目に注意
+168,skim,かすめる、ざっと読む,to move quickly above the surface without touching it,動作・変化,動詞,2,
+169,briefcase,書類かばん,a small case with a handle usually used for carrying business papers,日用品・道具・衣類,名詞,2,複合語（2語の合体）
+170,dessert,デザート,sweet food you eat after your main meal,食べ物・料理,名詞,2,
+171,impact,影響、効果,the effect one thing makes on another,動作・変化,名詞,2,
+172,innovative,革新的な,to be creative and come up with new ideas,性質・評価,形容詞,2,
+173,inquire,問い合わせる、尋ねる,to ask about,伝達・文書・情報,動詞,2,
+174,overnight,一晩中、夜通し,from one day to the next,時間・頻度・順序,副詞,2,上・超過（over-/super-/up-）
+175,venue,会場、開催地,the place that an event is happening,場所・位置・方向;娯楽・趣味・スポーツ,名詞,2,
+176,commuter,通勤者,someone who travels a long way to work and back,人・職業;旅行・交通・配送,名詞,2,〜する人（-er/-or/-ist/-ant/-ian/-man）
+177,logo,ロゴ,a small design used by a company as its symbol,会社・経営・組織,名詞,2,
+178,newsletter,会報、ニュースレター,report or open letter giving information of interest to a special group,伝達・文書・情報,名詞,2,複合語（2語の合体）
+179,advisor,助言者、顧問,someone who gives an opinion on what to do,人・職業,名詞,2,〜する人（-er/-or/-ist/-ant/-ian/-man）
+180,cartridge,カートリッジ（交換用部品）,"a piece of the equipment that is a sealed unit, and that can be taken out and replaced",機器・IT・通信;日用品・道具・衣類,名詞,2,
+181,cloudy,曇った,weather where the sky is filled with clouds,自然・天気・環境,形容詞,2,
+182,photographer,写真家,someone who takes pictures for a living,人・職業;娯楽・趣味・スポーツ,名詞,2,〜する人（-er/-or/-ist/-ant/-ian/-man）
+183,shopper,買い物客,someone who buys things in a store,人・職業;お金・売買,名詞,2,〜する人（-er/-or/-ist/-ant/-ian/-man）
+184,tag,札、ラベル,a label,日用品・道具・衣類,名詞,2,
+185,announcer,アナウンサー、告知する人,someone who gives a message publicly,人・職業;伝達・文書・情報,名詞,2,〜する人（-er/-or/-ist/-ant/-ian/-man）
+186,aspect,側面、点,a part or a feature,思考・判断,名詞,2,
+187,audit,監査する,"to check something is correct, usually related to accounts in business",お金・売買;規則・法律・手続き,動詞,2,
+188,contractor,請負業者、建築業者,a builder,人・職業;建物・設備,名詞,2,〜する人（-er/-or/-ist/-ant/-ian/-man）
+189,download,ダウンロードする,transfer a file or program onto your computer,機器・IT・通信,動詞,2,複合語（2語の合体）
+190,password,パスワード,a secret word or phrase needed to prove who you are,機器・IT・通信,名詞,2,複合語（2語の合体）
+191,prohibit,禁止する,not allowed,規則・法律・手続き,動詞,2,
+192,stadium,競技場、スタジアム,sports ground surrounded by rows of seats where people go to watch events,娯楽・趣味・スポーツ;建物・設備,名詞,2,
+193,terminal,終着駅、ターミナル,"the place where a transport line ends, like the final train station on the line",旅行・交通・配送;建物・設備,名詞,2,
+194,weekday,平日,"All the working days in a week, usually Monday to Friday",時間・頻度・順序,名詞,2,複合語（2語の合体）
+195,bonus,ボーナス、特別手当,"extra, usually in the form of money",お金・売買;仕事・業務,名詞,2,
+196,cart,カート、荷車,a wagon or truck used to for transport,旅行・交通・配送;日用品・道具・衣類,名詞,2,
+197,delicious,おいしい,to taste good,食べ物・料理;性質・評価,形容詞,2,
+198,ink,インク,liquid found in pens,日用品・道具・衣類,名詞,2,
+199,supervise,監督する,to watch over and manage,仕事・業務,動詞,2,上・超過（over-/super-/up-）
+200,waitress,ウェイトレス,a woman whose job it is to bring meals to your the table in a restaurant or cafe,人・職業;食べ物・料理,名詞,2,
+201,cleaner,清掃員,someone who cleans  for a living,人・職業,名詞,2,〜する人（-er/-or/-ist/-ant/-ian/-man）
+202,developer,開発業者（不動産）,someone who designs and builds properties,人・職業;建物・設備,名詞,2,〜する人（-er/-or/-ist/-ant/-ian/-man）
+203,headquarter,本社、本部,the main office of an organization,会社・経営・組織;建物・設備,名詞,2,複合語（2語の合体）
+204,shuttle,往復する,travel back and forth between two points,旅行・交通・配送,動詞,2,
+205,stationery,文房具,any materials needed for writing and printing,日用品・道具・衣類,名詞,2,
+206,subscribe,定期購読する、加入する,to pay money to receive a service or product regularly,お金・売買,動詞,2,
+207,alike,似ている,"similar, almost the same",性質・評価,形容詞,2,
+208,flavor,風味、味,"the taste of something, e.g. sweet, sour",食べ物・料理,名詞,2,
+209,picnic,ピクニック,a packed meal to take with you and eaten in the open air,娯楽・趣味・スポーツ;食べ物・料理,名詞,2,
+210,recipe,レシピ、調理法,directions for baking or cooking something,食べ物・料理,名詞,2,
+211,refreshment,軽い飲食物,a small amount of food and drink served as a light meal,食べ物・料理,名詞,2,re-（再び・元に）
+212,administrative,管理の、事務の,to do with the management of an office,会社・経営・組織;仕事・業務,形容詞,2,
+213,authorize,許可する、権限を与える,to give permission for something,規則・法律・手続き,動詞,2,〜にする（-ize/-ify/-en）
+214,commonly,一般に、よく,"frequently, usually",時間・頻度・順序,副詞,2,
+215,distribution,配布、流通,the act of circulating things in a wide area,旅行・交通・配送;会社・経営・組織,名詞,2,
+216,sofa,ソファー,"a long soft seat with a back, big enough for at least two people to sit on",日用品・道具・衣類,名詞,2,
+217,accommodate,（必要なものを）提供する、便宜を図る,to give something that is needed,動作・変化,動詞,2,
+218,affordable,手頃な価格の,"not expensive, one is able to pay easily",お金・売買,形容詞,2,〜できる（-able/-ible）
+219,annoy,いらいらさせる,to bother or irritate,気持ち・態度,動詞,2,
+220,commute,通勤する,to travel a long way to work and back,旅行・交通・配送;仕事・業務,動詞,2,
+221,coordinate,調整する、まとめる,to organize or manage,仕事・業務,動詞,2,共に（co-/com-）
+222,paperwork,書類仕事、事務処理,the written work to do with any particular job,仕事・業務;伝達・文書・情報,名詞,2,複合語（2語の合体）
+223,quit,やめる,to stop doing something,動作・変化,動詞,2,
+224,authority,権限、権威,the power to give orders and make decisions,規則・法律・手続き;会社・経営・組織,名詞,2,
+225,flu,インフルエンザ,"illness that you catch from other people, that gives you a fever for a few days",健康・医療,名詞,2,
+226,captain,船長、機長,the person in charge of a ship or airplane,人・職業;旅行・交通・配送,名詞,2,
+227,installation,設置、インストール,the act of connecting or inputting something,機器・IT・通信,名詞,2,
+228,trainer,指導者、トレーナー,one who teaches a person or animal to do something,人・職業;教育・学問・研究,名詞,2,〜する人（-er/-or/-ist/-ant/-ian/-man）
+229,availability,利用できること、空き状況,Being present and able to be used,性質・評価,名詞,2,〜できる（-able/-ible）
+230,bargain,お買い得品、掘り出し物,"a good deal, a good price",お金・売買,名詞,2,
+231,complimentary,無料の,"it does not cost anything, it is free",お金・売買,形容詞,2,
+232,hike,ハイキングする、長く歩く,walk a long way,娯楽・趣味・スポーツ,動詞,2,
+233,midnight,真夜中、午前0時,12 o'clock at night,時間・頻度・順序,名詞,2,複合語（2語の合体）
+234,productivity,生産性,the amount of work done,仕事・業務;会社・経営・組織,名詞,2,
+235,rainy,雨の,"water from the clouds, wet or showery",自然・天気・環境,形容詞,2,
+236,relocate,移転する,to move to a new location,場所・位置・方向;動作・変化,動詞,2,re-（再び・元に）
+237,trainee,研修生,someone who is learning on the job,人・職業;仕事・業務,名詞,2,〜される人（-ee）
+238,transaction,取引,an exchange between two people,お金・売買,名詞,2,
+239,unhappy,不幸な、不満な,feeling little or no joy,気持ち・態度,形容詞,2,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+240,verify,確かめる、確認する,confirm the truth of,思考・判断,動詞,2,〜にする（-ize/-ify/-en）
+241,automobile,自動車,long name for 'car',旅行・交通・配送,名詞,2,
+242,courier,配達人、宅配業者,Person paid to carry and deliver documents,人・職業;旅行・交通・配送,名詞,2,
+243,incomplete,不完全な、未完成の,not yet finished,性質・評価,形容詞,2,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+244,questionnaire,アンケート、質問票,a set of questions to find out what people think about something,伝達・文書・情報,名詞,2,
+245,baseball,野球,a sports game with a bat and ball,娯楽・趣味・スポーツ,名詞,2,複合語（2語の合体）
+246,dock,波止場、ドック,the place where boats get tied up,旅行・交通・配送;建物・設備,名詞,2,
+247,lamp,ランプ、照明,an artificial source of light,日用品・道具・衣類,名詞,2,
+248,lately,最近,recently,時間・頻度・順序,副詞,2,見た目に注意
+249,machinery,機械類,"tools, equipment",機器・IT・通信,名詞,2,
+250,presenter,発表者、司会者,a person who shows and explains something to an audience,人・職業;伝達・文書・情報,名詞,2,〜する人（-er/-or/-ist/-ant/-ian/-man）
+251,seldom,めったに〜ない,not very often,時間・頻度・順序,副詞,3,
+252,signature,署名,your name written in your own handwriting,伝達・文書・情報;規則・法律・手続き,名詞,3,
+253,worldwide,世界中の,Spanning or reaching across the whole earth,場所・位置・方向,形容詞,3,複合語（2語の合体）
+254,carrier,運ぶ人・物、運送業者,a person or thing that carries something,旅行・交通・配送,名詞,3,〜する人（-er/-or/-ist/-ant/-ian/-man）;〜する物・道具（-er/-or）
+255,designate,指名する、指定する,to name or select someone for something,仕事・業務;規則・法律・手続き,動詞,3,
+256,exclusive,限定の、独占的な,only available to a certain group,性質・評価,形容詞,3,
+257,grocery,食料品店,a place that sells food items,食べ物・料理;お金・売買,名詞,3,
+258,homework,宿題,the work a teacher gives to students to be done outside of school,教育・学問・研究,名詞,3,複合語（2語の合体）
+259,memorandum,覚え書き、社内連絡,A written note or message to remind you or someone else to do something,伝達・文書・情報;仕事・業務,名詞,3,
+260,photocopier,コピー機,a machine that makes exact copies of documents,機器・IT・通信,名詞,3,〜する物・道具（-er/-or）
+261,suite,スイートルーム（続き部屋）,"a set of connecting rooms, usually in a hotel",旅行・交通・配送;建物・設備,名詞,3,
+262,thorough,徹底的な、完全な,"to be carefully and completely done, e.g. a thorough search",性質・評価,形容詞,3,
+263,bookstore,書店,A place where you go to buy books,お金・売買;建物・設備,名詞,3,複合語（2語の合体）
+264,cater,料理をまかなう、仕出しをする,to make and deliver food,食べ物・料理,動詞,3,
+265,dental,歯の、歯科の,relating to teeth,健康・医療,形容詞,3,
+266,duration,継続期間,how long something takes,時間・頻度・順序,名詞,3,
+267,lounge,ラウンジ、休憩室,a place to relax,建物・設備,名詞,3,
+268,painter,画家,an artist who paints,人・職業;娯楽・趣味・スポーツ,名詞,3,〜する人（-er/-or/-ist/-ant/-ian/-man）
+269,patron,後援者、ひいき客,"someone who gives support with time, money or effort",人・職業,名詞,3,
+270,prescription,処方せん,doctor's written order for medicine,健康・医療,名詞,3,前・後（pre-/pro-/fore-/post-）
+271,productive,生産的な、実りのある,"useful or worthwhile, e.g. a productive meeting",性質・評価;仕事・業務,形容詞,3,
+272,salad,サラダ,food made of mainly leaves or lettuce and vegetables,食べ物・料理,名詞,3,
+273,stack,積み重ね、山,a pile of things placed one on top of the other,数量・大きさ・形,名詞,3,
+274,delegate,（仕事を）任せる、委任する,to give others tasks to do,仕事・業務,動詞,3,
+275,salesperson,販売員,a man or woman whose job it is get people to buy things from their company,人・職業;お金・売買,名詞,3,〜する人（-er/-or/-ist/-ant/-ian/-man）
+276,calculator,計算機、電卓,a device that does math for you,機器・IT・通信,名詞,3,〜する物・道具（-er/-or）
+277,completion,完了、完成,"the end, the finishing point",時間・頻度・順序,名詞,3,
+278,defect,欠陥,something that is faulty,性質・評価;日用品・道具・衣類,名詞,3,
+279,garbage,ごみ,trash; something that is worthless,生活・社会・家庭,名詞,3,
+280,omit,省く、言い落とす,to leave out or not say,動作・変化,動詞,3,
+281,spite,悪意、意地悪,the desire to direct bad feeling towards someone,気持ち・態度,名詞,3,
+282,bathroom,浴室,a room where there is a bath and/or a shower,建物・設備,名詞,3,複合語（2語の合体）
+283,cab,タクシー,taxi,旅行・交通・配送,名詞,3,
+284,correspondence,手紙のやり取り、通信,communication by letter,伝達・文書・情報,名詞,3,共に（co-/com-）
+285,ladder,はしご,something you use to climb up high,日用品・道具・衣類,名詞,3,
+286,photography,写真撮影（術）,the art of taking pictures,娯楽・趣味・スポーツ,名詞,3,
+287,sculpture,彫刻,a figure or statue,娯楽・趣味・スポーツ,名詞,3,
+288,anniversary,記念日,a date to remember,時間・頻度・順序;生活・社会・家庭,名詞,3,
+289,buffet,ビュッフェ、立食形式の食事,a meal consisting of a number of different dishes from which people serve themselves,食べ物・料理,名詞,3,
+290,defective,欠陥のある,when something is not working,性質・評価;日用品・道具・衣類,形容詞,3,
+291,ice cream,アイスクリーム,"Frozen food made of cream, very sweet and good to eat",食べ物・料理,名詞,3,複合語（2語の合体）
+292,leak,漏れる,to drip water or other liquid,動作・変化,動詞,3,
+293,occupancy,居住、（部屋などの）使用,the state of living in a place,建物・設備;生活・社会・家庭,名詞,3,
+294,proficiency,熟達、技能,skill and experience,性質・評価;教育・学問・研究,名詞,3,
+295,renewal,更新、再生,the act of making something new again,動作・変化;規則・法律・手続き,名詞,3,re-（再び・元に）
+296,urgent,緊急の,"very important, needing attention now",時間・頻度・順序;性質・評価,形容詞,3,
+297,annually,毎年、年1回,every 12 months,時間・頻度・順序,副詞,3,
+298,basketball,バスケットボール,a game played by two teams who try to score goals by throwing the ball,娯楽・趣味・スポーツ,名詞,3,複合語（2語の合体）
+299,delete,削除する,remove,動作・変化;機器・IT・通信,動詞,3,
+300,illogical,筋の通らない、非論理的な,"not making any sense, lack of reasoning",思考・判断,形容詞,3,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+301,pet,ペット,an animal you keep in the house to play with,生活・社会・家庭,名詞,3,
+302,textbook,教科書,a book of facts to be used for the study of a particular subject,教育・学問・研究,名詞,3,複合語（2語の合体）
+303,accurately,正確に,when something is done correctly,性質・評価,副詞,3,
+304,cabin,小屋、山小屋,a small house in the forest,建物・設備,名詞,3,
+305,conductor,指揮者、指導者,a person who leads,人・職業,名詞,3,〜する人（-er/-or/-ist/-ant/-ian/-man）
+306,inspector,警部、検査官,a high ranking police officer,人・職業;規則・法律・手続き,名詞,3,〜する人（-er/-or/-ist/-ant/-ian/-man）
+307,intern,実習生、インターン,"a stuent or trainee who is doing a job, often without pay, to get work experience",人・職業;仕事・業務,名詞,3,
+308,semester,学期（2学期制の）,one of two divisions of the school year,教育・学問・研究;時間・頻度・順序,名詞,3,
+309,confirmation,確認,something that verifies something is true,伝達・文書・情報,名詞,3,
+310,congratulation,祝い、祝賀,the act of congratulating,気持ち・態度;生活・社会・家庭,名詞,3,
+311,expertise,専門知識、専門技術,excellent knowledge on something,性質・評価;教育・学問・研究,名詞,3,
+312,graph,グラフ,an image that shows data,伝達・文書・情報,名詞,3,
+313,taker,受け取るばかりの人,someone who does not give but only takes,人・職業,名詞,3,〜する人（-er/-or/-ist/-ant/-ian/-man）
+314,utility,有用性、役立つこと,usefulness,性質・評価,名詞,3,
+315,voucher,クーポン券、割引券,a piece of paper that you can use to buy goods or to get them at a reduced price,お金・売買,名詞,3,
+316,banker,銀行員,someone who works for the bank,人・職業;お金・売買,名詞,3,〜する人（-er/-or/-ist/-ant/-ian/-man）
+317,behalf,（〜の）ために、代わりに（on behalf of）,"to speak or do something for someone else, e.g. on behalf of…",人・職業,名詞,3,
+318,minimize,最小限にする,to make less important or smaller,数量・大きさ・形,動詞,3,〜にする（-ize/-ify/-en）
+319,optional,任意の、選択できる,"a choice, something you do not have to do",規則・法律・手続き,形容詞,3,
+320,paycheck,給料（明細）,the piece of paper that tells a worker how much they have earned,お金・売買;仕事・業務,名詞,3,複合語（2語の合体）
+321,polite,礼儀正しい,being kind to others,気持ち・態度,形容詞,3,
+322,protective,守ろうとする、保護的な,to want to keep safe,気持ち・態度,形容詞,3,
+323,seller,売り手、販売者,someone who promotes or exchanges goods or services for money,人・職業;お金・売買,名詞,3,〜する人（-er/-or/-ist/-ant/-ian/-man）
+324,sidewalk,歩道,the area that runs alonside a road for people to walk on,旅行・交通・配送;場所・位置・方向,名詞,3,複合語（2語の合体）
+325,sightsee,観光する,go to visit places of interest,旅行・交通・配送;娯楽・趣味・スポーツ,動詞,3,複合語（2語の合体）
+326,soup,スープ,"a liquid meal, usually hot",食べ物・料理,名詞,3,
+327,transit,輸送、移動（中）,on the move from one place to another,旅行・交通・配送,名詞,3,越えて・移す（trans-）
+328,wallet,財布,"a small case that can fit in a pocket, used by men to hold money  and credit cards",日用品・道具・衣類;お金・売買,名詞,3,
+329,cashier,レジ係,the person whose job it is to take the money you pay for goods or services,人・職業;お金・売買,名詞,3,〜する人（-er/-or/-ist/-ant/-ian/-man）
+330,casual,偶然の、何気ない,"uncertain, unplanned",性質・評価,形容詞,3,
+331,drill,穴をあける,to bore a hole into something,動作・変化,動詞,3,
+332,fountain,噴水,a man-made spray of water that shoots upwards,建物・設備,名詞,3,
+333,juice,ジュース、果汁,the natural liquid from a plant or fruit,食べ物・料理,名詞,3,
+334,lane,小道、車線,a narrow road,旅行・交通・配送,名詞,3,
+335,popularity,人気,the state of being liked by many people,性質・評価,名詞,3,
+336,poster,ポスター,a large printed picture or notice to stick on a wall,伝達・文書・情報,名詞,3,
+337,promptly,すぐに、迅速に,"done right away, immediately",時間・頻度・順序,副詞,3,
+338,retailer,小売店、小売業者,a store that sells something,お金・売買;会社・経営・組織,名詞,3,〜する人（-er/-or/-ist/-ant/-ian/-man）
+339,vacancy,欠員、空き,job or position that needs to be filled,仕事・業務,名詞,3,
+340,bench,ベンチ,"a long, usually wooden, seat found mainly in parks",日用品・道具・衣類,名詞,3,
+341,cumulative,累積する,gets bigger by more and more being added to it,数量・大きさ・形,形容詞,3,
+342,directory,名簿、住所録,an alphabetical list of names and addresses,伝達・文書・情報,名詞,3,
+343,disposal,処分、廃棄,the act of getting rid of something,動作・変化;生活・社会・家庭,名詞,3,
+344,housekeeper,家政婦、客室清掃係,someone whose job it is to take care of and clean another person's house,人・職業;生活・社会・家庭,名詞,3,複合語（2語の合体）;〜する人（-er/-or/-ist/-ant/-ian/-man）
+345,internship,インターンシップ、就業体験,"a position or placement for someone to learn a job through work, sometimes without pay",仕事・業務;教育・学問・研究,名詞,3,立場・関係（-ship/-hood）
+346,knowledgeable,知識のある、精通した,to know much about a topic,性質・評価,形容詞,3,
+347,organizer,主催者、まとめ役,someone who plans things for a living,人・職業;仕事・業務,名詞,3,〜する人（-er/-or/-ist/-ant/-ian/-man）
+348,overdue,期限切れの、遅れた,past the date you should do something; late,時間・頻度・順序,形容詞,3,上・超過（over-/super-/up-）
+349,prediction,予測,a guess about the future,思考・判断;時間・頻度・順序,名詞,3,前・後（pre-/pro-/fore-/post-）
+350,subscriber,定期購読者、加入者,someone who pays money to receive a service or product regularly,人・職業;お金・売買,名詞,3,〜する人（-er/-or/-ist/-ant/-ian/-man）
+351,booklet,小冊子,"a small book, leaflet, or brochure",伝達・文書・情報,名詞,3,
+352,conditioner,コンディショナー,shampoo-like substance used after washing hair,日用品・道具・衣類,名詞,3,
+353,enroll,登録する、入学する,to register for something,規則・法律・手続き;教育・学問・研究,動詞,3,
+354,frustrate,いらだたせる、挫折させる,to upset someone,気持ち・態度,動詞,3,
+355,garment,衣服,"something made of material that you can wear, like pants or a dress",日用品・道具・衣類,名詞,3,
+356,orientation,オリエンテーション、方向づけ,something that makes you familiar with a place,教育・学問・研究;仕事・業務,名詞,3,
+357,outlet,アウトレット（安売り店）,a store that sells things at a discount,お金・売買;建物・設備,名詞,3,
+358,packet,小さな包み、小箱,a small carton or package,日用品・道具・衣類,名詞,3,
+359,plumber,配管工,someone connects and mends water pipes for a living,人・職業;建物・設備,名詞,3,〜する人（-er/-or/-ist/-ant/-ian/-man）
+360,specification,仕様、明細,a special detail or necessity for something,伝達・文書・情報,名詞,3,
+361,auto,自動車,car,旅行・交通・配送,名詞,3,
+362,decorate,飾る,"make more attractive by adding ornament, colour, etc.",動作・変化,動詞,3,
+363,deduction,差し引き、控除,"the act of taking away, usually money",お金・売買,名詞,3,
+364,definite,明確な、確かな,"for certain, exact",性質・評価,形容詞,3,
+365,economical,経済的な、節約になる,of good value,お金・売買;性質・評価,形容詞,3,
+366,efficiently,効率的に,to do something well in a little amount of time,性質・評価,副詞,3,
+367,flyer,チラシ,"brochure, leaflet",伝達・文書・情報,名詞,3,
+368,franchise,フランチャイズ（加盟店）,"one of many branches of a business you buy, e.g.KFC",会社・経営・組織,名詞,3,
+369,generous,気前のよい,to give willingly and freely,気持ち・態度,形容詞,3,
+370,interrupt,中断させる、さえぎる,to stop something or someone in the middle of something,動作・変化,動詞,3,間・相互（inter-）
+371,oven,オーブン,kitchen appliance used for baking or roasting,食べ物・料理;日用品・道具・衣類,名詞,3,
+372,pant,息を切らす、あえぐ,"take short sharp breaths through your mouth, noisily",健康・医療;動作・変化,動詞,3,
+373,profitable,利益になる,able to make money,お金・売買,形容詞,3,〜できる（-able/-ible）
+374,refrigerator,冷蔵庫,an electric box that cools food,食べ物・料理;機器・IT・通信,名詞,3,〜する物・道具（-er/-or）
+375,reimburse,払い戻す、返済する,give back the money for an expense that has been paid out,お金・売買,動詞,3,re-（再び・元に）
+376,showroom,ショールーム、展示室,an area where goods for sale are set out so people can look at them,お金・売買;建物・設備,名詞,4,複合語（2語の合体）
+377,vegetarian,菜食主義者,someone who does not eat meat or fish,人・職業;食べ物・料理,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+378,administrator,管理者、事務長,the person who manages an office,人・職業;会社・経営・組織,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+379,broker,仲買人、ブローカー,someone who buys and sells thing for a percentage of sales,人・職業;お金・売買,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+380,cancellation,取り消し、キャンセル,when something is not going to happen after all,規則・法律・手続き,名詞,4,
+381,confidential,機密の、内密の,something that needs to be kept secret,伝達・文書・情報;規則・法律・手続き,形容詞,4,
+382,jet,ジェット機,an airplane,旅行・交通・配送,名詞,4,
+383,realistic,現実的な,to be reasonable or be close to real life,思考・判断;性質・評価,形容詞,4,
+384,thoroughly,徹底的に、念入りに,to do something carefully with attention to detail,性質・評価,副詞,4,
+385,trash,ごみ、くず,garbage or waste; something worthless,生活・社会・家庭,名詞,4,
+386,usage,使い方、用法,the usual or customary way in which something is used,動作・変化,名詞,4,
+387,windy,風の強い,weather that is stormy or gusty,自然・天気・環境,形容詞,4,
+388,automate,自動化する,To make a process that does a task over and over again by machine,機器・IT・通信,動詞,4,
+389,ferry,フェリー,a big boat that carries people and cars,旅行・交通・配送,名詞,4,
+390,finalize,最終決定する、仕上げる,to make final,仕事・業務,動詞,4,〜にする（-ize/-ify/-en）
+391,incur,（損害などを）招く、負う,lay yourself open to something as a result of your actions,動作・変化,動詞,4,
+392,instruct,教える、指示する,to teach,教育・学問・研究;伝達・文書・情報,動詞,4,
+393,loyal,忠実な、誠実な,to stay true or faithful,気持ち・態度,形容詞,4,
+394,luncheon,昼食会,a formal meal eaten in the middle of the day,食べ物・料理,名詞,4,
+395,microphone,マイク,device used by singers and public speakers to make their voice louder,機器・IT・通信,名詞,4,
+396,overview,概要,a general summary of a subject,伝達・文書・情報,名詞,4,上・超過（over-/super-/up-）
+397,projector,プロジェクター,an optical instrument that projects an enlarged image onto a screen,機器・IT・通信,名詞,4,〜する物・道具（-er/-or）
+398,shortage,不足,a lack of something,数量・大きさ・形,名詞,4,
+399,spacious,広々とした,lots of room or space,数量・大きさ・形;建物・設備,形容詞,4,
+400,accomplishment,達成、業績,something you achieve,仕事・業務,名詞,4,
+401,accustom,慣れさせる,to get used to,生活・社会・家庭,動詞,4,
+402,clinic,診療所、クリニック,"a place you go when sick, like a mini-hospital",健康・医療;建物・設備,名詞,4,
+403,desktop,デスクトップ（画面）,the working area of a computer screen when no programs are open,機器・IT・通信,名詞,4,複合語（2語の合体）
+404,jog,ジョギング,a gentle run,娯楽・趣味・スポーツ;健康・医療,名詞,4,
+405,leisure,余暇、レジャー,something for fun or relaxing,娯楽・趣味・スポーツ,名詞,4,
+406,nap,昼寝、うたた寝,"a short sleep, often taken during the daytime",生活・社会・家庭,名詞,4,
+407,reinforce,強化する,to make stronger,動作・変化,動詞,4,re-（再び・元に）
+408,sender,送り主、差出人,someone who transmits a message,人・職業;伝達・文書・情報,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+409,vacuum,真空,a completely empty space,自然・天気・環境,名詞,4,
+410,wireless,無線（通信）,a means of communication that uses radio waves instead of wires,機器・IT・通信;伝達・文書・情報,名詞,4,〜のない（-less/-free）
+411,yearly,毎年の、年1回の,happening every 12 months,時間・頻度・順序,形容詞,4,〜ごと（名詞＋-ly）
+412,appreciation,感謝,to show thanks for something or someone,気持ち・態度,名詞,4,
+413,cargo,貨物、積み荷,the things carried in the hold of an airplane or on a truck,旅行・交通・配送,名詞,4,
+414,cooperate,協力する,to work together nicely,仕事・業務,動詞,4,共に（co-/com-）
+415,distract,気をそらす,to take your focus away from something,気持ち・態度,動詞,4,
+416,dividend,配当金,money received as a bonus,お金・売買,名詞,4,
+417,exemption,免除,an exception to the rule,規則・法律・手続き,名詞,4,外・元（ex-）
+418,furnish,家具を備えつける,to put furniture in,建物・設備,動詞,4,
+419,hourly,1時間ごとの,happens every 60 minutes,時間・頻度・順序,形容詞,4,〜ごと（名詞＋-ly）
+420,laundry,洗濯物,dirty clothes that need washing,生活・社会・家庭,名詞,4,
+421,mandatory,義務的な、必須の,something that has to be done,規則・法律・手続き,形容詞,4,
+422,mechanical,機械の,to do with machines,機器・IT・通信,形容詞,4,
+423,pharmacy,薬局,a store where medicines are prepared and sold,健康・医療;建物・設備,名詞,4,
+424,promotional,販売促進の,to do with encouraging sales,お金・売買;会社・経営・組織,形容詞,4,
+425,quarterly,年4回の、四半期ごとの,every 4 months,時間・頻度・順序,形容詞,4,〜ごと（名詞＋-ly）
+426,residential,住宅の、居住の,an area where people live,生活・社会・家庭;建物・設備,形容詞,4,
+427,scholarship,奨学金,an amount of money given to an able student to help pay for their studies,教育・学問・研究;お金・売買,名詞,4,立場・関係（-ship/-hood）
+428,seeker,探し求める人,someone looking for something,人・職業,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+429,temporarily,一時的に,"not for ever, for a short while",時間・頻度・順序,副詞,4,
+430,towel,タオル,a big cloth used for drying after a shower or swim,日用品・道具・衣類,名詞,4,
+431,unattended,放置された、見張りのいない,when someone or something is not being watched,場所・位置・方向,形容詞,4,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+432,accessible,利用しやすい、近づきやすい,"available, easy to reach",性質・評価,形容詞,4,〜できる（-able/-ible）
+433,afterward,その後,after an event or action,時間・頻度・順序,副詞,4,複合語（2語の合体）
+434,apology,謝罪,saying you are sorry for something,気持ち・態度;伝達・文書・情報,名詞,4,
+435,assemble,集める、集まる,to gather people together,動作・変化,動詞,4,
+436,automatic,無意識の、自動的な,done without thinking,性質・評価,形容詞,4,
+437,boardroom,役員会議室,a room where the board of directors of a company hold meetings,会社・経営・組織;建物・設備,名詞,4,複合語（2語の合体）
+438,carpenter,大工,a person makes and mends things made of wood for a liviing,人・職業;建物・設備,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+439,caterer,仕出し業者,the person who makes food and delivers it for a living,人・職業;食べ物・料理,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+440,classify,分類する,to put into a category,思考・判断,動詞,4,〜にする（-ize/-ify/-en）
+441,consultation,相談、協議,a meeting between two people,伝達・文書・情報;仕事・業務,名詞,4,
+442,durable,耐久性のある、長持ちする,very long lasting,性質・評価;日用品・道具・衣類,形容詞,4,〜できる（-able/-ible）
+443,glove,手袋,something you wear on your hand to keep warm,日用品・道具・衣類,名詞,4,
+444,hardware,道具類、機器,tools or equipment,日用品・道具・衣類;機器・IT・通信,名詞,4,複合語（2語の合体）
+445,malfunction,故障、不調,a breakdown or failure in the system,機器・IT・通信,名詞,4,
+446,outdated,時代遅れの,to be older than,時間・頻度・順序;性質・評価,形容詞,4,複合語（2語の合体）
+447,patience,忍耐,to accept suffering without getting angry,気持ち・態度,名詞,4,
+448,postcard,はがき,a card for sending messages by post without an envelope,伝達・文書・情報,名詞,4,複合語（2語の合体）
+449,prospective,見込みのある、将来の,"possible in the future, e.g. prospective client",時間・頻度・順序,形容詞,4,前・後（pre-/pro-/fore-/post-）
+450,revision,修正、改訂,to change or rewrite something,伝達・文書・情報;動作・変化,名詞,4,re-（再び・元に）
+451,strictly,厳しく、厳密に,"in a strong manner, in a manner that follows the rules",規則・法律・手続き,副詞,4,
+452,tomato,トマト,"a round red fruit, usually thought of as a vegetable",食べ物・料理,名詞,4,
+453,tray,お盆、トレー,"a flat plate used to carry things, usually coffee or tea",日用品・道具・衣類;食べ物・料理,名詞,4,
+454,vendor,販売者、業者,the person who is selling something,人・職業;お金・売買,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+455,withdrawal,引き出し、撤退,"the act of taking something away or out of something, e.g. bank withdrawal",お金・売買;動作・変化,名詞,4,
+456,anytime,いつでも,"at a time you choose, it's not important when",時間・頻度・順序,副詞,4,複合語（2語の合体）
+457,badge,名札、バッジ,a small piece of material with your name and details on that you wear to show who you are,日用品・道具・衣類,名詞,4,
+458,brake,ブレーキをかける,to stop a vehicle by pressing a pedal,旅行・交通・配送,動詞,4,
+459,calculation,計算,"to add, subtract, multiply, divide etc.",数量・大きさ・形,名詞,4,
+460,coordinator,まとめ役、調整役,someone whose job is to organize things,人・職業;仕事・業務,名詞,4,共に（co-/com-）;〜する人（-er/-or/-ist/-ant/-ian/-man）
+461,costly,高価な、費用のかかる,"to be expensive, to be of a high price",お金・売買,形容詞,4,見た目に注意
+462,equip,（道具・能力を）備えさせる,provide with abilities or tools,動作・変化,動詞,4,
+463,excursion,小旅行、遠足,a journey taken for pleasure,旅行・交通・配送;娯楽・趣味・スポーツ,名詞,4,外・元（ex-）
+464,graphic,図の、画像の,to do with a picture or image,伝達・文書・情報,形容詞,4,
+465,inexperience,未経験、不慣れ,to not have much practice with something,性質・評価,名詞,4,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+466,lengthy,長い、長たらしい,long in time or size,数量・大きさ・形;時間・頻度・順序,形容詞,4,
+467,librarian,図書館員、司書,a person who works with books in a library,人・職業;教育・学問・研究,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+468,meantime,その間,the time between two events,時間・頻度・順序,名詞,4,複合語（2語の合体）
+469,merge,合併する、合わせる,to bring two things together to make one,会社・経営・組織;動作・変化,動詞,4,
+470,performer,演奏者、出演者,an entertainer  like an actor or a singer,人・職業;娯楽・趣味・スポーツ,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+471,pharmacist,薬剤師,a person whose job it is to prepare medicines,人・職業;健康・医療,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+472,pizza,ピザ,"a round piece of baked dough, covered with tomato, cheese and other ingredients",食べ物・料理,名詞,4,
+473,resignation,辞職、辞任,to quit one's job,仕事・業務,名詞,4,
+474,reviewer,評論家、査読者,someone who checks written work,人・職業;伝達・文書・情報,名詞,4,re-（再び・元に）;〜する人（-er/-or/-ist/-ant/-ian/-man）
+475,terminate,終わらせる,bring to an end,時間・頻度・順序;動作・変化,動詞,4,
+476,translation,翻訳,something that is changed into another language,伝達・文書・情報,名詞,4,越えて・移す（trans-）
+477,unfamiliar,よく知らない、なじみのない,not well known,性質・評価,形容詞,4,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+478,actress,女優,a female actor,人・職業;娯楽・趣味・スポーツ,名詞,4,
+479,adjacent,隣接した,"next to, beside",場所・位置・方向,形容詞,4,
+480,alternate,代わりのもの、代替案,another option,思考・判断,名詞,4,
+481,congratulate,祝う,to tell someone 'good job' on a happy occasion,気持ち・態度,動詞,4,
+482,escort,付き添う、案内する,to go with someone,動作・変化,動詞,4,
+483,inexpensive,安価な,having a low price; cheap,お金・売買,形容詞,4,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+484,mask,マスク、仮面,something that covers your face,日用品・道具・衣類,名詞,4,
+485,purchaser,購入者,someone who buys things; buyer,人・職業;お金・売買,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+486,purse,ハンドバッグ、財布,a small bag women use to carry personal items,日用品・道具・衣類,名詞,4,
+487,realtor,不動産業者,"a person who sells, rents out or manages property for a living",人・職業;建物・設備,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+488,rearrange,並べ替える、再調整する,to put into a new order,動作・変化,動詞,4,re-（再び・元に）
+489,reopen,再開する,to open again,動作・変化,動詞,4,re-（再び・元に）
+490,soap,石けん,a block of material used for washing or cleaning,日用品・道具・衣類,名詞,4,
+491,spokesperson,広報担当者、代弁者,one man or woman who speaks officially for the rest of the group,人・職業;伝達・文書・情報,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+492,superior,上司、上役,"the leader, someone higher than you in rank",人・職業;仕事・業務,名詞,4,上・超過（over-/super-/up-）
+493,airfare,航空運賃,the amount of money charged for traveling by airplane,旅行・交通・配送;お金・売買,名詞,4,複合語（2語の合体）
+494,bake,焼く,to cook things inside the oven,食べ物・料理,動詞,4,
+495,businessperson,実業家、ビジネスパーソン,"a person who works in commercial or industrial business, especially an owner or executive",人・職業;会社・経営・組織,名詞,4,〜する人（-er/-or/-ist/-ant/-ian/-man）
+496,considerably,かなり、相当,to a large degree,数量・大きさ・形,副詞,4,
+497,faulty,欠陥のある,"broken, not perfect",性質・評価,形容詞,4,
+498,hobby,趣味,something you do in your spare time for fun,娯楽・趣味・スポーツ,名詞,4,
+499,informal,形式ばらない、略式の,"relaxed, casual - often used to describe clothes or an event",性質・評価,形容詞,4,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+500,kilometer,キロメートル,a metric unit of length equal to 1000 meters,数量・大きさ・形,名詞,4,
+501,lawn,芝生,the grassy area in your garden,自然・天気・環境;生活・社会・家庭,名詞,5,
+502,microscope,顕微鏡,a device that makes very small things look bigger so you can study them closer,教育・学問・研究;機器・IT・通信,名詞,5,
+503,mislead,誤った方向に導く、誤解させる,to lead someone in the wrong direction or give someone wrong directions,伝達・文書・情報,動詞,5,mis-（誤って）
+504,misplace,置き忘れる,forget where you have put it,動作・変化,動詞,5,mis-（誤って）
+505,newsstand,新聞売り場、売店,a small structure where newspapers and magazines are sold,お金・売買;建物・設備,名詞,5,複合語（2語の合体）
+506,overhead,間接費、諸経費,"the fixed cost of a business, e.g. rent",お金・売買;会社・経営・組織,名詞,5,上・超過（over-/super-/up-）
+507,portfolio,（投資の）ポートフォリオ、保有資産一覧,a collection of investments that someone owns,お金・売買,名詞,5,
+508,rack,棚、ラック,a stand or shelf to put things on,日用品・道具・衣類,名詞,5,
+509,remodel,改装する、作り直す,change or alter nearly everything to make it look different,建物・設備;動作・変化,動詞,5,re-（再び・元に）
+510,statistics,統計（学）,math related to data collection,教育・学問・研究;数量・大きさ・形,名詞,5,学問（-ology/-ics）
+511,tunnel,トンネル,a hole one can travel through,旅行・交通・配送;建物・設備,名詞,5,
+512,unlimited,無制限の,without end,数量・大きさ・形,形容詞,5,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+513,vitamin,ビタミン,a natural substance found in food and drink that your body needs to be healthy,健康・医療;食べ物・料理,名詞,5,
+514,zoo,動物園,a park where many different types of live animals are kept,娯楽・趣味・スポーツ;自然・天気・環境,名詞,5,
+515,alert,油断のない、注意深い,"wide awake, aware",気持ち・態度,形容詞,5,
+516,auditorium,観客席、講堂,the area of a theater or concert hall where the audience sits,娯楽・趣味・スポーツ;建物・設備,名詞,5,
+517,celebrity,有名人,someone famous,人・職業,名詞,5,
+518,deduct,差し引く、控除する,to minus or take away,お金・売買;数量・大きさ・形,動詞,5,
+519,disruption,混乱、中断,the act of interrupting and causing chaos,動作・変化,名詞,5,
+520,electrician,電気技師,a person who installs or repairs electrical or telephone lines,人・職業;機器・IT・通信,名詞,5,〜する人（-er/-or/-ist/-ant/-ian/-man）
+521,enthusiastic,熱心な、熱狂的な,to show excitement for something,気持ち・態度,形容詞,5,
+522,graduation,卒業（式）,the ceremony upon finishing a degree or program,教育・学問・研究,名詞,5,
+523,icy,氷の、凍った,made of ice,自然・天気・環境,形容詞,5,
+524,irregular,不規則な,occuring at unexpected times,時間・頻度・順序;性質・評価,形容詞,5,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+525,login,ログインする,to enter a computer website account,機器・IT・通信,動詞,5,複合語（2語の合体）
+526,managerial,管理の、経営の,to do with management or supervision,会社・経営・組織;仕事・業務,形容詞,5,
+527,mineral,鉱物、ミネラル,a type of substance found in nature,自然・天気・環境,名詞,5,
+528,motorcycle,オートバイ,a motor vehicle with two wheels and a strong frame,旅行・交通・配送,名詞,5,複合語（2語の合体）
+529,necessity,必要なもの、必需品,something which you need,生活・社会・家庭,名詞,5,
+530,planner,計画者、立案者,a person who makes plans,人・職業;仕事・業務,名詞,5,〜する人（-er/-or/-ist/-ant/-ian/-man）
+531,programmer,プログラマー,a person who designs and writes and tests computer programs,人・職業;機器・IT・通信,名詞,5,〜する人（-er/-or/-ist/-ant/-ian/-man）
+532,proofread,校正する,read for errors,伝達・文書・情報,動詞,5,複合語（2語の合体）
+533,recruiter,採用担当者,a person who hires people for businesses,人・職業;仕事・業務,名詞,5,〜する人（-er/-or/-ist/-ant/-ian/-man）
+534,remainder,残り,what is left over,数量・大きさ・形,名詞,5,
+535,statue,像、彫像,"a work of art, usually a model of a person or animal, made from hard material",娯楽・趣味・スポーツ,名詞,5,
+536,steadily,着実に,in a slow and even manner,時間・頻度・順序,副詞,5,
+537,stockholder,株主,someone who holds shares of stock in a corporation,人・職業;お金・売買,名詞,5,複合語（2語の合体）;〜する人（-er/-or/-ist/-ant/-ian/-man）
+538,vacant,空いている,empty,建物・設備,形容詞,5,
+539,accessory,共犯者,partner in crime,人・職業;規則・法律・手続き,名詞,5,
+540,assembly,集会、集まり,when people are gathered together,生活・社会・家庭,名詞,5,
+541,basket,かご,a container made of pieces of wood,日用品・道具・衣類,名詞,5,
+542,certification,証明（書）、認定,written proof that you did something or that something is good enough,規則・法律・手続き,名詞,5,
+543,closure,閉鎖,when something is closed for good,会社・経営・組織,名詞,5,
+544,dislike,嫌う,"to not like, hate",気持ち・態度,動詞,5,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+545,downstairs,階下に,on a lower floor of a building,場所・位置・方向,副詞,5,複合語（2語の合体）
+546,expiration,期限切れ、満了,the end of a period of time,時間・頻度・順序;規則・法律・手続き,名詞,5,
+547,headache,頭痛,pain in the head,健康・医療,名詞,5,複合語（2語の合体）
+548,jam,押し込む、詰め込む,push down hard,動作・変化,動詞,5,
+549,nail,くぎ,"a long, thin piece of metal used to hold pieces of wood together banged in with a hammer",日用品・道具・衣類,名詞,5,
+550,optimistic,楽観的な,being positive about the future,気持ち・態度,形容詞,5,
+551,pedestrian,歩行者,a person who is walking on the street,人・職業;旅行・交通・配送,名詞,5,〜する人（-er/-or/-ist/-ant/-ian/-man）
+552,projection,予測、見積もり,"a guess about future events, e.g. sales or income",思考・判断;時間・頻度・順序,名詞,5,
+553,sleeve,袖,"the part of a garment that covers some, or all, of the arm",日用品・道具・衣類,名詞,5,
+554,suburb,郊外,living area outside the city,場所・位置・方向;生活・社会・家庭,名詞,5,下・不足・副（under-/sub-/vice-）
+555,takeover,（企業の）買収,the buying out of one company by another,会社・経営・組織,名詞,5,複合語（2語の合体）
+556,unsure,確信がない,not certain or sure,気持ち・態度,形容詞,5,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+557,upstairs,上の階に,on a higher level of the building,場所・位置・方向,副詞,5,複合語（2語の合体）
+558,verbal,口頭の,spoken,伝達・文書・情報,形容詞,5,
+559,visa,ビザ、査証,travel permit that allows you to enter a particular country for a period of time,旅行・交通・配送;規則・法律・手続き,名詞,5,
+560,wildlife,野生生物,animals and plants that live in the natural world,自然・天気・環境,名詞,5,複合語（2語の合体）
+561,workforce,全従業員、労働力,all the people that a company employs,会社・経営・組織;人・職業,名詞,5,複合語（2語の合体）
+562,absent,不在の、欠席の,"missing, not present",場所・位置・方向,形容詞,5,
+563,accumulate,蓄積する、ためる,"to slowly get more and more of something, e.g. wealth",数量・大きさ・形,動詞,5,
+564,appraisal,評価、査定,an evaluation,思考・判断,名詞,5,
+565,apprentice,見習い、徒弟,someone who is learning a trade by working with an expert,人・職業;仕事・業務,名詞,5,
+566,businessman,実業家,"a man who works in commercial or industrial business, especially an owner or executive",人・職業;会社・経営・組織,名詞,5,〜する人（-er/-or/-ist/-ant/-ian/-man）
+567,ceiling,天井,the thing that covers the room up high,建物・設備,名詞,5,
+568,colorful,色彩豊かな,having many different colors,性質・評価,形容詞,5,〜に満ちた（-ful）
+569,compensate,報酬を払う、補償する,to give money for a service,お金・売買,動詞,5,
+570,costume,衣装、仮装,"something unusual you dress up in, e.g. for Hallowe'en",日用品・道具・衣類;娯楽・趣味・スポーツ,名詞,5,
+571,editorial,社説,a newspaper article written by the editor,伝達・文書・情報,名詞,5,
+572,effectiveness,有効性,the state of working properly or as expected,性質・評価,名詞,5,
+573,facilitate,促進する、容易にする,to help or make easier,動作・変化,動詞,5,
+574,firefighter,消防士,someone whose job it is to put out fires or save people from dangerous situations,人・職業,名詞,5,複合語（2語の合体）;〜する人（-er/-or/-ist/-ant/-ian/-man）
+575,gasoline,ガソリン,fuel used in most motor vehicles,旅行・交通・配送,名詞,5,
+576,inappropriate,不適切な,not suitable for use in a given situation,性質・評価,形容詞,5,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+577,internet,インターネット,"the information highway, the worldwide web",機器・IT・通信,名詞,5,間・相互（inter-）
+578,landlord,家主、大家,the person who owns the place you rent,人・職業;建物・設備,名詞,5,複合語（2語の合体）
+579,layout,配置、設計,the plan of how it is set out,建物・設備,名詞,5,複合語（2語の合体）
+580,lunchtime,昼食時間,The usual time for eating the midday meal,時間・頻度・順序;食べ物・料理,名詞,5,複合語（2語の合体）
+581,payroll,給与支払総額、従業員名簿,the total amount of money paid in wages,お金・売買;仕事・業務,名詞,5,複合語（2語の合体）
+582,pharmaceutical,製薬の、薬の,relating to the preparation and making of medicine,健康・医療,形容詞,5,
+583,plausible,もっともらしい,it sounds like it could be true,思考・判断,形容詞,5,〜できる（-able/-ible）
+584,premium,割増金、追加料金,an extra payment added to the cost,お金・売買,名詞,5,
+585,safely,安全に,in a way that is not dangerous,性質・評価,副詞,5,
+586,simplify,簡単にする,make easier to understand,動作・変化,動詞,5,〜にする（-ize/-ify/-en）
+587,specialty,得意分野、専門,something you are very good at,仕事・業務,名詞,5,
+588,tech,テクノロジー,short form of the word 'technology',機器・IT・通信,名詞,5,
+589,unexpected,予期しない,to be a surprise,性質・評価,形容詞,5,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+590,unspecified,特定されていない,not clearly marked or known,伝達・文書・情報,形容詞,5,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+591,adhere,固守する、従う,"to stay with or follow , e.g. adhere to rules",規則・法律・手続き,動詞,5,
+592,bankrupt,破産した,to have no more money,お金・売買,形容詞,5,
+593,caution,警告、注意,a warning to be careful,伝達・文書・情報,名詞,5,
+594,clip,切り取る、刈る,"to cut short, snip",動作・変化,動詞,5,
+595,comply,従う、応じる,to obey a rule,規則・法律・手続き,動詞,5,
+596,diner,小さな食堂,"a small, informal restaurant",食べ物・料理;建物・設備,名詞,5,
+597,duplicate,複製する,make an exact copy,動作・変化,動詞,5,数（uni-/bi-/tri-/multi-）
+598,eager,熱心な、〜したがる,to be excited to help or do something,気持ち・態度,形容詞,5,
+599,economist,経済学者,an expert in the science of economics,人・職業;教育・学問・研究,名詞,5,〜する人（-er/-or/-ist/-ant/-ian/-man）
+600,embassy,大使館,the office of an ambassador,規則・法律・手続き;建物・設備,名詞,5,
+601,fasten,しっかり留める,fix together firmly,動作・変化,動詞,5,〜にする（-ize/-ify/-en）
+602,harmful,有害な,"damaging, hurtful",性質・評価,形容詞,5,〜に満ちた（-ful）
+603,informative,有益な、情報に富む,tells you a lot of useful facts about somethiing,伝達・文書・情報,形容詞,5,
+604,institute,研究所、学校,like a school or college,教育・学問・研究,名詞,5,
+605,kit,道具一式,a box of tools or equipment,日用品・道具・衣類,名詞,5,
+606,locally,地元で、特定の地域で,in a specific area,場所・位置・方向,副詞,5,
+607,mentor,指導者、助言者,personal advisor or teacher,人・職業;教育・学問・研究,名詞,5,
+608,nominate,推薦する、指名する,to suggest someone for to do or be something,仕事・業務,動詞,5,
+609,opt,選ぶ,to make a choice,思考・判断,動詞,5,
+610,parade,行進する,walk or march,動作・変化;娯楽・趣味・スポーツ,動詞,5,
+611,physician,内科医、医師,A doctor of medicine,人・職業;健康・医療,名詞,5,〜する人（-er/-or/-ist/-ant/-ian/-man）
+612,polish,磨く,to make something shine with a cloth,動作・変化,動詞,5,
+613,postage,郵便料金,the charge for mailing something,伝達・文書・情報;お金・売買,名詞,5,
+614,recreational,娯楽の、レクリエーションの,what you do for relaxation in your free time,娯楽・趣味・スポーツ,形容詞,5,re-（再び・元に）
+615,rehearse,リハーサルする、練習する,practise so that you get better at doing it,娯楽・趣味・スポーツ,動詞,5,re-（再び・元に）
+616,removal,除去、移転,to take away and put in another place,動作・変化,名詞,5,
+617,satisfactory,満足のいく、十分な,acceptable,性質・評価,形容詞,5,
+618,seasonal,季節の,happening at a certain time of the year only,時間・頻度・順序,形容詞,5,
+619,separately,別々に,"to do things one at a time, not together",数量・大きさ・形,副詞,5,
+620,turnover,売上高,the amount of money that a business makes in an amount of time,お金・売買;会社・経営・組織,名詞,5,複合語（2語の合体）
+621,unnecessary,不必要な,not needed,性質・評価,形容詞,5,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+622,accordingly,したがって、それに応じて,"therefore, so",思考・判断,副詞,5,
+623,apple,りんご,"a type of fruit from trees that is green, red, or yellow",食べ物・料理,名詞,5,
+624,applicable,当てはまる、関係する,relating to,思考・判断,形容詞,5,〜できる（-able/-ible）
+625,auction,競売、オークション,where things are sold to highest payer,お金・売買,名詞,5,
+626,balcony,バルコニー,a small floor area with a wall or fence round it that is joined to the outside of a building,建物・設備,名詞,6,
+627,basement,地下室,the level under the ground floor,建物・設備;場所・位置・方向,名詞,6,
+628,beforehand,前もって,earlier in time,時間・頻度・順序,副詞,6,複合語（2語の合体）
+629,culinary,料理の,relating to cooking,食べ物・料理,形容詞,6,
+630,documentary,ドキュメンタリー,a film about a real life or event,娯楽・趣味・スポーツ;伝達・文書・情報,名詞,6,
+631,downturn,（景気の）下降、低迷,a drop in the success of a business or the economy,お金・売買;会社・経営・組織,名詞,6,複合語（2語の合体）
+632,earthquake,地震,when the ground shakes due to the natural movement of rocks underground,自然・天気・環境,名詞,6,複合語（2語の合体）
+633,elegant,上品な、優雅な,fine or beautiful,性質・評価,形容詞,6,
+634,excessive,過度の,way too much of something,数量・大きさ・形,形容詞,6,外・元（ex-）
+635,generic,一般的な,general,性質・評価,形容詞,6,
+636,jazz,ジャズ,a kind of music,娯楽・趣味・スポーツ,名詞,6,
+637,lifetime,一生、生涯,The time between when a person is born and when they die,時間・頻度・順序;生活・社会・家庭,名詞,6,複合語（2語の合体）
+638,massage,マッサージする,rub the body in a special way that makes it feel better,健康・医療,動詞,6,
+639,maximize,最大限にする,to make use of as much as possible,数量・大きさ・形,動詞,6,〜にする（-ize/-ify/-en）
+640,mild,穏やかな、軽い,"soft, gentle, not strong in nature",性質・評価,形容詞,6,
+641,ongoing,進行中の,still happening,時間・頻度・順序,形容詞,6,複合語（2語の合体）
+642,periodically,定期的に,"every so often, at regular times",時間・頻度・順序,副詞,6,
+643,pie,パイ,"round, covered pastrywith a filling like cherry or apple",食べ物・料理,名詞,6,
+644,plug,（穴を）ふさぐ,to fill in a hole,動作・変化,動詞,6,
+645,recruitment,採用、募集,the act of hiring people for businesses,仕事・業務,名詞,6,
+646,referee,審判、審査員,the person who oversees something to make sure that the rules are followed,人・職業;娯楽・趣味・スポーツ,名詞,6,〜される人（-ee）
+647,referral,紹介、推薦,the recommendation of someone or something,伝達・文書・情報;仕事・業務,名詞,6,
+648,renown,名声,the state of being well known,性質・評価,名詞,6,
+649,runner,走者、ランナー,someone who travels on foot by running,人・職業;娯楽・趣味・スポーツ,名詞,6,〜する人（-er/-or/-ist/-ant/-ian/-man）
+650,sock,靴下,something you wear on your foot to keep you warm,日用品・道具・衣類,名詞,6,
+651,spam,迷惑メール、スパム,"unwanted e-mail, usually of a commercial nature sent out in bulk",機器・IT・通信;伝達・文書・情報,名詞,6,
+652,surf,ネットサーフィンする,move from one website to another on the internet,機器・IT・通信,動詞,6,
+653,timetable,時刻表、予定表,a list of events and when they are going to happen,時間・頻度・順序;伝達・文書・情報,名詞,6,複合語（2語の合体）;見た目に注意
+654,vase,花瓶,"a jug or urn to put cut flowers in, to make a room look pretty",日用品・道具・衣類,名詞,6,
+655,aboard,（乗り物に）乗って,"on or in a moving vehicle, e.g. aboard the boat",旅行・交通・配送,副詞,6,
+656,advancement,前進、昇進,gradual move forward,動作・変化;仕事・業務,名詞,6,
+657,advertiser,広告主,someone who is selling something through media,人・職業;お金・売買,名詞,6,〜する人（-er/-or/-ist/-ant/-ian/-man）
+658,alternatively,代わりに、あるいは,another option,思考・判断,副詞,6,
+659,amuse,楽しませる,to entertain,娯楽・趣味・スポーツ;気持ち・態度,動詞,6,
+660,attorney,弁護士,lawyer,人・職業;規則・法律・手続き,名詞,6,
+661,authorization,許可、認可,the permission given to do something,規則・法律・手続き,名詞,6,〜にする（-ize/-ify/-en）
+662,campus,キャンパス、構内,place where university buildings are,教育・学問・研究;建物・設備,名詞,6,
+663,candy,キャンディー、菓子,"a very sweet food, made from sugar and other things, that is good to eat",食べ物・料理,名詞,6,
+664,certify,証明する,to state something is real or correct,規則・法律・手続き,動詞,6,〜にする（-ize/-ify/-en）
+665,checkout,チェックアウト（の時刻）,the latest time that you must vacate a hotel room,旅行・交通・配送;時間・頻度・順序,名詞,6,複合語（2語の合体）
+666,chemistry,化学,the study of chemicals,教育・学問・研究,名詞,6,
+667,circulation,流通、（新聞などの）発行部数,"to distribute in a wide area, e.g. newspaper",伝達・文書・情報,名詞,6,
+668,concierge,コンシェルジュ,the person in a hotel whose job it is to arrange things for the guests,人・職業;旅行・交通・配送,名詞,6,
+669,consent,同意する、許可する,to give permission,規則・法律・手続き,動詞,6,
+670,consistently,一貫して,doing something the same way every time,性質・評価,副詞,6,
+671,cookie,クッキー,"a small, flat, round, dry, sweet cake-like snack",食べ物・料理,名詞,6,
+672,deck,デッキ、テラス,like a patio or terrace,建物・設備,名詞,6,
+673,descriptive,説明的な、描写的な,something that tells you more about it,伝達・文書・情報,形容詞,6,
+674,detach,取り外す,to remove from something,動作・変化,動詞,6,
+675,documentation,文書による証明、文書化,the act of showing proof in writing,伝達・文書・情報,名詞,6,
+676,entrepreneur,起業家,a business person who starts companies,人・職業;会社・経営・組織,名詞,6,
+677,exceptional,並外れた,beyond excellent,性質・評価,形容詞,6,外・元（ex-）
+678,familiarize,慣れ親しませる、よく知る,to get to know better,教育・学問・研究,動詞,6,〜にする（-ize/-ify/-en）
+679,hotline,ホットライン、直通電話,"telephone line that gives direct, fast access",伝達・文書・情報;機器・IT・通信,名詞,6,複合語（2語の合体）
+680,intonation,抑揚、イントネーション,the rise and fall of the voice when speaking,伝達・文書・情報,名詞,6,
+681,invention,発明（品）,the idea or creation of something new,教育・学問・研究,名詞,6,
+682,irritate,いらいらさせる,to bother,気持ち・態度,動詞,6,
+683,locker,ロッカー,a small cupboard  you can store personal items in securely for a period of time,日用品・道具・衣類,名詞,6,
+684,overlook,見落とす、見逃す,"to ignore, to not notice",思考・判断,動詞,6,上・超過（over-/super-/up-）;見た目に注意
+685,patent,特許,the right to be the only one who is allowed to make a thing,規則・法律・手続き,名詞,6,
+686,payable,支払うべき金額,an amount of money due,お金・売買,名詞,6,〜できる（-able/-ible）
+687,preliminary,予備的なもの、準備,The first action that comes before a more important one,時間・頻度・順序,名詞,6,前・後（pre-/pro-/fore-/post-）
+688,salesman,販売員、セールスマン,a man whose job it is to get people to buy things from his company,人・職業;お金・売買,名詞,6,〜する人（-er/-or/-ist/-ant/-ian/-man）
+689,sauna,サウナ,a Finnish steam bath; steam is produced by pouring water over heated rocks,建物・設備;娯楽・趣味・スポーツ,名詞,6,
+690,smoothly,順調に、円滑に,to do something easily with no trouble,性質・評価,副詞,6,
+691,sunshine,日光、日差し,the warmth and light of the sun,自然・天気・環境,名詞,6,複合語（2語の合体）
+692,tow,牽引する、引っ張る,pull something along,旅行・交通・配送;動作・変化,動詞,6,
+693,translator,翻訳者,the person who changes something into another language,人・職業;伝達・文書・情報,名詞,6,越えて・移す（trans-）;〜する人（-er/-or/-ist/-ant/-ian/-man）
+694,tuition,授業料,the sum of money charged for teaching by a college or university,教育・学問・研究;お金・売買,名詞,6,
+695,unavailable,利用できない,not ready for use,性質・評価,形容詞,6,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）;〜できる（-able/-ible）
+696,violation,違反,the act of breaking a rule or law,規則・法律・手続き,名詞,6,
+697,webpage,ウェブページ,information shown on the screen of an internet website about a particular subject,機器・IT・通信,名詞,6,複合語（2語の合体）
+698,acceptance,受け入れること、受容,state of being okay with something or someone,気持ち・態度,名詞,6,
+699,allocate,割り当てる,to assign (usually people or money) to something,仕事・業務;お金・売買,動詞,6,
+700,ambitious,野心的な,"hard-working, wanting to achieve much",気持ち・態度,形容詞,6,
+701,appendix,付録,an extra bit of information at the end of a book or document,伝達・文書・情報,名詞,6,
+702,booth,ブース、仕切られた小部屋,"an enclosed space like a cubicle, stall or stand",建物・設備,名詞,6,
+703,clarify,明確にする,to explain or make clear,伝達・文書・情報,動詞,6,〜にする（-ize/-ify/-en）
+704,classmate,同級生,Someone studying in your class with you,人・職業;教育・学問・研究,名詞,6,複合語（2語の合体）
+705,compile,（資料を）まとめる、編集する,to collect or gather data,伝達・文書・情報,動詞,6,
+706,correction,訂正,the act of making something right,伝達・文書・情報,名詞,6,
+707,customize,カスタマイズする、注文に合わせて作る,make or change something to suit the customer's  particular needs,動作・変化,動詞,6,〜にする（-ize/-ify/-en）
+708,dedication,献身,the act of being faithful to someone or something,気持ち・態度,名詞,6,
+709,diagnose,診断する,to figure out what is wrong,健康・医療,動詞,6,
+710,discontinue,中止する,stop doing it,動作・変化,動詞,6,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+711,dishwasher,食器洗い機,a machine that cleans dirty dishes,機器・IT・通信;食べ物・料理,名詞,6,複合語（2語の合体）;〜する物・道具（-er/-or）
+712,drought,干ばつ,a period of time when there is very little rainfall,自然・天気・環境,名詞,6,
+713,economize,節約する,"to save money, avoid waste",お金・売買,動詞,6,〜にする（-ize/-ify/-en）
+714,entrée,メインディッシュ,the main dish of a meal [Claude],食べ物・料理,名詞,6,
+715,firework,花火,"a small stick-like object that, when lit with a flame, goes off with a bang and flashes of colored light",娯楽・趣味・スポーツ,名詞,6,複合語（2語の合体）
+716,freight,貨物,goods that are transported from one place to another,旅行・交通・配送,名詞,6,
+717,fry,揚げる、炒める,to cook in a pan,食べ物・料理,動詞,6,
+718,gallon,ガロン（約3.78リットル）,a type of measurement equal to 3.78 liters,数量・大きさ・形,名詞,6,
+719,gardener,庭師,a person who works with plants and flowers for a living,人・職業;自然・天気・環境,名詞,6,〜する人（-er/-or/-ist/-ant/-ian/-man）
+720,ideally,理想的には,in a perfect world,思考・判断,副詞,6,
+721,inclusive,すべて含んだ,includes everything,数量・大きさ・形,形容詞,6,
+722,insufficient,不十分な,not enough,数量・大きさ・形,形容詞,6,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+723,introductory,導入の、前置きの,"something that comes before the main event, e.g. introductory speech",時間・頻度・順序,形容詞,6,
+724,junk,がらくた,useless item; trash,生活・社会・家庭,名詞,6,
+725,ma'am,奥様（女性への丁寧な呼びかけ）,"short for 'madam', a polite way to address a woman",人・職業,名詞,6,
+726,mileage,走行距離,distance travelled in miles,旅行・交通・配送;数量・大きさ・形,名詞,6,
+727,noisy,騒がしい,too loud,性質・評価,形容詞,6,
+728,pan,フライパン、平鍋,"a flat, round cooking container used for frying",食べ物・料理;日用品・道具・衣類,名詞,6,
+729,parcel,小包,"something wrapped in paper so that it can be sent, or delivered somewhere",旅行・交通・配送,名詞,6,
+730,pasta,パスタ,"shaped and dried dough, made from flour and water, often used in Italian cooking",食べ物・料理,名詞,6,
+731,periodical,定期刊行物、雑誌,a magazine made and available on a regular basis,伝達・文書・情報,名詞,6,
+732,pill,錠剤,medicine in the form of a capsule that you swallow,健康・医療,名詞,6,
+733,portable,持ち運びできる,something that is small and easy to carry,日用品・道具・衣類,形容詞,6,〜できる（-able/-ible）
+734,punctual,時間を守る,arriving on time,時間・頻度・順序;性質・評価,形容詞,6,
+735,recreation,娯楽、気晴らし,leisure,娯楽・趣味・スポーツ,名詞,6,re-（再び・元に）
+736,relieve,取り除く、和らげる,to take something away from someone,動作・変化,動詞,6,
+737,reminder,思い出させるもの、催促状,something that makes you remember something,伝達・文書・情報,名詞,6,re-（再び・元に）;〜する物・道具（-er/-or）
+738,rumor,うわさ,something said by people but not necessarily true,伝達・文書・情報,名詞,6,
+739,scarf,スカーフ、マフラー,"a long, narrow piece of material you wear round your neck to keep you warm",日用品・道具・衣類,名詞,6,
+740,seaside,海辺,a place right by the ocean where people can go to relax and have fun,自然・天気・環境;場所・位置・方向,名詞,6,複合語（2語の合体）
+741,shorten,短くする,to make smaller in length,数量・大きさ・形,動詞,6,〜にする（-ize/-ify/-en）
+742,specially,特に、特別に,in particular,性質・評価,副詞,6,
+743,spill,こぼす,"to accidentally empty a container, e.g. spill a glass of milk",動作・変化,動詞,6,
+744,spouse,配偶者,the person you are married to,人・職業;生活・社会・家庭,名詞,6,
+745,subtract,引く、差し引く,take away from,数量・大きさ・形,動詞,6,下・不足・副（under-/sub-/vice-）
+746,tablet,錠剤、平たい固形物,a small flat solid cake of some substance,健康・医療,名詞,6,
+747,ton,トン（重さの単位）,a measurement equalling 2000 pounds,数量・大きさ・形,名詞,6,
+748,vend,販売する,To offer something for sale or to sell something,お金・売買,動詞,6,
+749,yoga,ヨガ,a system of exercise to give control over your mind and body,娯楽・趣味・スポーツ;健康・医療,名詞,6,
+750,accent,なまり、話し方の特徴,special manner of oral expression,伝達・文書・情報,名詞,6,
+751,advisory,助言の、顧問の,related to giving advice or an opinion on what to do,伝達・文書・情報,形容詞,7,
+752,asleep,眠って,"not awake, in sleep",生活・社会・家庭,形容詞,7,
+753,authentic,本物の,"real, not fake",性質・評価,形容詞,7,
+754,bakery,パン屋,a place where baked goods (breads and cakes and pastries) are made and sold,食べ物・料理;建物・設備,名詞,7,
+755,carton,紙パック、ボール箱,a box made of cardboard or plastic in which things like milk and juice are sold,日用品・道具・衣類,名詞,7,
+756,compartment,仕切られた区画,a part of a closed area that has been separated from a bigger one,建物・設備;場所・位置・方向,名詞,7,
+757,compatible,相性がよい、互換性のある,to go well with,性質・評価,形容詞,7,共に（co-/com-）;〜できる（-able/-ible）
+758,consumption,消費、摂取,the act of eating,食べ物・料理,名詞,7,
+759,conveniently,便利に、都合よく,in a manner that is easy,性質・評価,副詞,7,
+760,cosmetic,表面的な、見た目だけの,makes something look better without changing it too much,性質・評価,形容詞,7,
+761,courtesy,親切、礼儀,a kindness to someone,気持ち・態度,名詞,7,
+762,creativity,創造性,the state of having talent and imagination,性質・評価,名詞,7,
+763,disagreement,意見の相違,the act of having a difference of opinion,伝達・文書・情報;思考・判断,名詞,7,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+764,disappointment,失望,what is felt when someone does not fulfill your expectations,気持ち・態度,名詞,7,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+765,dissatisfy,不満を抱かせる,to make someone not pleased with what you have done,気持ち・態度,動詞,7,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+766,enjoyable,楽しい,"not boring, fun",娯楽・趣味・スポーツ;気持ち・態度,形容詞,7,〜できる（-able/-ible）
+767,faculty,教員（陣）,an instructor or professor at university,人・職業;教育・学問・研究,名詞,7,
+768,favorable,好意的な、有利な,to be seen as good or positive,性質・評価,形容詞,7,〜できる（-able/-ible）
+769,foreman,現場監督、職長,Senior worker who controls other workers,人・職業;仕事・業務,名詞,7,前・後（pre-/pro-/fore-/post-）;〜する人（-er/-or/-ist/-ant/-ian/-man）
+770,forum,討論の場、フォーラム,a place for open discussion,伝達・文書・情報,名詞,7,
+771,founder,創設者,someone who starts a business or organization,人・職業;会社・経営・組織,名詞,7,〜する人（-er/-or/-ist/-ant/-ian/-man）
+772,fundraise,資金を集める,to get money from people for a partular project,お金・売買,動詞,7,複合語（2語の合体）
+773,graphics,画像、図,images or pictures,伝達・文書・情報,名詞,7,
+774,handy,便利な,useful,性質・評価,形容詞,7,
+775,hazardous,危険な,to be dangerous,性質・評価,形容詞,7,
+776,healthcare,医療、ヘルスケア,the business of providing medical services to a community or individuals,健康・医療,名詞,7,複合語（2語の合体）
+777,humidity,湿度,how much dampness their is in the air,自然・天気・環境,名詞,7,
+778,influential,影響力のある,powerful,性質・評価,形容詞,7,
+779,nationwide,全国的な,all across the country,場所・位置・方向,形容詞,7,複合語（2語の合体）
+780,pad,はぎ取り式の便箋、メモ帳,many sheets of paper glued together for writing,日用品・道具・衣類,名詞,7,
+781,paraphrase,言い換え,saying it again but putting the same meaning into different words,伝達・文書・情報,名詞,7,
+782,placement,職業紹介、配置,the act of placing someone in a job or the location of something,仕事・業務;場所・位置・方向,名詞,7,
+783,postal,郵便の,of or relating to the system for delivering mail,伝達・文書・情報,形容詞,7,
+784,publicity,広告、宣伝,the  advertising message to let people know about a product or event,伝達・文書・情報;お金・売買,名詞,7,
+785,renter,借り手,someone who pays money to have the use of something for a period of time,人・職業;お金・売買,名詞,7,〜する人（-er/-or/-ist/-ant/-ian/-man）
+786,repairperson,修理工,Person whose job it is to fixe things when they are broken,人・職業,名詞,7,〜する人（-er/-or/-ist/-ant/-ian/-man）
+787,repeatedly,繰り返し,many times,時間・頻度・順序,副詞,7,
+788,restroom,（公共の）トイレ,room in a building which contains one or more toilets for public use,建物・設備,名詞,7,複合語（2語の合体）
+789,silently,静かに,in a quiet manner,性質・評価,副詞,7,
+790,spa,スパ、温泉,"a place you can go to relax and  improve your health, or how you look",娯楽・趣味・スポーツ;健康・医療,名詞,7,
+791,spreadsheet,表計算ソフト、スプレッドシート,a computer program worksheet or table that you enter information onto,機器・IT・通信,名詞,7,複合語（2語の合体）
+792,stapler,ホッチキス,a small device used to fix papers together with a small thin piece of wire called a staple,日用品・道具・衣類,名詞,7,〜する物・道具（-er/-or）
+793,streamline,合理化する、効率化する,make smoother and more efficient,仕事・業務,動詞,7,複合語（2語の合体）
+794,substantially,大いに、相当,"a great deal, amount",数量・大きさ・形,副詞,7,
+795,teller,（銀行の）窓口係,"person who works in a bank, who pays out and takes in money",人・職業;お金・売買,名詞,7,〜する人（-er/-or/-ist/-ant/-ian/-man）
+796,tidy,片づける,put things in their correct place,生活・社会・家庭,動詞,7,
+797,toll,通行料、使用料,a small cost or fee you pay to use a service,旅行・交通・配送;お金・売買,名詞,7,
+798,toner,トナー,the ink in the computer or printer,機器・IT・通信,名詞,7,
+799,urgently,至急,to do something right away,時間・頻度・順序,副詞,7,
+800,walkway,歩道、通路,a connecting passage or path for pedestrians to move along,旅行・交通・配送;建物・設備,名詞,7,複合語（2語の合体）
+801,absorb,吸収する,to take in or soak up,動作・変化,動詞,7,
+802,administer,管理する、運営する,to manage an office,会社・経営・組織,動詞,7,
+803,ample,十分な,more than enough of,数量・大きさ・形,形容詞,7,
+804,antique,骨董品,"very old item, usually furniture or jewellery",日用品・道具・衣類,名詞,7,
+805,bean,豆、さやいんげん,a long thin green vegetable,食べ物・料理,名詞,7,
+806,browse,ざっと目を通す、拾い読みする,"look or leaf through casually, like looking through a book without really reading it",伝達・文書・情報,動詞,7,
+807,bye,さようなら,opposite of 'hello',伝達・文書・情報,間投詞,7,
+808,careless,不注意な,to do something with little care or attention,性質・評価,形容詞,7,〜のない（-less/-free）
+809,collector,収集家,someone who buys and keeps old things,人・職業;娯楽・趣味・スポーツ,名詞,7,〜する人（-er/-or/-ist/-ant/-ian/-man）
+810,conform,従う、合わせる,to be like others,規則・法律・手続き,動詞,7,共に（co-/com-）
+811,congestion,混雑、渋滞,a blockage; something that blocks it up,旅行・交通・配送,名詞,7,
+812,contradiction,矛盾、正反対のもの,the opposite of something,思考・判断,名詞,7,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+813,contrary,反対の,opposite to,思考・判断,形容詞,7,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+814,diploma,卒業証書、修了証,a document certifying the successful completion of a course of study,教育・学問・研究,名詞,7,
+815,distributor,販売代理店、配給業者,someone who sells or sends things to different areas,人・職業;旅行・交通・配送,名詞,7,〜する人（-er/-or/-ist/-ant/-ian/-man）
+816,dive,飛び込む、潜る,jump in or swim under water,娯楽・趣味・スポーツ;動作・変化,動詞,7,
+817,energetic,精力的な、元気な,"to be lively, full of energy",性質・評価,形容詞,7,
+818,environmentally,環境的に、環境面で,related to natural surroundings,自然・天気・環境,副詞,7,
+819,escalator,エスカレーター,a moving stairway,建物・設備;機器・IT・通信,名詞,7,〜する物・道具（-er/-or）
+820,exotic,異国風の、外来の,from another country,性質・評価,形容詞,7,
+821,fabric,生地、布,"material, cloth",日用品・道具・衣類,名詞,7,
+822,generalization,一般化、概論,an idea that is true most of the time but not all of the time,思考・判断,名詞,7,〜にする（-ize/-ify/-en）
+823,guidance,指導、案内,the act of showing the way,伝達・文書・情報,名詞,7,
+824,gum,接着剤、ゴム,stubstance that can be used to stick things together,日用品・道具・衣類,名詞,7,
+825,hesitant,ためらいがちな,hold back from acting because you are uncertain or undecided,気持ち・態度,形容詞,7,
+826,indicator,指標、表示,a signal or a warning,伝達・文書・情報,名詞,7,〜する物・道具（-er/-or）
+827,individually,個別に,apart from others,数量・大きさ・形,副詞,7,
+828,junior,年下の、下位の,"younger, lower in rank",人・職業,形容詞,7,
+829,lifestyle,生活様式,the way that you live; the things that you usually do,生活・社会・家庭,名詞,7,複合語（2語の合体）
+830,likewise,同様に,in the same way,思考・判断,副詞,7,複合語（2語の合体）
+831,morale,士気、やる気,"the confidence in how a group of people all feel, usually at a difficult time",気持ち・態度;会社・経営・組織,名詞,7,
+832,orchestra,オーケストラ,many musicians with different instruments playing one musical piece,娯楽・趣味・スポーツ,名詞,7,
+833,organizational,組織の、運営の,to do with planning and managing,会社・経営・組織,形容詞,7,
+834,outlook,見解、見通し,a view point,思考・判断,名詞,7,複合語（2語の合体）
+835,physics,物理学,the science of how things  like heat and light work,教育・学問・研究,名詞,7,学問（-ology/-ics）
+836,pole,棒、柱,"a long, thin stick or post",日用品・道具・衣類,名詞,7,
+837,puzzle,謎、難問,something you do not understand,思考・判断,名詞,7,
+838,reflexive,再帰的な、自らに返る,referring back to itself,伝達・文書・情報,形容詞,7,re-（再び・元に）
+839,snowy,雪の降る,cold weather with snow falling,自然・天気・環境,形容詞,7,
+840,steak,ステーキ,a big piece of meat or fish,食べ物・料理,名詞,7,
+841,sticker,シール、ステッカー,a label with glue on the back,日用品・道具・衣類,名詞,7,〜する物・道具（-er/-or）
+842,telecommunication,遠距離通信,"exchanging audio, visual or digital information at a distance, electronically",機器・IT・通信;伝達・文書・情報,名詞,7,遠く（tele-）
+843,timely,タイミングのよい、時宜を得た,to happen at the right time or good time,時間・頻度・順序,形容詞,7,見た目に注意
+844,uncomfortable,心地よくない、不快な,not pleased or happy with a situation or thing,気持ち・態度,形容詞,7,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）;〜できる（-able/-ible）
+845,amenity,生活を快適にする設備・施設,"Something, like a swimming pool in a town, that makes life more comfortable and enjoyable.",建物・設備;生活・社会・家庭,名詞,7,
+846,approximate,見積もる、概算する,to give a general number as a guess,数量・大きさ・形;思考・判断,動詞,7,
+847,await,待つ,"to wait for, or expect, something to happen",時間・頻度・順序,動詞,7,
+848,barbecue,バーベキュー,"meal that has been cooked on a grill, outdoors",食べ物・料理;娯楽・趣味・スポーツ,名詞,7,
+849,beginner,初心者,to be new at something,人・職業;教育・学問・研究,名詞,7,〜する人（-er/-or/-ist/-ant/-ian/-man）
+850,biology,生物学,the study of nature,教育・学問・研究;自然・天気・環境,名詞,7,学問（-ology/-ics）
+851,blanket,毛布,a large piece of cloth used to cover someone or something,日用品・道具・衣類,名詞,7,
+852,chairperson,議長,the person in charge of a meeting,人・職業;会社・経営・組織,名詞,7,〜する人（-er/-or/-ist/-ant/-ian/-man）
+853,charitable,慈善の,giving free money or help of some kind to someone who needs it,お金・売買;生活・社会・家庭,形容詞,7,〜できる（-able/-ible）
+854,checkup,点検、健康診断,a test to see that all is as it should be,健康・医療,名詞,7,複合語（2語の合体）
+855,cooler,クーラーボックス,a box (filled with ice) that keeps drinks cold,日用品・道具・衣類,名詞,7,〜する物・道具（-er/-or）
+856,crane,クレーン,a machine used to move and lift heavy things,機器・IT・通信;建物・設備,名詞,7,
+857,dealership,販売代理店,a business that can buy and sell certain things,お金・売買;会社・経営・組織,名詞,7,立場・関係（-ship/-hood）
+858,dependable,頼りになる,"reliable, trustworthy",性質・評価,形容詞,7,〜できる（-able/-ible）
+859,disconnect,切断する、外す,cut off or detach,動作・変化;機器・IT・通信,動詞,7,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+860,dispose,処分する,to get rid of something,動作・変化;生活・社会・家庭,動詞,7,
+861,disrupt,混乱させる、中断させる,to interrupt and cause chaos,動作・変化,動詞,7,
+862,dynamic,精力的な、活動的な,energetic,性質・評価,形容詞,7,
+863,enthusiastically,熱心に,to do something with excitement and energy,気持ち・態度,副詞,7,
+864,freelance,フリーランスの、自由契約の,"working for yourself, not for an employer",仕事・業務,形容詞,7,複合語（2語の合体）
+865,grill,グリル、焼き網,"like a barbeque, something you cook on",食べ物・料理;日用品・道具・衣類,名詞,7,
+866,habitual,習慣的な,"regular, what you always do",時間・頻度・順序,形容詞,7,
+867,internationally,国際的に,around the world,場所・位置・方向,副詞,7,間・相互（inter-）
+868,invaluable,非常に貴重な,to be of great worth,性質・評価,形容詞,7,見た目に注意
+869,messenger,使者、配達人,person who carries a piece of information to someone else,人・職業;伝達・文書・情報,名詞,7,〜する人（-er/-or/-ist/-ant/-ian/-man）
+870,paperback,ペーパーバック（紙表紙の本）,a book that has a cover made of paper,伝達・文書・情報;日用品・道具・衣類,名詞,7,複合語（2語の合体）
+871,rebate,払い戻し,an amount of money given back to you as part of the deal when you buy goods or services,お金・売買,名詞,7,re-（再び・元に）
+872,recur,再発する、繰り返される,happens again,時間・頻度・順序,動詞,7,re-（再び・元に）
+873,reproduce,複製する,to make one or more copies of something,動作・変化,動詞,7,re-（再び・元に）
+874,spray,吹きかける、スプレーする,to send tiny drops of liquid into the air,動作・変化,動詞,7,
+875,staple,ホッチキスの針,short thin piece of wire  that is punched through sheets of paper to fasten them together,日用品・道具・衣類,名詞,7,
+876,strategic,戦略的な,in a way carefully thought about,思考・判断;会社・経営・組織,形容詞,8,
+877,stripe,しま模様、筋,a line or band of a different color,数量・大きさ・形,名詞,8,
+878,teen,10代の若者,someone aged between the ages of thirteen and nineteen,人・職業,名詞,8,
+879,tempt,誘惑する、そそのかす,to try to get someone to do something they should not,気持ち・態度,動詞,8,
+880,timer,タイマー,something that counts seconds and minutes,時間・頻度・順序;日用品・道具・衣類,名詞,8,〜する物・道具（-er/-or）
+881,unload,荷を降ろす,to remove something (usually from a truck),旅行・交通・配送;動作・変化,動詞,8,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+882,unusually,いつになく、珍しく,not normal or usual,性質・評価,副詞,8,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+883,vacate,立ち退く、空ける,leave empty; move out of,建物・設備;動作・変化,動詞,8,
+884,whale,クジラ,a large mamal that lives in the sea,自然・天気・環境,名詞,8,
+885,wisely,賢明に,to do something that is the right thing to do,思考・判断,副詞,8,
+886,amateur,アマチュア、素人,"a beginner, not a professional, done for pleasure not for pay",人・職業,名詞,8,
+887,ambassador,大使、代表者,"somebody who represents somehting, usually a country",人・職業;規則・法律・手続き,名詞,8,
+888,anew,新たに、もう一度,"starting over again, a fresh start",時間・頻度・順序,副詞,8,
+889,architectural,建築の,to do with the design of buildings,建物・設備,形容詞,8,
+890,attain,達成する、手に入れる,to get or achieve,動作・変化,動詞,8,
+891,balloon,風船,a colorful round object made of rubber that is filled with air,日用品・道具・衣類;娯楽・趣味・スポーツ,名詞,8,
+892,blueprint,設計図、青写真,a drawing or plan to show what the finished thing will look like,建物・設備;伝達・文書・情報,名詞,8,複合語（2語の合体）
+893,bug,虫、昆虫,an insect,自然・天気・環境,名詞,8,
+894,cautious,慎重な,to be careful,気持ち・態度,形容詞,8,
+895,circuit,巡回路、周回コース,a set path you move along,場所・位置・方向,名詞,8,
+896,clap,拍手する,hitting your hands together to make a noise to show you enjoyed something,動作・変化;娯楽・趣味・スポーツ,動詞,8,
+897,commerce,商業、貿易,"trade, business, industry",お金・売買;会社・経営・組織,名詞,8,共に（co-/com-）
+898,convey,伝える,to give a message to someone,伝達・文書・情報,動詞,8,
+899,cord,電気コード,electric cable,機器・IT・通信,名詞,8,
+900,counselor,カウンセラー、相談員,someone who helps people with problems for a living,人・職業;健康・医療,名詞,8,〜する人（-er/-or/-ist/-ant/-ian/-man）
+901,debit,引き落とし（の記録）、借方,a record of an amount of money taken out of an account,お金・売買,名詞,8,
+902,delicate,扱いに注意が必要な、繊細な,need to handle with care,性質・評価,形容詞,8,
+903,dependence,依存,the state of needing someone,気持ち・態度,名詞,8,
+904,distraction,気を散らすこと,the act of taking your focus away from something,気持ち・態度,名詞,8,
+905,downsize,縮小する、人員削減する,reduce in size or number,会社・経営・組織;数量・大きさ・形,動詞,8,複合語（2語の合体）
+906,elephant,ゾウ,a large animal with a long trunk and big ears found in Africa and Asia,自然・天気・環境,名詞,8,
+907,enthusiasm,熱意,the act of being excited about something,気持ち・態度,名詞,8,
+908,enthusiast,熱狂的なファン、愛好家,"a person who is crazy about something, e.g. a sports enthusiast",人・職業;娯楽・趣味・スポーツ,名詞,8,〜する人（-er/-or/-ist/-ant/-ian/-man）
+909,evident,明らかな,to be clear or obvious,思考・判断,形容詞,8,
+910,flexibility,柔軟性,the ability to adapt or change easily,性質・評価,名詞,8,
+911,flextime,フレックスタイム,there is a choice about when to start and finish working a set number of hours,仕事・業務;時間・頻度・順序,名詞,8,複合語（2語の合体）
+912,fortunately,幸運にも,"happily, luckily",気持ち・態度,副詞,8,
+913,freighter,貨物船,a large ship that is used to transport goods,旅行・交通・配送,名詞,8,〜する物・道具（-er/-or）
+914,generator,発電機,a machine that makes electricity,機器・IT・通信,名詞,8,〜する物・道具（-er/-or）
+915,hallway,廊下,a passage or corridor that other rooms open out of,建物・設備,名詞,8,複合語（2語の合体）
+916,hamburger,ハンバーガー,a flat round cake of minced beef that is fried and then eaten in a bread roll,食べ物・料理,名詞,8,
+917,hazard,危険（要因）,something that is dangerous,性質・評価,名詞,8,
+918,homeowner,住宅所有者、持ち家の人,someone who owns the house that they live in,人・職業;生活・社会・家庭,名詞,8,複合語（2語の合体）;〜する人（-er/-or/-ist/-ant/-ian/-man）
+919,imperative,緊急の、必須の,very important and urgent,時間・頻度・順序;性質・評価,形容詞,8,
+920,inflate,膨らませる,to make bigger,数量・大きさ・形,動詞,8,
+921,insert,差し込む、挿入する,to put into or add into,動作・変化,動詞,8,
+922,lecturer,講師,an instructor or professor,人・職業;教育・学問・研究,名詞,8,〜する人（-er/-or/-ist/-ant/-ian/-man）
+923,meaningful,意味のある,to have a meaning or purpose,性質・評価,形容詞,8,〜に満ちた（-ful）
+924,memorize,暗記する,to learn and remember things,教育・学問・研究,動詞,8,〜にする（-ize/-ify/-en）
+925,merchant,商人,a person who sells things for a living,人・職業;お金・売買,名詞,8,
+926,modification,修正、変更,a change made on something,動作・変化,名詞,8,
+927,occupant,居住者、入居者,"a person who lives in a place, e.g. renter, tenant",人・職業;建物・設備,名詞,8,〜する人（-er/-or/-ist/-ant/-ian/-man）
+928,overcharge,不当な料金を請求する,to ask for too much money for goods or service,お金・売買,動詞,8,上・超過（over-/super-/up-）
+929,oversee,監督する,to supervise,仕事・業務,動詞,8,上・超過（over-/super-/up-）
+930,petition,嘆願（書）,"a demand for a particular action, usually signed by a lot of people",規則・法律・手続き;伝達・文書・情報,名詞,8,
+931,pillow,枕,soft cushion to rest your head on when you go to bed,日用品・道具・衣類,名詞,8,
+932,popcorn,ポップコーン,grains of maize that have been heated up until they explode; good to eat as a snack,食べ物・料理,名詞,8,複合語（2語の合体）
+933,pottery,陶器,"earthenware, stoneware, ceramics",日用品・道具・衣類;娯楽・趣味・スポーツ,名詞,8,
+934,professionally,職業的に、仕事として,to do with your work or job,仕事・業務,副詞,8,
+935,publicize,公表する、宣伝する,make known generally,伝達・文書・情報,動詞,8,〜にする（-ize/-ify/-en）
+936,ray,光線,a beam of light from the sun,自然・天気・環境,名詞,8,
+937,redecorate,改装する、模様替えする,to redo the inside of a house with new colors and furniture,建物・設備;動作・変化,動詞,8,re-（再び・元に）
+938,refinery,精製所,a factory where raw materials are taken to be made pure,建物・設備;会社・経営・組織,名詞,8,re-（再び・元に）
+939,refresh,元気づける、新しくする,to put new life or energy into,気持ち・態度;動作・変化,動詞,8,re-（再び・元に）
+940,refundable,払い戻し可能な,money that can be returned if you change your mind about a purchase,お金・売買,形容詞,8,re-（再び・元に）;〜できる（-able/-ible）
+941,reimbursement,払い戻し、弁済,the money that is given to cover the cost of an expense that has been paid out,お金・売買,名詞,8,re-（再び・元に）
+942,reliability,信頼性,the state of being trustworthy,性質・評価,名詞,8,
+943,reluctant,気が進まない,not very willing to do something,気持ち・態度,形容詞,8,
+944,sewer,下水道,the pipes that carry water and waste away from toilets,建物・設備,名詞,8,見た目に注意
+945,skate,滑る、スケートをする,glide over the surface as if you are sliding on ice,娯楽・趣味・スポーツ,動詞,8,
+946,skateboard,スケートボード,a flat board with small wheels on the bottom that you move by pushing on the ground with one foot,娯楽・趣味・スポーツ,名詞,8,複合語（2語の合体）
+947,sleepy,眠い,"tired, ready for bed",生活・社会・家庭,形容詞,8,
+948,tailor,（目的に合わせて）調整する,adjust something to fit a specific need or market,動作・変化,動詞,8,
+949,termination,終了、解雇,the  end of something,時間・頻度・順序,名詞,8,
+950,theft,盗み、窃盗,the taking and keeping of something that does not belong to you,規則・法律・手続き,名詞,8,
+951,thunderstorm,雷雨,"an extreme weather condition with rain, wind, thunder and lightening",自然・天気・環境,名詞,8,複合語（2語の合体）
+952,transmission,伝達、送信,the message sent from one to another,伝達・文書・情報,名詞,8,越えて・移す（trans-）
+953,transmit,送る、伝える,to send a message to someone,伝達・文書・情報,動詞,8,越えて・移す（trans-）
+954,unused,未使用の,not yet put into use,性質・評価,形容詞,8,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+955,waive,放棄する、免除する,to give up or do without,規則・法律・手続き,動詞,8,
+956,yen,円（日本の通貨）,the basic unit of money in Japan,お金・売買,名詞,8,
+957,activate,起動する、作動させる,to start or begin something,動作・変化;機器・IT・通信,動詞,8,
+958,additionally,さらに、加えて,"furthermore, also",思考・判断,副詞,8,
+959,affirmative,肯定的な,"positive, meaning 'yes'",伝達・文書・情報,形容詞,8,
+960,baker,パン職人,someone who bakes for a living,人・職業;食べ物・料理,名詞,8,〜する人（-er/-or/-ist/-ant/-ian/-man）
+961,brainstorm,ブレーンストーミング,a group discussion to come up with a lot of ideas very quickly,思考・判断;仕事・業務,名詞,8,複合語（2語の合体）
+962,cage,檻、かご,a box-like crate usually made of steel,日用品・道具・衣類,名詞,8,
+963,cinema,映画館,a movie theatre,娯楽・趣味・スポーツ;建物・設備,名詞,8,
+964,collaboration,共同作業、協力,the act of working together,仕事・業務,名詞,8,共に（co-/com-）
+965,condominium,分譲マンション,"a building that has lots of apartments in it, all owned and lived in by different people",建物・設備;生活・社会・家庭,名詞,8,共に（co-/com-）
+966,consecutive,連続した,following one after the other,時間・頻度・順序,形容詞,8,
+967,cordless,コードのない,no electric cable needed,機器・IT・通信,形容詞,8,〜のない（-less/-free）
+968,deluxe,豪華な、高級な,rich and superior in quality,性質・評価,形容詞,8,
+969,desirable,望ましい,worth having or wanting,性質・評価,形容詞,8,〜できる（-able/-ible）
+970,discrepancy,食い違い、不一致,an unexpected difference between two things that needs to be explained,思考・判断,名詞,8,
+971,dispatch,発送する、派遣する,to send out,旅行・交通・配送,動詞,8,
+972,drawback,欠点,the downside of something,性質・評価,名詞,8,複合語（2語の合体）
+973,dull,退屈な,boring; not exciting,性質・評価,形容詞,8,
+974,economically,経済的に,related to use of income and money,お金・売買,副詞,8,
+975,evenly,均等に,in equal ways,数量・大きさ・形,副詞,8,
+976,excellence,優秀さ,"the state of being very, very good",性質・評価,名詞,8,
+977,exclusively,限定して、独占的に,offered only to a certain group,数量・大きさ・形,副詞,8,
+978,farewell,別れ、さようなら,goodbye,伝達・文書・情報,名詞,8,複合語（2語の合体）
+979,fatigue,疲労,"what you feel when you are very, very tired",健康・医療,名詞,8,
+980,fiscal,財政の、会計の,to do with money,お金・売買,形容詞,8,
+981,fleet,船団、（車両などの）一団,a group of ships travelling together,旅行・交通・配送,名詞,8,
+982,flour,小麦粉,white powder from wheat used in baking,食べ物・料理,名詞,8,
+983,fog,霧,a cloud of white filled with small water droplets,自然・天気・環境,名詞,8,
+984,formally,正式に,officially,規則・法律・手続き,副詞,8,
+985,gram,グラム,a small measurement of weight,数量・大きさ・形,名詞,8,
+986,handbook,手引書、ハンドブック,a book that gives intructions on how to do something,伝達・文書・情報,名詞,8,複合語（2語の合体）
+987,headphone,ヘッドホン,a set of small speakers that fit into each ear so that only you can hear the sound,機器・IT・通信,名詞,8,複合語（2語の合体）
+988,heater,暖房器具、ヒーター,something that warms a room,機器・IT・通信,名詞,8,〜する物・道具（-er/-or）
+989,helmet,ヘルメット,something you wear to protect your head,日用品・道具・衣類,名詞,8,
+990,hiker,ハイカー,someone who likes to go for long walks in their leisure time,人・職業;娯楽・趣味・スポーツ,名詞,8,〜する人（-er/-or/-ist/-ant/-ian/-man）
+991,homeless,家のない,to be without a place to live,生活・社会・家庭,形容詞,8,〜のない（-less/-free）
+992,lighter,より軽い,not as heavy as,数量・大きさ・形,形容詞,8,見た目に注意
+993,loudly,大声で,in a manner that is not quiet,性質・評価,副詞,8,
+994,loyalty,忠誠、誠実,the act of being faithful to someone or something,気持ち・態度,名詞,8,
+995,microwave,電子レンジ,kitchen appliance that cooks food quickly,食べ物・料理;機器・IT・通信,名詞,8,
+996,misidentify,誤認する,to mistakenly recognise something; to think that it is something else,思考・判断,動詞,8,mis-（誤って）;〜にする（-ize/-ify/-en）
+997,neat,きちんとした,"tidy, clean",性質・評価,形容詞,8,
+998,nomination,推薦、指名,the state of being suggested for something,仕事・業務,名詞,8,
+999,officially,公式に,done by the government or office in charge,規則・法律・手続き,副詞,8,
+1000,outfit,服装一式,a set of clothes like a uniform,日用品・道具・衣類,名詞,8,複合語（2語の合体）
+1001,pastry,ペストリー、パイ菓子,"a food made of flour, fat and water and baked with other food inside it",食べ物・料理,名詞,9,
+1002,personalize,個人向けにする,change something so that it is tailored to a particular person's needs,動作・変化,動詞,9,〜にする（-ize/-ify/-en）
+1003,poorly,下手に、不十分に,Badly; not enough; not sufficient,性質・評価,副詞,9,
+1004,prestigious,名声のある、一流の,very important and well thought of,性質・評価,形容詞,9,
+1005,purser,（船の）事務長、パーサー,an officer aboard a ship who keeps accounts and attends to the passengers' needs,人・職業;旅行・交通・配送,名詞,9,〜する人（-er/-or/-ist/-ant/-ian/-man）
+1006,reassure,安心させる,to make someone feel certain of something,気持ち・態度,動詞,9,re-（再び・元に）
+1007,resume,再開する,to continue or start again,動作・変化;時間・頻度・順序,動詞,9,re-（再び・元に）
+1008,reunion,再会（の集まり）、同窓会,when people get together to meet up after not meeting for a long time,生活・社会・家庭,名詞,9,re-（再び・元に）
+1009,revolutionize,大変革をもたらす,"to make a new, big change in society",動作・変化,動詞,9,〜にする（-ize/-ify/-en）
+1010,seafood,魚介類、シーフード,things you can eat as food that live in the sea,食べ物・料理,名詞,9,複合語（2語の合体）
+1011,signify,意味する、示す,shows a sign that it has an important meaning,伝達・文書・情報,動詞,9,〜にする（-ize/-ify/-en）
+1012,slot,細長い穴、差し込み口,a narrow opening,日用品・道具・衣類,名詞,9,
+1013,steer,操縦する、導く,guide the direction of,旅行・交通・配送;動作・変化,動詞,9,
+1014,sue,訴える,To take legal action against someone,規則・法律・手続き,動詞,9,
+1015,superb,すばらしい,very good,性質・評価,形容詞,9,
+1016,traditionally,伝統的に、昔から,to do things the way they used to be done,時間・頻度・順序,副詞,9,
+1017,tremendous,とてつもない、すばらしい,extraordinary or excellent,性質・評価;数量・大きさ・形,形容詞,9,
+1018,underway,進行中で,happening now,時間・頻度・順序,形容詞,9,複合語（2語の合体）
+1019,unpleasant,不快な,"not nice, not comfortable",気持ち・態度,形容詞,9,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+1020,violin,バイオリン,small wooden instrument with four strings for making music,娯楽・趣味・スポーツ,名詞,9,
+1021,ward,区、選挙区,"an electoral district, a small area within which the people can all vote for the same thing",場所・位置・方向;規則・法律・手続き,名詞,9,
+1022,worthwhile,価値のある,useful; there is some value to it,性質・評価,形容詞,9,複合語（2語の合体）
+1023,adapter,アダプター,something that connects to something to make it usable,機器・IT・通信,名詞,9,〜する物・道具（-er/-or）
+1024,advisable,望ましい、賢明な,"something one should do, or is good to do",思考・判断,形容詞,9,〜できる（-able/-ible）
+1025,archive,記録保管所、アーカイブ,a place where documents are kept for a long time,伝達・文書・情報;建物・設備,名詞,9,
+1026,artistic,芸術的な,"to be creative, good at art",娯楽・趣味・スポーツ;性質・評価,形容詞,9,
+1027,assurance,確信、保証,certainty or full confidence,気持ち・態度,名詞,9,
+1028,athletic,運動競技の,to do with sports,娯楽・趣味・スポーツ,形容詞,9,
+1029,attire,服装,clothing,日用品・道具・衣類,名詞,9,
+1030,auditor,監査役、会計検査官,a person who checks to make sure things are correct,人・職業;お金・売買,名詞,9,〜する人（-er/-or/-ist/-ant/-ian/-man）
+1031,bankruptcy,破産,the act of having no more money to pay bills,お金・売買,名詞,9,
+1032,bulk,大量,in big amount,数量・大きさ・形,名詞,9,
+1033,butter,バター,"a kind of soft spread for bread, made from cow's milk",食べ物・料理,名詞,9,
+1034,centimeter,センチメートル,"a form of measurement,  e.g. there are 100 cm in a meter",数量・大きさ・形,名詞,9,
+1035,circulate,循環する、回る,to move around in a circle,動作・変化,動詞,9,
+1036,comb,（髪を）とかす,make smooth by getting the knots out of,生活・社会・家庭,動詞,9,
+1037,comfortably,楽に、快適に,to do something easily,気持ち・態度,副詞,9,〜できる（-able/-ible）
+1038,compliance,（規則の）順守,the act of obeying rules,規則・法律・手続き,名詞,9,
+1039,contraction,収縮,a tightening or squeezing movement,動作・変化,名詞,9,
+1040,cookbook,料理本,a book that gives directions  on how to prepare and cook food,食べ物・料理;伝達・文書・情報,名詞,9,複合語（2語の合体）
+1041,cushion,クッション,a pad to make something more comfortable,日用品・道具・衣類,名詞,9,
+1042,dose,（薬の）1回分の服用量,the amount of medicine taken at one time,健康・医療;数量・大きさ・形,名詞,9,
+1043,drum,太鼓、ドラム,a musical instrument you hit with wooden sticks,娯楽・趣味・スポーツ,名詞,9,
+1044,embed,埋め込む,to push something deep inside something else,動作・変化,動詞,9,
+1045,evacuate,避難させる,to make people leave an area,動作・変化,動詞,9,
+1046,expedite,迅速に進める、促進する,speed up the progress of,時間・頻度・順序,動詞,9,
+1047,extinguisher,消火器,Device used to put out fires,日用品・道具・衣類,名詞,9,〜する物・道具（-er/-or）
+1048,familiarity,よく知っていること、親しみ,"the state of being used to, or comfortable with something",気持ち・態度,名詞,9,
+1049,flaw,欠陥、欠点,something that is faulty in otherwise perfect person/thing,性質・評価,名詞,9,
+1050,fluctuate,変動する,comes and goes stronger and weaker,動作・変化;数量・大きさ・形,動詞,9,
+1051,fluent,流暢な,able to speak a language easily and with confidence,伝達・文書・情報,形容詞,9,
+1052,honestly,本当に、正直に,"really, truly",気持ち・態度,副詞,9,
+1053,housekeep,家事を切り盛りする,take care of all business related to a household,生活・社会・家庭,動詞,9,複合語（2語の合体）
+1054,hurricane,ハリケーン,a strong often deadly storm that begins over the water,自然・天気・環境,名詞,9,
+1055,hygiene,衛生,how you keep yourself and your surroundings clean and so that you stay healthy,健康・医療,名詞,9,
+1056,integral,不可欠な,"very important, necessary as part of the whole thing",性質・評価,形容詞,9,
+1057,interactive,対話式の、双方向の,to engage with others,伝達・文書・情報,形容詞,9,間・相互（inter-）
+1058,interfere,干渉する、口出しする,to take part in something that is not your business,動作・変化,動詞,9,間・相互（inter-）
+1059,kilogram,キログラム,a unit of weight; one kilogram is about the same weight as 2.2 pounds,数量・大きさ・形,名詞,9,
+1060,layoff,一時解雇、レイオフ,"the act of ending a worker's job because there is not enough work, or not enough money to pay for it",仕事・業務;会社・経営・組織,名詞,9,複合語（2語の合体）
+1061,lightweight,軽量の,someone or something that is not heavy,数量・大きさ・形,形容詞,9,複合語（2語の合体）
+1062,merit,値する,to deserve praise,思考・判断,動詞,9,
+1063,necklace,ネックレス,"a piece of jewelery, or decoration, worn around the neck",日用品・道具・衣類,名詞,9,複合語（2語の合体）
+1064,needy,貧しい,people who are poor and do not have enough to live on,生活・社会・家庭,形容詞,9,
+1065,overpay,払いすぎる,to hand over too much money,お金・売買,動詞,9,上・超過（over-/super-/up-）
+1066,pamphlet,パンフレット、小冊子,a small paper leaflet or booklet  that tells you about a single subject,伝達・文書・情報,名詞,9,
+1067,partial,部分的な,to be a part of something whole,数量・大きさ・形,形容詞,9,
+1068,penalize,罰する,to punish someone,規則・法律・手続き,動詞,9,〜にする（-ize/-ify/-en）
+1069,pollute,汚染する,to make the environment dirty,自然・天気・環境,動詞,9,
+1070,prescribe,指示する、処方する,to formally tell someone what to do,健康・医療;規則・法律・手続き,動詞,9,前・後（pre-/pro-/fore-/post-）
+1071,probable,ありそうな,"possible, but not certain to be or become true or real",思考・判断,形容詞,9,〜できる（-able/-ible）
+1072,prominent,重要な、著名な,"important, significant",性質・評価,形容詞,9,
+1073,rainfall,降雨（量）,"Water that falls from the clouds in the sky, in little drops",自然・天気・環境,名詞,9,複合語（2語の合体）
+1074,relocation,移転,the act of moving something to a new location,場所・位置・方向;動作・変化,名詞,9,re-（再び・元に）
+1075,residence,住居、住宅,the house or place you live,生活・社会・家庭;建物・設備,名詞,9,
+1076,retrieve,取り戻す、回収する,to go and get something back,動作・変化,動詞,9,re-（再び・元に）
+1077,rider,乗る人（乗り手）,someone who uses an animal or a bicycle or motorcycle for transport,人・職業;旅行・交通・配送,名詞,9,〜する人（-er/-or/-ist/-ant/-ian/-man）
+1078,rubber,ゴム,the stretchy material that elastic bands are made of,日用品・道具・衣類,名詞,9,
+1079,rug,じゅうたん、敷物,a small loose floor covering,日用品・道具・衣類,名詞,9,
+1080,salespeople,販売員たち,men and women whose job it is get people to buy things from their company,人・職業;お金・売買,名詞,9,〜する人（-er/-or/-ist/-ant/-ian/-man）
+1081,sharply,厳しく、鋭く,harshly,性質・評価,副詞,9,
+1082,similarity,類似（点）,the state of being almost the same,思考・判断,名詞,9,
+1083,someday,いつか,At some unspecified time in the future,時間・頻度・順序,副詞,9,複合語（2語の合体）
+1084,spectator,観客,a person who watches something happening,人・職業;娯楽・趣味・スポーツ,名詞,9,〜する人（-er/-or/-ist/-ant/-ian/-man）
+1085,stereo,ステレオ,a device that plays sound through two or more speakers,機器・IT・通信;娯楽・趣味・スポーツ,名詞,9,
+1086,storeroom,物置、貯蔵室,a room where things can be kept when they are not being used,建物・設備,名詞,9,複合語（2語の合体）
+1087,subsidize,補助金を出す,to give financial help,お金・売買,動詞,9,下・不足・副（under-/sub-/vice-）;〜にする（-ize/-ify/-en）
+1088,suspicious,疑わしい、怪しいと思う,the feeling that something is not right,気持ち・態度,形容詞,9,
+1089,tasty,おいしい,delicious,食べ物・料理,形容詞,9,
+1090,terrific,すばらしい,very great or wonderful,性質・評価,形容詞,9,
+1091,underground,地下の,below the surface,場所・位置・方向,形容詞,9,下・不足・副（under-/sub-/vice-）
+1092,unpaid,無給の、未払いの,working for no money,お金・売買,形容詞,9,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+1093,volleyball,バレーボール,a ballgame for two teams who try to hit a large ball backwards and forwards across a central net,娯楽・趣味・スポーツ,名詞,9,複合語（2語の合体）
+1094,wheelchair,車いす,"a seat, that has wheels, that allows a person who cannot walk to move about",健康・医療;日用品・道具・衣類,名詞,9,複合語（2語の合体）
+1095,whoever,〜する人は誰でも,anyone who,人・職業,代名詞,9,複合語（2語の合体）
+1096,wool,羊毛、ウール,the fur of sheep,日用品・道具・衣類,名詞,9,
+1097,wrinkle,しわ,a crease or fold,日用品・道具・衣類,名詞,9,
+1098,accuracy,正確さ,the state of being exact and correct,性質・評価,名詞,9,
+1099,anyhow,とにかく、いずれにせよ,"anyway, besides",思考・判断,副詞,9,複合語（2語の合体）
+1100,appetizer,前菜,small amount of food eaten before the main meal,食べ物・料理,名詞,9,
+1101,arc,弧,"a curved line, like part of a circle",数量・大きさ・形,名詞,9,
+1102,audition,オーディション,a try out done by a performer to test whether they have the skills to do the job,娯楽・趣味・スポーツ,名詞,9,
+1103,backpack,リュックサック,a bag with shoulder straps worn on the back,日用品・道具・衣類;旅行・交通・配送,名詞,9,複合語（2語の合体）
+1104,ballroom,舞踏室,large room used mainly for dancing,娯楽・趣味・スポーツ;建物・設備,名詞,9,複合語（2語の合体）
+1105,beneficial,有益な,"good for you, positive effect",性質・評価,形容詞,9,
+1106,biography,伝記,someone's life story,伝達・文書・情報,名詞,9,
+1107,bound,縛る、包む,"wrap around with something, so as to cover or enclose",動作・変化,動詞,9,
+1108,broom,ほうき,a brush with a long handle used for sweeping the dirt from the floor,日用品・道具・衣類,名詞,9,
+1109,cheeseburger,チーズバーガー,a hamburger with melted cheese on it,食べ物・料理,名詞,9,複合語（2語の合体）
+1110,chilly,肌寒い,when the weather is cold and causing you to shiver,自然・天気・環境,形容詞,9,
+1111,circus,見せ物、大騒ぎ,a showy or noisy performance,娯楽・趣味・スポーツ,名詞,9,
+1112,compliment,褒め言葉,saying something nice about someone,伝達・文書・情報;気持ち・態度,名詞,9,
+1113,consignment,委託貨物、発送品,a shipment of goods for  delivery,旅行・交通・配送,名詞,9,
+1114,continental,大陸の,to do with the mainland,場所・位置・方向,形容詞,9,
+1115,copyright,著作権,when you cannot copy work,規則・法律・手続き,名詞,9,複合語（2語の合体）
+1116,countryside,田舎、田園地帯,"land outside of cities and towns, that does not have buildings on it",場所・位置・方向;自然・天気・環境,名詞,9,複合語（2語の合体）
+1117,demolish,取り壊す,knock down; completely destroy,建物・設備;動作・変化,動詞,9,
+1118,departmental,部門の,to do with a specific area or unit in an organization,会社・経営・組織,形容詞,9,
+1119,desperate,切実に必要とする、必死の,to be in urgent need of something,気持ち・態度,形容詞,9,
+1120,devastate,徹底的に破壊する,to destroy completely,動作・変化,動詞,9,
+1121,diagnostic,診断（法）,how you solve problems by working out what is wrong,健康・医療;思考・判断,名詞,9,
+1122,diagram,図、図表,a drawing explaining something,伝達・文書・情報,名詞,9,
+1123,diamond,ダイヤモンド,a very valuable gem,日用品・道具・衣類,名詞,9,
+1124,disable,使えなくする,to make something not work,動作・変化;機器・IT・通信,動詞,9,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）;〜できる（-able/-ible）
+1125,disgust,嫌悪感,strong feelings of dislike,気持ち・態度,名詞,9,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+1126,donut,ドーナツ,"small, fried, very sweet piece of dough covered in sugar and good to eat",食べ物・料理,名詞,10,
+1127,doorman,ドアマン,Someone whose job it is to stand at entrance to a hotel to let people go in and out,人・職業;旅行・交通・配送,名詞,10,複合語（2語の合体）;〜する人（-er/-or/-ist/-ant/-ian/-man）
+1128,electronically,電子的に,to do something using electronics,機器・IT・通信,副詞,10,
+1129,elevate,持ち上げる、高める,to raise or make higher,動作・変化,動詞,10,
+1130,engagement,参加、関与,the act of participating in something,仕事・業務,名詞,10,
+1131,enrollment,登録、入学,the act of registering for something,規則・法律・手続き;教育・学問・研究,名詞,10,
+1132,euro,ユーロ,a unit of money used in a number of European countries,お金・売買,名詞,10,
+1133,forbid,禁じる,to not allow,規則・法律・手続き,動詞,10,
+1134,fork,フォーク,eating utensil,食べ物・料理;日用品・道具・衣類,名詞,10,
+1135,foster,促進する、育成する,to promote or bring about,動作・変化,動詞,10,
+1136,getaway,逃走、（短い）休暇,escape or leave very quickly,旅行・交通・配送,名詞,10,複合語（2語の合体）
+1137,gossip,うわさ話をする,to talk about someone behind his/her back,伝達・文書・情報,動詞,10,
+1138,hacker,ハッカー,someone who gains access to a computer system without permission,人・職業;機器・IT・通信,名詞,10,〜する人（-er/-or/-ist/-ant/-ian/-man）
+1139,hardworking,勤勉な,always puts a lot of effort into the task or job,性質・評価,形容詞,10,複合語（2語の合体）
+1140,impatient,せっかちな、短気な,"in a hurry, not calm",気持ち・態度,形容詞,10,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+1141,indirect,間接的な,not in a straight way,性質・評価,形容詞,10,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+1142,interpreter,通訳者,someone who translates from one language to another,人・職業;伝達・文書・情報,名詞,10,〜する人（-er/-or/-ist/-ant/-ian/-man）
+1143,intersection,交差点,where two paths cross each other,旅行・交通・配送;場所・位置・方向,名詞,10,間・相互（inter-）
+1144,irrelevant,無関係な,"not related to the topic, not important",思考・判断,形容詞,10,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+1145,jeans,ジーンズ,pants made from denim,日用品・道具・衣類,名詞,10,
+1146,journalism,報道（業）、ジャーナリズム,the reporting of news,伝達・文書・情報,名詞,10,
+1147,letterhead,レターヘッド（便箋上部の社名・住所）,the printing at the top of a letter that tells you the name and details of the company sending it,伝達・文書・情報,名詞,10,複合語（2語の合体）
+1148,lifeguard,ライフガード、監視員,the person whose job it is to keep people safe at the beach or at  pool,人・職業;娯楽・趣味・スポーツ,名詞,10,複合語（2語の合体）
+1149,modem,モデム,a device that lets you send information from one computer to another,機器・IT・通信,名詞,10,
+1150,monument,記念碑,something built to honor someone,建物・設備,名詞,10,
+1151,mosquito,蚊,a small winged insect that bites,自然・天気・環境,名詞,10,
+1152,obligate,義務を負わせる,to have to do,規則・法律・手続き,動詞,10,
+1153,oblige,義務づける,to make someone have to do something,規則・法律・手続き,動詞,10,
+1154,occurrence,出来事、発生,something that happens,時間・頻度・順序,名詞,10,
+1155,operational,稼働中の,in working order,機器・IT・通信,形容詞,10,
+1156,outage,停電,a failure in the power system so that there is no electricity available,機器・IT・通信,名詞,10,
+1157,overcrowd,過密にする、混雑させる,too many people in too small a space,数量・大きさ・形,動詞,10,上・超過（over-/super-/up-）
+1158,paralegal,弁護士補助員、パラリーガル,someone who works in a law company but who has not trained as a lawyer,人・職業;規則・法律・手続き,名詞,10,
+1159,partially,部分的に,In part; in some degree; not wholly,数量・大きさ・形,副詞,10,
+1160,pepper,コショウ,a strong spice (black or white),食べ物・料理,名詞,10,
+1161,permanently,永久に,for ever,時間・頻度・順序,副詞,10,
+1162,plow,かき分けて進む,to force your way through something,動作・変化,動詞,10,
+1163,query,質問、問い合わせ,"question, inquire",伝達・文書・情報,名詞,10,
+1164,railway,鉄道,"transport system of tracks ,stations and trains",旅行・交通・配送,名詞,10,複合語（2語の合体）
+1165,raincoat,レインコート,a water-resistant coat,日用品・道具・衣類,名詞,10,複合語（2語の合体）
+1166,reconsider,再考する,to think something over again,思考・判断,動詞,10,re-（再び・元に）
+1167,redesign,設計し直す,change or improve the plan of how a thing is made,動作・変化,動詞,10,re-（再び・元に）
+1168,rehearsal,リハーサル、予行演習,a practice session in preparation for a public performance,娯楽・趣味・スポーツ,名詞,10,re-（再び・元に）
+1169,relaxation,くつろぎ、休養,the act of resting,生活・社会・家庭,名詞,10,
+1170,repetition,繰り返し,to do something over and over again,時間・頻度・順序,名詞,10,re-（再び・元に）
+1171,retreat,後退する、引き下がる,to move back or withdraw from a place,動作・変化;場所・位置・方向,動詞,10,
+1172,salon,（美容院などの）店、サロン,"a store where you can get a particular service, like getting your hair styled",建物・設備;生活・社会・家庭,名詞,10,
+1173,satellite,支社、出先機関,another branch of an office elsewhere,会社・経営・組織,名詞,10,
+1174,scenery,景色、風景,the view of natural surroundings,自然・天気・環境,名詞,10,
+1175,serial,連続の、順次の,"ongoing, happening more than once in a particular order",時間・頻度・順序,形容詞,10,
+1176,sew,縫う,to use a needle and thread,生活・社会・家庭,動詞,10,
+1177,sketch,スケッチ、略図,"a simple, quickly made drawing",娯楽・趣味・スポーツ,名詞,10,
+1178,smartphone,スマートフォン,a mobile phone that can also use the internet and run apps [Claude],機器・IT・通信;伝達・文書・情報,名詞,10,複合語（2語の合体）
+1179,soar,舞い上がる、急上昇する,fly quickly up into the air,動作・変化,動詞,10,
+1180,stimulus,刺激、きっかけ,the reason or prompt that causes something to happen,動作・変化,名詞,10,
+1181,stockbroker,株式仲買人,an agent whose job it is to buy and sell stocks and bonds,人・職業;お金・売買,名詞,10,複合語（2語の合体）;〜する人（-er/-or/-ist/-ant/-ian/-man）
+1182,tablecloth,テーブルクロス,a cover for a table,日用品・道具・衣類;食べ物・料理,名詞,10,複合語（2語の合体）
+1183,thirsty,のどが渇いた,in need of water,食べ物・料理;健康・医療,形容詞,10,
+1184,thrill,わくわく感、スリル,excitement,気持ち・態度,名詞,10,
+1185,tile,タイル、瓦,"a thin slab of material, often made of clay, used for covering roofs and floors",建物・設備,名詞,10,
+1186,toiletry,洗面用品,articles used for washing and taking care of your body,日用品・道具・衣類,名詞,10,
+1187,trademark,商標,the trade or brand name,規則・法律・手続き;会社・経営・組織,名詞,10,複合語（2語の合体）
+1188,tropical,熱帯の,hot and humid like the climate near the equator,自然・天気・環境,形容詞,10,
+1189,tuna,マグロ,"a type of fish that lives in the sea, and is good to eat",食べ物・料理,名詞,10,
+1190,unemployed,失業した,having no job,仕事・業務,形容詞,10,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+1191,validate,有効と認める、確認する,to confirm that something is acceptable,規則・法律・手続き,動詞,10,
+1192,vanilla,バニラ,a flavoring used in ice cream and other sweet foods to make them taste good,食べ物・料理,名詞,10,
+1193,willingness,進んでする気持ち,being happy to do something,気持ち・態度,名詞,10,
+1194,wristwatch,腕時計,a small device for telling the time that you wear on your lower arm,日用品・道具・衣類,名詞,10,複合語（2語の合体）
+1195,abide,我慢する、耐える,put up with,気持ち・態度,動詞,10,
+1196,actively,積極的に,in a way that takes effort and action,気持ち・態度,副詞,10,
+1197,allergy,アレルギー,condition that means you get ill if you come into contact with a particular material,健康・医療,名詞,10,
+1198,apprehensive,不安な、心配して,"uneasy, worried",気持ち・態度,形容詞,10,
+1199,automotive,自動車の,of or relating to motor vehicles,旅行・交通・配送,形容詞,10,
+1200,bacteria,細菌,small microbes that often make you sick,健康・医療;自然・天気・環境,名詞,10,
+1201,broaden,広げる,to widen,数量・大きさ・形,動詞,10,〜にする（-ize/-ify/-en）
+1202,bulb,電球、球根,"the shape of a teardrop, e.g. light bulb",日用品・道具・衣類,名詞,10,
+1203,by-law,内規、（自治体の）条例,a rule made by an organization or local government for its own members or area [Claude],規則・法律・手続き,名詞,10,
+1204,cheer,声援を送る,"to cheer on, shout encouragement",娯楽・趣味・スポーツ,動詞,10,
+1205,complication,複雑化、困難な問題,the act of making something more difficult,思考・判断,名詞,10,
+1206,considerate,思いやりのある,showing concern for the rights and feelings of others,気持ち・態度,形容詞,10,
+1207,daytime,昼間,The time between when the sun rises and when it  goes down; not nightime,時間・頻度・順序,名詞,10,複合語（2語の合体）
+1208,decoration,装飾,the act of decorating something (in the hope of making it more attractive),動作・変化,名詞,10,
+1209,discard,捨てる,to throw away,動作・変化;生活・社会・家庭,動詞,10,
+1210,drastically,大幅に、劇的に,very seriously,数量・大きさ・形,副詞,10,
+1211,erase,消す、削除する,to remove or delete,動作・変化,動詞,10,
+1212,explorer,探検家,a person who travels to unknown places,人・職業;旅行・交通・配送,名詞,10,外・元（ex-）;〜する人（-er/-or/-ist/-ant/-ian/-man）
+1213,factual,事実に基づく,based on true information,伝達・文書・情報,形容詞,10,
+1214,fixture,備え付けの設備,"a piece of equipment, like a bath, that is permanently fixed to a building",建物・設備,名詞,10,
+1215,footwear,履物,"something you wear on your feet, such as shoes or boots",日用品・道具・衣類,名詞,10,複合語（2語の合体）
+1216,genre,ジャンル,"type of art, literature, or film, e.g. romance",娯楽・趣味・スポーツ,名詞,10,
+1217,gymnasium,体育館、ジム,building with equipment you can use to exercise your body,娯楽・趣味・スポーツ;建物・設備,名詞,10,
+1218,hereby,これによって,a formal way of saying 'as a result of this',伝達・文書・情報;規則・法律・手続き,副詞,10,複合語（2語の合体）
+1219,hesitation,ためらい,the act of pausing uncertainly,気持ち・態度,名詞,10,
+1220,homemade,手作りの、自家製の,not bought from a store; made at home,食べ物・料理;生活・社会・家庭,形容詞,10,複合語（2語の合体）
+1221,hospitality,もてなし、歓待,"welcoming, friendly behavior  you show to visitors or guests",気持ち・態度;旅行・交通・配送,名詞,10,
+1222,incoming,到着する、入ってくる,just arriving,旅行・交通・配送,形容詞,10,複合語（2語の合体）
+1223,induction,導入、就任（式）,the act of being introduced into,仕事・業務,名詞,10,
+1224,inspiration,ひらめき、刺激を与えるもの,the thing or person that encourages you to do something,気持ち・態度,名詞,10,
+1225,intently,熱心に、じっと,concentrate closely,気持ち・態度,副詞,10,
+1226,mower,芝刈り機,machine used to cut grass,機器・IT・通信;自然・天気・環境,名詞,10,〜する物・道具（-er/-or）
+1227,nutrition,栄養学,the study of food and health,食べ物・料理;健康・医療,名詞,10,
+1228,restatement,言い換え,a statement that has been reworded,伝達・文書・情報,名詞,10,re-（再び・元に）
+1229,sedan,セダン（乗用車）,a type of car that has seats for four people,旅行・交通・配送,名詞,10,
+1230,sunscreen,日焼け止め,a cream spread on the skin that protects your skin from the sun,日用品・道具・衣類,名詞,10,複合語（2語の合体）
+1231,wellness,健康,State of being healthy; not ill,健康・医療,名詞,10,
+1232,workbook,ワークブック、学習帳,"a file containing information about a particular subject, and relatated problems to be solved by the student",教育・学問・研究,名詞,10,複合語（2語の合体）
+1233,bookcase,本棚,a piece of furniture with shelves for storing books,日用品・道具・衣類,名詞,10,複合語（2語の合体）
+1234,cleanliness,清潔さ,"state of being not dirty, clean",性質・評価,名詞,10,
+1235,contestant,競技参加者、出場者,someone who is part of a contest,人・職業;娯楽・趣味・スポーツ,名詞,10,〜する人（-er/-or/-ist/-ant/-ian/-man）
+1236,ethics,倫理,morals or belief system,思考・判断,名詞,10,
+1237,healthful,健康によい,helping to keep well in body and mind,健康・医療,形容詞,10,〜に満ちた（-ful）
+1238,inefficient,非効率な,not working well or quickly,性質・評価,形容詞,10,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+1239,liter,リットル,a unit  of measurement for liquids,数量・大きさ・形,名詞,10,
+1240,recession,景気後退、不況,a less successful time in the economy,お金・売買,名詞,10,
+1241,timeline,年表、時系列表,"a series of related events arranged in the order they happen, and displayed in a row",時間・頻度・順序;伝達・文書・情報,名詞,10,複合語（2語の合体）
+1242,unreliable,信頼できない,not trustworthy,性質・評価,形容詞,10,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）;〜できる（-able/-ible）
+1243,acclaim,称賛,approval and great praise,気持ち・態度,名詞,10,
+1244,chronic,長期にわたる、慢性の,for a long time,時間・頻度・順序;健康・医療,形容詞,10,
+1245,deteriorate,悪化する,to become worse in state,動作・変化,動詞,10,
+1246,resemble,似ている,"to look like, similar to",思考・判断,動詞,10,
+1247,unauthorized,無許可の,without official permission,規則・法律・手続き,形容詞,10,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）;〜にする（-ize/-ify/-en）
+1248,violate,（規則・法律を）破る,to break the rule or law,規則・法律・手続き,動詞,10,
+1249,unplug,プラグを抜く,to pull out an electrical cord from its socket,機器・IT・通信;動作・変化,動詞,10,否定・反対（un-/in-/im-/dis-/non-/anti-/contra-）
+1250,videoconference,テレビ会議,meeting carried out over the internet,機器・IT・通信;仕事・業務,名詞,10,複合語（2語の合体）

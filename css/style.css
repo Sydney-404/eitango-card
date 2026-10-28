@@ -484,7 +484,7 @@ body.no-scroll { overflow: hidden; }
 .btn.small { min-height: 36px; padding: 0 14px; font-size: .9rem; }
 
 /* ===== 品詞・Unit・分類タグ ===== */
-.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
 
 .tag {
   display: inline-block;
