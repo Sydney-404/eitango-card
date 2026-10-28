@@ -1,6 +1,7 @@
 // 忘却曲線：次の復習日を「最後に学んだ日 ＋ 記憶度に応じた日数」で決める（SPEC 5.1）
+// 記憶度4（覚えた）は卒業として、復習には出さない
 const Review = (() => {
-  const INTERVAL_DAYS = { 1: 1, 2: 3, 3: 7, 4: 14 };
+  const INTERVAL_DAYS = { 1: 1, 2: 3, 3: 7 };
 
   function addDays(key, n) {
     const [y, m, d] = key.split('-').map(Number);
@@ -11,10 +12,10 @@ const Review = (() => {
     return UI.dayKey(new Date());
   }
 
-  // 次の復習日。まだ一度も学んでいない単語は復習の対象ではないので null
+  // 次の復習日。まだ一度も学んでいない単語と、記憶度4の単語は復習の対象ではないので null
   function dueDay(id) {
     const s = Store.state(id);
-    if (!s.lastStudied) return null;
+    if (!s.lastStudied || !INTERVAL_DAYS[s.memory]) return null;
     return addDays(UI.dayKey(s.lastStudied), INTERVAL_DAYS[s.memory]);
   }
 

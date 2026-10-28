@@ -143,7 +143,7 @@ const SummaryView = (() => {
         <h2>今日の復習</h2>
         <p class="hero-num">${due}<small> 語</small></p>
         <button type="button" class="btn primary block" data-action="review" ${due ? '' : 'disabled'}>カードで復習する</button>
-        <p class="muted note">次の復習日＝最後に学んだ日 ＋ 記憶度ごとの日数（1→1日・2→3日・3→7日・4→14日）</p>
+        <p class="muted note">次の復習日＝最後に学んだ日 ＋ 記憶度ごとの日数（1→1日・2→3日・3→7日）。記憶度4は復習に出しません</p>
         <h3>この先の復習の予定</h3>
         ${columns('upcoming', upcomingItems, { caption: '棒を押すと、その日の語数が出ます', unit: ' 語' })}
       </section>

@@ -198,6 +198,8 @@ try {
   $('#view-summary [data-action="review"]').click();
   log('review → card', !$('#view-card').hidden && $('#view-card .progress-text').textContent.trim() === '1 ／ 1', $('#view-card .progress-text')?.textContent);
   Filter.preset({});
+  Store.setMemory('1', 4, { rated: true });
+  log('memory 4 not reviewed', Review.dueDay('1') === null && !Review.isDue('1'), String(Review.dueDay('1')));
   App.show('manage');
   log('manage renders', !!$('#reset-all'));
 } catch (e) { errs.push('EXC ' + e.stack); }

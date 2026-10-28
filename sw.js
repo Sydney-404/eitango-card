@@ -2,7 +2,7 @@
 // アプリの部品を端末に保存しておき、通信できないときは保存してあるものを出す。
 // 部品を足したら APP_FILES に加える。公開するたびに CACHE の番号を上げる
 // （sw.js が変わると端末が新しい版に気づき、開いているアプリが読み直される）
-const CACHE = 'eitango-v7';
+const CACHE = 'eitango-v8';
 const APP_FILES = [
   './',
   'index.html',
