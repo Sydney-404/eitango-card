@@ -481,3 +481,4 @@ body.no-scroll { overflow: hidden; }
   .sheet-foot .btn { padding: 0 12px; }
 }
 #btn-filter { font-size: 1.8rem; }
+.btn.small { min-height: 36px; padding: 0 14px; font-size: .9rem; }

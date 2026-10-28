@@ -119,7 +119,10 @@ const QuizView = (() => {
       <button type="button" class="btn primary block gap" data-action="next">${qi + 1 < questions.length ? '次へ' : '結果を見る'}</button>` : '';
 
     el.innerHTML = `
-      <div class="list-head"><span class="progress-text">${qi + 1} ／ ${questions.length}</span></div>
+      <div class="list-head">
+        <button type="button" class="btn small" data-action="quit">やめる</button>
+        <span class="progress-text">${qi + 1} ／ ${questions.length}</span>
+      </div>
       <div class="progress"><span style="width:${(qi / questions.length) * 100}%"></span></div>
       <div class="quiz-prompt">${prompt}</div>
       <div class="options">${options}</div>
@@ -172,6 +175,10 @@ const QuizView = (() => {
       if (qi >= questions.length) phase = 'result';
       render();
       window.scrollTo(0, 0);
+    } else if (t.dataset.action === 'quit') {
+      if (!confirm('この回をやめて設定に戻りますか？（答えた分の記録は残ります）')) return;
+      phase = 'setup';
+      render();
     } else if (t.dataset.action === 'start') {
       start();
     } else if (t.dataset.action === 'setup') {
