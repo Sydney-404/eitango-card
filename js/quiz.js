@@ -1,6 +1,6 @@
 // 定義四択：覚えたかを試す
 const QuizView = (() => {
-  const DIRS = { forward: '英単語 → 日本語の意味', reverse: '英語の意味 → 英単語' };
+  const DIRS = { en: '英単語 → 英語の意味', forward: '英単語 → 日本語の意味', reverse: '英語の意味 → 英単語' };
   const COUNTS = [5, 10, 20, 0]; // 0 は「全部」
   let el;
   let phase = 'setup'; // setup → question → result
@@ -27,17 +27,17 @@ const QuizView = (() => {
   }
 
   // ---- 出題の準備 ----
-  const dir = () => Store.pref('quizDir', 'forward');
+  const dir = () => Store.pref('quizDir', 'en');
 
-  // 出題できる単語（逆向きでは英語の意味がある単語だけ）
+  // 出題できる単語（英語の意味を使う向きでは、英語の意味がある単語だけ）
   function pool() {
     const words = App.targetWords();
-    return dir() === 'reverse' ? words.filter(w => w.en) : words;
+    return dir() === 'forward' ? words : words.filter(w => w.en);
   }
 
   // 選択肢に出す文字列
   function optionText(w) {
-    return dir() === 'forward' ? w.ja : w.word;
+    return { en: w.en, forward: w.ja, reverse: w.word }[dir()];
   }
 
   // 誤答は全単語から選び、できるだけ同じ品詞にそろえる。同じ文字列は重ねない
@@ -48,7 +48,7 @@ const QuizView = (() => {
     const wrongs = [];
     for (const x of ordered) {
       if (wrongs.length === 3) break;
-      if (used.has(optionText(x))) continue;
+      if (!optionText(x) || used.has(optionText(x))) continue; // 英語の意味がない単語は誤答にも使わない
       used.add(optionText(x));
       wrongs.push(x);
     }
@@ -85,7 +85,7 @@ const QuizView = (() => {
         <h2>出題の向き</h2>
         <div class="chips">${Object.entries(DIRS).map(([k, v]) =>
           `<button type="button" class="chip" data-dir="${k}" aria-pressed="${k === dir()}">${v}</button>`).join('')}</div>
-        ${dir() === 'reverse' ? '<p class="muted">英語の意味がない単語は出題しません。</p>' : ''}
+        ${dir() !== 'forward' ? '<p class="muted">英語の意味がない単語は出題しません。</p>' : ''}
         <h2 class="gap">1回の出題数</h2>
         <div class="chips">${COUNTS.map(c =>
           `<button type="button" class="chip" data-count="${c}" aria-pressed="${c === count}">${c ? `${c}問` : '全部'}</button>`).join('')}</div>
@@ -98,9 +98,9 @@ const QuizView = (() => {
     const q = questions[qi];
     const w = Store.word(q.id);
     const answered = chosen !== null;
-    const prompt = dir() === 'forward'
-      ? `<div class="card-word">${UI.esc(w.word)}</div>`
-      : `<p class="muted">この意味の英単語は？</p><p class="quiz-en">${UI.esc(w.en)}</p>`;
+    const prompt = dir() === 'reverse'
+      ? `<p class="muted">この意味の英単語は？</p><p class="quiz-en">${UI.esc(w.en)}</p>`
+      : `<div class="card-word">${UI.esc(w.word)}</div>`;
 
     const options = q.options.map((o, i) => {
       let cls = '';
