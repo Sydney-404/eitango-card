@@ -16,6 +16,12 @@ const App = (() => {
     window.scrollTo(0, 0);
   }
 
+  // 人が押して画面を移るとき（描き直しのための show とは分けて、こちらだけ音を鳴らす）
+  function go(name) {
+    if (name !== current) Sound.play('shu');
+    show(name);
+  }
+
   // 3機能が対象にする単語（Unit → ID の順）
   function targetWords() {
     return Store.wordList()
@@ -79,8 +85,8 @@ const App = (() => {
 
   function boot() {
     applyTheme();
-    document.querySelectorAll('.tabbar button').forEach(b => b.addEventListener('click', () => show(b.dataset.view)));
-    document.getElementById('btn-manage').addEventListener('click', () => show('manage'));
+    document.querySelectorAll('.tabbar button').forEach(b => b.addEventListener('click', () => go(b.dataset.view)));
+    document.getElementById('btn-manage').addEventListener('click', () => go('manage'));
     Filter.init();
     show(Store.pref('tab', 'list'));
     autoLoad();
@@ -96,7 +102,7 @@ const App = (() => {
     navigator.storage?.persist?.();
   }
 
-  return { boot, show, targetWords, dataChanged, theme, setTheme };
+  return { boot, show, go, targetWords, dataChanged, theme, setTheme };
 })();
 
 App.boot();

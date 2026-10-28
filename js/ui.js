@@ -60,7 +60,7 @@ const UI = (() => {
         <p>データ管理から Excel / CSV を取り込んでください。</p>
         <button type="button" class="btn primary" data-goto="manage">データ管理を開く</button>
       </div>`;
-    el.querySelector('[data-goto]').addEventListener('click', () => App.show('manage'));
+    el.querySelector('[data-goto]').addEventListener('click', () => App.go('manage'));
   }
 
   function shuffle(arr) {

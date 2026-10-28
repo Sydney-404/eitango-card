@@ -6,6 +6,10 @@ const ManageView = (() => {
 
   function show(container) {
     el = container;
+    // 設定のボタンは pon。各ボタンの処理のあとに鳴るので、効果音をオフにした瞬間は鳴らない
+    el.onclick = e => {
+      if (e.target.closest('button, label.btn') && !e.target.closest('[data-goto]')) Sound.play('pon');
+    };
     render();
   }
 
@@ -25,6 +29,11 @@ const ManageView = (() => {
         <h2>表示</h2>
         <div class="chips">${Object.entries(THEMES).map(([k, v]) =>
           `<button type="button" class="chip" data-theme-choice="${k}" aria-pressed="${k === App.theme()}">${v}</button>`).join('')}</div>
+        <h2 class="gap">効果音</h2>
+        <div class="chips">
+          <button type="button" class="chip" data-sound="on" aria-pressed="${Sound.enabled()}">オン</button>
+          <button type="button" class="chip" data-sound="off" aria-pressed="${!Sound.enabled()}">オフ</button>
+        </div>
       </section>
 
       <section class="panel">
@@ -61,6 +70,10 @@ const ManageView = (() => {
     el.querySelector('#reset-all').addEventListener('click', resetAll);
     el.querySelectorAll('[data-theme-choice]').forEach(b => b.addEventListener('click', () => {
       App.setTheme(b.dataset.themeChoice);
+      render();
+    }));
+    el.querySelectorAll('[data-sound]').forEach(b => b.addEventListener('click', () => {
+      Sound.setEnabled(b.dataset.sound === 'on');
       render();
     }));
     if (pending) {

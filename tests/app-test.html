@@ -44,6 +44,7 @@
 <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js" integrity="sha384-EnyY0/GSHQGSxSgMwaIPzSESbqoOLSexfnSMN2AP+39Ckmn92stwABZynq1JyzdT" crossorigin="anonymous"></script>
   <script src="../js/ui.js"></script>
   <script src="../js/store.js"></script>
+  <script src="../js/sound.js"></script>
   <script src="../js/importer.js"></script>
   <script src="../js/filter.js"></script>
   <script src="../js/list.js"></script>
@@ -61,6 +62,7 @@ const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 try {
   log('SheetJS loaded', typeof XLSX !== 'undefined');
+  const played = []; Sound.play = name => played.push(name); // 音は鳴らさず、呼ばれた名前だけ記録する
   const csv = `ID,英単語,日本語の意味,英語の意味,分類タグ,品詞,Unit,語の形
 1,cook,料理する,to prepare food by heating it,料理,動詞,1,cook - cooked - cooked
 2,boil,ゆでる・沸騰させる,to heat a liquid until it bubbles,料理,動詞,1,boil - boiled - boiled
@@ -153,6 +155,9 @@ try {
   const skipped = Store.importData(evil);
   log('bad logs rejected', skipped === 2 && Store.state('1').memory === 1 && Store.state('3').memory === 4, 'skipped=' + skipped);
   log('SheetJS version', XLSX.version === '0.20.3', XLSX.version);
+  document.querySelector('.tabbar [data-view="list"]').click();
+  document.querySelector('.tabbar [data-view="card"]').click();
+  log('sounds called', ['shu', 'pon', 'kachi', 'maru', 'batsu'].every(n => played.includes(n)) || (['shu', 'pon', 'kachi'].every(n => played.includes(n)) && (played.includes('maru') || played.includes('batsu'))), [...new Set(played)].join(','));
   App.show('manage');
   log('manage renders', !!$('#reset-all'));
 } catch (e) { errs.push('EXC ' + e.stack); }

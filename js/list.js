@@ -35,6 +35,7 @@ const ListView = (() => {
         : '<p class="empty">条件に合う単語がありません</p>'}`;
 
     el.querySelector('#list-sort').addEventListener('change', e => {
+      Sound.play('pon');
       Store.setPref('listSort', e.target.value);
       render();
     });
@@ -107,9 +108,11 @@ const ListView = (() => {
 
     if (memBtn) {
       // 並びは変えずに、その行だけ描き直す（押した行が動かないように）
+      Sound.play('pon');
       Store.setMemory(id, Number(memBtn.dataset.memory));
       redrawItem(li);
     } else if (e.target.closest('.word-row')) {
+      Sound.play('pon');
       const prev = openId && el.querySelector(`.word-item.open`);
       openId = openId === id ? null : id;
       if (prev && prev !== li) redrawItem(prev);

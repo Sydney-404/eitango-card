@@ -89,9 +89,11 @@ const Filter = (() => {
   }
 
   function onClick(e) {
-    if (e.target.classList.contains('sheet-backdrop')) return close();
     const chip = e.target.closest('.chip');
     const action = e.target.closest('[data-action]')?.dataset.action;
+    const backdrop = e.target.classList.contains('sheet-backdrop');
+    if (chip || action || backdrop) Sound.play('pon');
+    if (backdrop) return close();
 
     if (chip) {
       const group = chip.dataset.group;
@@ -123,7 +125,10 @@ const Filter = (() => {
   }
 
   function init() {
-    document.getElementById('btn-filter').addEventListener('click', open);
+    document.getElementById('btn-filter').addEventListener('click', () => {
+      Sound.play('pon');
+      open();
+    });
     sheet().addEventListener('click', onClick);
     updateIndicator();
   }

@@ -155,7 +155,9 @@ const QuizView = (() => {
   // ---- 操作 ----
   function onClick(e) {
     const t = e.target.closest('button');
-    if (!t) return;
+    if (!t || t.dataset.goto) return; // data-goto は「データ管理を開く」（音は App.go が鳴らす）
+    // 選択肢は正誤の音、記憶度は受け付けたときだけ鳴らす。それ以外のボタンはここで鳴らす
+    if (!t.dataset.option && !t.dataset.memory) Sound.play('kachi');
 
     if (t.dataset.dir) {
       Store.setPref('quizDir', t.dataset.dir);
@@ -168,12 +170,14 @@ const QuizView = (() => {
       chosen = Number(t.dataset.option);
       answeredAt = Date.now();
       const correct = chosen === q.answer;
+      Sound.play(correct ? 'maru' : 'batsu');
       Store.answerQuiz(q.id, correct, q.options[chosen].text);
       results.push({ id: q.id, correct });
       render();
     } else if (t.dataset.memory) {
       // 回答直後は配置が詰まってボタンが指の下に来ることがあるので、少しのあいだ受け付けない
       if (Date.now() - answeredAt < 400) return;
+      Sound.play('kachi');
       Store.setMemory(questions[qi].id, Number(t.dataset.memory), { rated: true });
       qi++;
       chosen = null;

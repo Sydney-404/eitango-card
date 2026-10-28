@@ -49,6 +49,7 @@ const CardView = (() => {
     }
 
     el.querySelector('#card-order').addEventListener('change', e => {
+      Sound.play('kachi');
       Store.setPref('cardOrder', e.target.value);
       buildDeck();
       render();
@@ -94,6 +95,7 @@ const CardView = (() => {
   function onClick(e) {
     const memBtn = e.target.closest('[data-memory]');
     const action = e.target.closest('[data-action]')?.dataset.action;
+    if (memBtn || action) Sound.play('kachi');
     if (memBtn) {
       Store.setMemory(deck[index], Number(memBtn.dataset.memory), { rated: true });
       go(1);
@@ -124,7 +126,10 @@ const CardView = (() => {
       const dx = e.changedTouches[0].clientX - x0;
       const dy = e.changedTouches[0].clientY - y0;
       x0 = null;
-      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) go(dx < 0 ? 1 : -1);
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+        Sound.play('kachi'); // 前へ／次へボタンと同じ音
+        go(dx < 0 ? 1 : -1);
+      }
     });
   }
 
