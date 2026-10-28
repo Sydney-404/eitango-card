@@ -38,7 +38,7 @@ const ManageView = (() => {
 
       <section class="panel">
         <h2>バックアップ</h2>
-        <p class="muted">学習状態とログを JSON ファイルにします。機種変更やデータ消去に備えて、ときどき書き出してください。</p>
+        <p class="muted">学習状態と日別の記録を JSON ファイルにします。機種変更やデータ消去に備えて、ときどき書き出してください。ホーム画面のアプリとブラウザの間で記録を移すときにも使えます。</p>
         <div class="row">
           <button type="button" class="btn" id="export-json">書き出す</button>
           <label class="btn file-btn">
@@ -50,23 +50,19 @@ const ManageView = (() => {
 
       <section class="panel">
         <h2>いまの記録</h2>
-        <p>単語 <b>${Store.wordList().length}</b> 語 ／ 学習ログ <b>${Store.logCount()}</b> 件<br>
+        <p>単語 <b>${Store.wordList().length}</b> 語 ／ 学習した日 <b>${Store.dayCount()}</b> 日分<br>
           <span class="muted">保存量 約 ${Math.ceil(Store.usageBytes() / 1024)} KB（ブラウザの上限はおよそ 5 MB）</span></p>
-        <div class="row">
-          <button type="button" class="btn" id="rebuild">ログから学習状態を作り直す</button>
-        </div>
       </section>
 
       <section class="panel">
         <h2>全リセット</h2>
-        <p class="muted">単語・学習状態・ログ・設定をすべて消します。元に戻せません。（リポジトリの単語ファイルは、次の起動で読み直されます）</p>
+        <p class="muted">単語・学習状態・日別の記録・設定をすべて消します。元に戻せません。（リポジトリの単語ファイルは、次の起動で読み直されます）</p>
         <button type="button" class="btn danger block" id="reset-all">すべて消す</button>
       </section>`;
 
     el.querySelector('#import-file').addEventListener('change', onFile);
     el.querySelector('#export-json').addEventListener('click', exportJson);
     el.querySelector('#import-json').addEventListener('change', importJson);
-    el.querySelector('#rebuild').addEventListener('click', rebuild);
     el.querySelector('#reset-all').addEventListener('click', resetAll);
     el.querySelectorAll('[data-theme-choice]').forEach(b => b.addEventListener('click', () => {
       App.setTheme(b.dataset.themeChoice);
@@ -141,7 +137,7 @@ const ManageView = (() => {
     if (!file) return;
     try {
       const data = JSON.parse(await file.text());
-      if (!confirm(`いまの学習状態とログを、このファイルの内容（ログ ${data.logs?.length ?? 0} 件）で置き換えます。よろしいですか？`)) return;
+      if (!confirm('いまの学習状態と日別の記録を、このファイルの内容で置き換えます。よろしいですか？')) return;
       const skipped = Store.importData(data);
       UI.toast(skipped ? `バックアップを読み込みました（形の正しくない記録 ${skipped} 件は除外）` : 'バックアップを読み込みました');
       App.dataChanged();
@@ -152,15 +148,9 @@ const ManageView = (() => {
     }
   }
 
-  function rebuild() {
-    Store.rebuildStates();
-    UI.toast('ログから学習状態を作り直しました');
-    App.dataChanged();
-  }
-
   // 確認を2回はさむ
   function resetAll() {
-    if (!confirm('単語・学習状態・ログ・設定をすべて消します。よろしいですか？')) return;
+    if (!confirm('単語・学習状態・日別の記録・設定をすべて消します。よろしいですか？')) return;
     if (!confirm('本当に消しますか？ この操作は元に戻せません。')) return;
     Store.resetAll();
     location.reload();

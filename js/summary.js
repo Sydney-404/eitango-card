@@ -1,5 +1,5 @@
 // まとめ：いまどこにいるか・どう進んできたか・次に何をするか を1ページで見る。
-// すべて学習状態と学習ログから計算する（絞り込みは使わず、全単語が対象）
+// すべて学習状態（単語ごとの最新）と日別の集計から計算する（絞り込みは使わず、全単語が対象）
 const SummaryView = (() => {
   const WEEKDAYS = ['日', '月', '火', '水', '木', '金', '土'];
   let el;
@@ -24,24 +24,14 @@ const SummaryView = (() => {
     const words = Store.wordList();
     const today = Review.today();
     const last14 = Array.from({ length: 14 }, (_, i) => Review.addDays(today, i - 13));
-    const studied = new Map(last14.map(d => [d, new Set()]));
-    const quiz = new Map(last14.map(d => [d, { correct: 0, total: 0 }]));
-    const activeDays = new Set();
-
-    for (const log of Store.logs()) {
-      const d = Review.dayKey(log.at);
-      activeDays.add(d);
-      studied.get(d)?.add(log.id);
-      if (log.type === 'quiz_answer' && quiz.has(d)) {
-        quiz.get(d).total++;
-        if (log.detail.correct) quiz.get(d).correct++;
-      }
-    }
+    const days = Store.daily();
+    const dayOf = key => days[key] || { studied: 0, correct: 0, total: 0 };
+    const active = key => dayOf(key).studied > 0;
 
     // 連続日数：今日（まだ今日やっていなければ昨日）から、さかのぼって途切れるまで
     let streak = 0;
-    let d = activeDays.has(today) ? today : Review.addDays(today, -1);
-    while (activeDays.has(d)) {
+    let d = active(today) ? today : Review.addDays(today, -1);
+    while (active(d)) {
       streak++;
       d = Review.addDays(d, -1);
     }
@@ -79,7 +69,7 @@ const SummaryView = (() => {
       .slice(0, 10);
 
     return {
-      total: words.length, today, last14, studied, quiz, streak,
+      total: words.length, today, last14, dayOf, streak,
       upcoming, memory, unstudied, quizCorrect, quizTotal, weak,
       units: [...units.entries()].sort((a, b) => a[0] - b[0]),
     };
@@ -133,13 +123,13 @@ const SummaryView = (() => {
     }));
 
     const studiedItems = c.last14.map(k => {
-      const n = c.studied.get(k).size;
+      const n = c.dayOf(k).studied;
       return { label: dayLabel(k), short: dayNum(k), value: n, valueText: `${n} 語`, text: `${dayLabel(k)}：${n} 語` };
     });
     const studiedTotal = studiedItems.reduce((sum, it) => sum + it.value, 0);
 
     const quizItems = c.last14.map(k => {
-      const q = c.quiz.get(k);
+      const q = c.dayOf(k);
       const rate = q.total ? Math.round((q.correct / q.total) * 100) : null;
       const text = q.total ? `${dayLabel(k)}：${rate}%（${q.correct}/${q.total} 問）` : `${dayLabel(k)}：四択なし`;
       return { label: dayLabel(k), short: dayNum(k), value: rate, valueText: q.total ? `${rate}%（${q.correct}/${q.total}）` : '—', text };
@@ -162,7 +152,7 @@ const SummaryView = (() => {
         <h2>学習の記録</h2>
         <div class="stats">
           ${stat('連続', c.streak, ' 日')}
-          ${stat('今日', c.studied.get(c.today).size, ' 語')}
+          ${stat('今日', c.dayOf(c.today).studied, ' 語')}
           ${stat('直近14日', studiedTotal, ' 語')}
         </div>
         <h3>日別の学習数（その日に触れた単語の数）</h3>

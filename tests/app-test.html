@@ -42,7 +42,12 @@
   <div id="toast" role="status" aria-live="polite"></div>
 
   <!-- テスト用：このページ（file://）の記録を消して、まっさらな状態から始める -->
-  <script>Object.keys(localStorage).filter(k => k.startsWith("ewc.")).forEach(k => localStorage.removeItem(k));</script>
+  <script>
+    Object.keys(localStorage).filter(k => k.startsWith("ewc.")).forEach(k => localStorage.removeItem(k));
+    // 以前の形式のログを1件置き、起動時に日別の集計へ変わるかを確かめる（辞書にない ID なので画面には出ない）
+    window.legacyDay = new Date(Date.now() - 20 * 864e5);
+    localStorage.setItem("ewc.logs", JSON.stringify([{ at: legacyDay.toISOString(), id: "901", type: "quiz_answer", detail: { correct: true, chosen: "x" } }]));
+  </script>
 <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js" integrity="sha384-EnyY0/GSHQGSxSgMwaIPzSESbqoOLSexfnSMN2AP+39Ckmn92stwABZynq1JyzdT" crossorigin="anonymous"></script>
   <script src="../js/ui.js"></script>
   <script src="../js/store.js"></script>
@@ -66,6 +71,8 @@ const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 try {
   log('SheetJS loaded', typeof XLSX !== 'undefined');
+  const legacyKey = UI.dayKey(window.legacyDay);
+  log('legacy logs migrated', localStorage.getItem('ewc.logs') === null && Store.daily()[legacyKey]?.studied === 1 && Store.daily()[legacyKey]?.total === 1 && Store.state('901').correct === 1, JSON.stringify(Store.daily()));
   const played = []; Sound.play = name => played.push(name); // 音は鳴らさず、呼ばれた名前だけ記録する
   const csv = `ID,英単語,日本語の意味,英語の意味,分類タグ,品詞,Unit,語の形
 1,cook,料理する,to prepare food by heating it,料理,動詞,1,cook - cooked - cooked
@@ -96,7 +103,7 @@ try {
   $('.word-row').click();
   log('expand', !!$('.word-item.open .mem-buttons'));
   $('.word-item.open [data-memory="3"]').click();
-  log('memory set from list', Store.state('1').memory === 3 && Store.logCount() === 1);
+  log('memory set from list', Store.state('1').memory === 3 && Store.daily()[Review.today()]?.studied === 1);
 
   $('#btn-filter').click();
   [...$$('.chip')].find(c => c.dataset.group === 'pos' && c.dataset.value === '名詞').click();
@@ -123,8 +130,9 @@ try {
   const texts = $$('.option').map(o => o.textContent);
   log('options distinct', new Set(texts).size === 4, texts.join(' / '));
   const realNow = Date.now; let off = 0; Date.now = () => realNow() + off;
-  $('#view-quiz .option').click(); const logsBefore = Store.logCount(); $('#view-quiz [data-memory]').click();
-  log('memory blocked right after answer', Store.logCount() === logsBefore && $$('#view-quiz .option:disabled').length === 4);
+  const snapshot = () => JSON.stringify(Object.fromEntries(Store.wordList().map(w => [w.id, Store.state(w.id)])));
+  $('#view-quiz .option').click(); const statesBefore = snapshot(); $('#view-quiz [data-memory]').click();
+  log('memory blocked right after answer', snapshot() === statesBefore && $$('#view-quiz .option:disabled').length === 4);
   off += 1000; $('#view-quiz [data-memory="1"]').click();
   log('memory press advances', $('main .view:not([hidden]) .progress-text').textContent.startsWith('2'));
   for (let i = 1; i < 5; i++) { $('#view-quiz .option').click(); off += 1000; $('#view-quiz [data-memory="1"]').click(); }
@@ -144,20 +152,29 @@ try {
   $('#view-quiz [data-action="quit"]').click();
   log('quit back to setup', !!$('#view-quiz [data-action="start"]'));
   window.confirm = () => false;
-  const before = JSON.stringify(Object.fromEntries(Store.wordList().map(w => [w.id, Store.state(w.id)])));
-  Store.rebuildStates();
-  const after = JSON.stringify(Object.fromEntries(Store.wordList().map(w => [w.id, Store.state(w.id)])));
-  log('rebuild from logs matches', before === after);
+  // 日別の集計の四択の数と、単語ごとの正解・不正解の数が合う（日別には、変換した以前のログの1問が入っている）
+  const quizInDaily = Object.values(Store.daily()).reduce((n, d) => n + d.total, 0);
+  const quizInStates = Store.wordList().reduce((n, w) => n + Store.state(w.id).correct + Store.state(w.id).wrong, 0);
+  log('daily matches states', quizInStates === 5 && quizInDaily === quizInStates + 1, `daily=${quizInDaily} states=${quizInStates}`);
   const data = Store.exportData();
-  Store.importData(JSON.parse(JSON.stringify(data)));
-  log('export/import roundtrip', Store.logCount() === data.logs.length, 'logs=' + data.logs.length);
-  const evil = { logs: [
-    { at: 'x', id: '1', type: 'memory_change', detail: { from: 1, to: '<img src=x onerror=alert(1)>' } },
-    { at: 'x', id: '2', type: 'hack' },
-    { at: 'x', id: '3', type: 'memory_change', detail: { from: 1, to: 4 } },
-  ], states: { '1': { memory: '<b>x</b>' } } };
-  const skipped = Store.importData(evil);
-  log('bad logs rejected', skipped === 2 && Store.state('1').memory === 1 && Store.state('3').memory === 4, 'skipped=' + skipped);
+  const exported = JSON.stringify(data);
+  Store.importData(JSON.parse(exported));
+  log('export/import roundtrip', data.version === 2 && !('logs' in data) && JSON.stringify(Store.exportData().states) === JSON.stringify(data.states) && JSON.stringify(Store.daily()) === JSON.stringify(data.daily));
+  const now = new Date().toISOString();
+  const evilOld = { logs: [
+    { at: now, id: '1', type: 'memory_change', detail: { from: 1, to: '<img src=x onerror=alert(1)>' } },
+    { at: 'x', id: '2', type: 'card_view' },
+    { at: now, id: '2', type: 'hack' },
+    { at: now, id: '3', type: 'memory_change', detail: { from: 1, to: 4 } },
+  ] };
+  const skippedOld = Store.importData(evilOld);
+  log('bad old-format rows rejected', skippedOld === 3 && Store.state('1').memory === 1 && Store.state('3').memory === 4, 'skipped=' + skippedOld);
+  const evilNew = {
+    states: { '1': { seen: 1, memory: '<b>x</b>', lastStudied: now, correct: 0, wrong: 0 }, '3': { seen: 1, memory: 2, lastStudied: now, correct: 1, wrong: 0 } },
+    daily: { '<script>': { studied: 1, correct: 0, total: 0 }, '2026-10-01': { studied: 2, correct: 5, total: 1 }, '2026-10-02': { studied: 3, correct: 1, total: 2 } },
+  };
+  const skippedNew = Store.importData(evilNew);
+  log('bad new-format rows rejected', skippedNew === 3 && Store.state('1').memory === 1 && Store.state('3').memory === 2 && Object.keys(Store.daily()).join() === '2026-10-02', 'skipped=' + skippedNew);
   log('SheetJS version', XLSX.version === '0.20.3', XLSX.version);
   document.querySelector('.tabbar [data-view="list"]').click();
   document.querySelector('.tabbar [data-view="card"]').click();

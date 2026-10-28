@@ -171,7 +171,7 @@ const QuizView = (() => {
       answeredAt = Date.now();
       const correct = chosen === q.answer;
       Sound.play(correct ? 'maru' : 'batsu');
-      Store.answerQuiz(q.id, correct, q.options[chosen].text);
+      Store.answerQuiz(q.id, correct);
       results.push({ id: q.id, correct });
       render();
     } else if (t.dataset.memory) {

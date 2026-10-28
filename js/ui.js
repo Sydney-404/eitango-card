@@ -72,10 +72,17 @@ const UI = (() => {
     return a;
   }
 
+  // 端末の時刻での日付（例：2026-10-29）。文字列のまま大小を比べられる
+  function dayKey(date) {
+    const d = new Date(date);
+    const pad = n => String(n).padStart(2, '0');
+    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  }
+
   // ID や Unit を「1, 2, 10」の順に並べる比較
   function naturalCompare(a, b) {
     return String(a).localeCompare(String(b), undefined, { numeric: true });
   }
 
-  return { MEMORY_LABELS, esc, toast, memoryBadge, wordDetail, memoryButtons, emptyWords, shuffle, naturalCompare };
+  return { MEMORY_LABELS, esc, toast, memoryBadge, wordDetail, memoryButtons, emptyWords, shuffle, dayKey, naturalCompare };
 })();

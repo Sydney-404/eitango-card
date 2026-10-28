@@ -11,7 +11,7 @@
 ## ファイル構成
 | ファイル | 役割 |
 |---|---|
-| `js/store.js` | 辞書・学習状態・学習ログの保存 |
+| `js/store.js` | 辞書・学習状態（単語ごとの最新）・日別の集計の保存 |
 | `js/importer.js` | Excel / CSV の取り込み |
 | `js/filter.js` | 絞り込み（≡） |
 | `js/list.js` / `card.js` / `quiz.js` | 一覧／カード／四択 |
