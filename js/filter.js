@@ -48,11 +48,13 @@ const Filter = (() => {
     // 辞書から消えた選択肢が残って、見えない条件にならないようにする
     for (const key of ['tags', 'pos', 'units']) draft[key] = draft[key].filter(v => opts[key].includes(v));
     sheet().hidden = false;
+    document.body.classList.add('no-scroll');
     render();
   }
 
   function close() {
     sheet().hidden = true;
+    document.body.classList.remove('no-scroll');
     draft = null;
   }
 
