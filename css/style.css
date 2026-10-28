@@ -464,14 +464,32 @@ select {
 .card-foot .muted { margin: 0 0 8px; }
 
 /* ===== 定義四択 ===== */
-/* カードと同じく画面を縦に埋め、選択肢を下側（親指の届く位置）に置く。
-   下の「次へ」の枠（.quiz-next）の分だけ短くする */
+/* 回答前：画面を縦に埋め、選択肢を下側（親指の届く位置）に置く */
 .quiz-stage {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - var(--bar-h) - var(--tab-h) - 36px - 64px);
-  min-height: calc(100dvh - var(--bar-h) - var(--safe-top) - var(--tab-h) - var(--safe-bottom) - 36px - 64px);
+  min-height: calc(100vh - var(--bar-h) - var(--tab-h) - 36px);
+  min-height: calc(100dvh - var(--bar-h) - var(--safe-top) - var(--tab-h) - var(--safe-bottom) - 36px);
 }
+
+/* 回答後：問題と選択肢を上に詰め、下に詳細と記憶度ボタンを出す */
+.quiz-stage.answered { min-height: 0; }
+.quiz-stage.answered .quiz-prompt {
+  flex: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  min-height: 0;
+  padding: 10px 14px;
+}
+
+.quiz-stage.answered .quiz-prompt .card-word { font-size: 1.7rem; text-align: left; }
+.quiz-stage.answered .verdict { position: static; }
+.quiz-stage.answered .options { gap: 6px; }
+.quiz-stage.answered .option { min-height: 46px; padding: 6px 14px; }
+.quiz-stage.answered + .panel { padding: 12px 14px; margin-bottom: 8px; }
+.quiz-stage.answered ~ .muted { margin: 0 0 8px; }
 
 .quiz-prompt {
   position: relative;
@@ -491,20 +509,6 @@ select {
 .quiz-prompt .muted { margin: 0 0 4px; }
 .quiz-en { font-size: 1.3rem; margin: 0; }
 
-/* 「次へ」：スクロールしても画面の下に残る */
-.quiz-next {
-  position: sticky;
-  bottom: calc(var(--tab-h) + var(--safe-bottom) + 8px);
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 52px;
-  margin-bottom: 12px;
-}
-
-.quiz-next .btn { min-height: 52px; box-shadow: 0 4px 12px rgb(0 0 0 / .15); }
-.quiz-next .muted { margin: 0; }
 
 .options { display: grid; gap: 8px; margin-bottom: 12px; }
 

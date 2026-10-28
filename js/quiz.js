@@ -7,6 +7,7 @@ const QuizView = (() => {
   let questions = [];
   let qi = 0;
   let chosen = null;   // いまの問題で選んだ番号（未回答なら null）
+  let answeredAt = 0;  // 答えた時刻（記憶度ボタンの押し間違い防止に使う）
   let results = [];    // [{ id, correct }]
 
   function reset() {
@@ -113,9 +114,11 @@ const QuizView = (() => {
       ? `<span class="verdict ${chosen === q.answer ? 'good' : 'bad'}">${chosen === q.answer ? '正解！' : '不正解'}</span>`
       : '';
 
-    // 答えても問題と選択肢の位置は変えない。詳細は下に足し、「次へ」は画面下に貼りつける
+    // 回答前は選択肢を下側（親指の届く位置）に。回答後は上に詰め、詳細と記憶度ボタンを1画面に収める。
+    // 詳細では、問題文や選択肢にすでに出ている意味を繰り返さない
+    const shown = { en: ['en'], forward: ['ja'], reverse: ['en'] }[dir()];
     el.innerHTML = `
-      <div class="quiz-stage">
+      <div class="quiz-stage${answered ? ' answered' : ''}">
         <div class="list-head">
           <button type="button" class="btn small" data-action="quit">やめる</button>
           <span class="progress-text">${qi + 1} ／ ${questions.length}</span>
@@ -124,14 +127,9 @@ const QuizView = (() => {
         <div class="quiz-prompt">${verdict}${prompt}</div>
         <div class="options">${options}</div>
       </div>
-      <div class="quiz-next">
-        ${answered
-          ? `<button type="button" class="btn primary block" data-action="next">${qi + 1 < questions.length ? '次へ' : '結果を見る'}</button>`
-          : '<p class="muted center">答えを選んでください</p>'}
-      </div>
       ${answered ? `
-        <div class="panel">${UI.wordDetail(w)}</div>
-        <p class="muted center">覚え具合</p>
+        <div class="panel">${UI.wordDetail(w, { omit: shown })}</div>
+        <p class="muted center">覚え具合を押すと${qi + 1 < questions.length ? '次へ進みます' : '結果を表示します'}</p>
         ${UI.memoryButtons(Store.state(w.id).memory)}` : ''}`;
   }
 
@@ -168,14 +166,15 @@ const QuizView = (() => {
     } else if (t.dataset.option && chosen === null) {
       const q = questions[qi];
       chosen = Number(t.dataset.option);
+      answeredAt = Date.now();
       const correct = chosen === q.answer;
       Store.answerQuiz(q.id, correct, q.options[chosen].text);
       results.push({ id: q.id, correct });
       render();
     } else if (t.dataset.memory) {
+      // 回答直後は配置が詰まってボタンが指の下に来ることがあるので、少しのあいだ受け付けない
+      if (Date.now() - answeredAt < 400) return;
       Store.setMemory(questions[qi].id, Number(t.dataset.memory), { rated: true });
-      render();
-    } else if (t.dataset.action === 'next') {
       qi++;
       chosen = null;
       if (qi >= questions.length) phase = 'result';

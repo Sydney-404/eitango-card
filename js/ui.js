@@ -31,12 +31,14 @@ const UI = (() => {
   }
 
   // 単語の全要素。品詞・Unit・分類タグを先頭に置く（英単語そのものは呼び出し側で見出しにする）
-  // meanings: false のときは意味を省く（一覧のように、行にすでに意味が出ている場合）
-  function wordDetail(w, { meanings = true } = {}) {
+  // omit には、すでに画面に出ていて繰り返さなくてよい項目（'ja' / 'en'）を渡す
+  function wordDetail(w, { omit = [] } = {}) {
     const rows = [
-      ...(meanings ? [['日本語の意味', w.ja], ['英語の意味', w.en]] : []),
-      ['語の形', w.forms],
-    ].filter(([, v]) => v !== '' && v != null);
+      ['ja', '日本語の意味', w.ja],
+      ['en', '英語の意味', w.en],
+      ['forms', '語の形', w.forms],
+    ].filter(([key, , v]) => !omit.includes(key) && v !== '' && v != null)
+      .map(([, label, v]) => [label, v]);
     return `
       ${wordTags(w)}
       ${rows.length ? `<dl class="detail">${rows.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>` : ''}`;

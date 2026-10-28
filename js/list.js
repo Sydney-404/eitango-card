@@ -87,7 +87,7 @@ const ListView = (() => {
         </button>
         ${open ? `
           <div class="word-body">
-            ${UI.wordDetail(w, { meanings: false })}
+            ${UI.wordDetail(w, { omit: ['ja', 'en'] })}
             <p class="muted">四択 正解 ${s.correct}・不正解 ${s.wrong} ／ 最終学習 ${last}</p>
             ${UI.memoryButtons(s.memory)}
           </div>` : ''}
