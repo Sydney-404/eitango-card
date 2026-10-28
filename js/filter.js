@@ -75,11 +75,11 @@ const Filter = (() => {
         <button type="button" class="icon-btn" data-action="close" aria-label="閉じる">×</button>
       </div>
       <div class="sheet-scroll">
-        <h3>分類タグ</h3>${chips('tags', opts.tags)}
         <h3>既見</h3>${chips('seen', Object.keys(SEEN), v => SEEN[v])}
         <h3>記憶度</h3>${chips('memory', opts.memory, m => `${m} ${UI.MEMORY_LABELS[m]}`)}
-        <h3>品詞</h3>${chips('pos', opts.pos)}
         <h3>Unit</h3>${chips('units', opts.units, u => `Unit ${u}`)}
+        <h3>品詞</h3>${chips('pos', opts.pos)}
+        <h3>分類タグ</h3>${chips('tags', opts.tags)}
       </div>
       <div class="sheet-foot">
         <span>該当 <b>${count}</b> 語</span>
