@@ -1,7 +1,7 @@
 // オフラインで使うための保存係（Service Worker）。
 // アプリの部品を端末に保存しておき、通信できないときは保存してあるものを出す。
 // 部品を足したら APP_FILES に加え、CACHE の番号を上げる
-const CACHE = 'eitango-v3';
+const CACHE = 'eitango-v4';
 const APP_FILES = [
   './',
   'index.html',
@@ -15,6 +15,7 @@ const APP_FILES = [
   'js/list.js',
   'js/card.js',
   'js/quiz.js',
+  'js/summary.js',
   'js/manage.js',
   'js/app.js',
   'manifest.webmanifest',

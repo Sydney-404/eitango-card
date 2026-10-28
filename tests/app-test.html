@@ -23,6 +23,7 @@
     <section id="view-list" class="view"></section>
     <section id="view-card" class="view" hidden></section>
     <section id="view-quiz" class="view" hidden></section>
+    <section id="view-summary" class="view" hidden></section>
     <section id="view-manage" class="view" hidden></section>
   </main>
 
@@ -30,6 +31,7 @@
     <button type="button" data-view="list"><span class="tab-icon">☰</span>一覧</button>
     <button type="button" data-view="card"><span class="tab-icon">▭</span>カード</button>
     <button type="button" data-view="quiz"><span class="tab-icon">✓</span>四択</button>
+    <button type="button" data-view="summary"><span class="tab-icon">▥</span>まとめ</button>
   </nav>
 
   <div id="filter-sheet" class="sheet" hidden>
@@ -51,6 +53,7 @@
   <script src="../js/list.js"></script>
   <script src="../js/card.js"></script>
   <script src="../js/quiz.js"></script>
+  <script src="../js/summary.js"></script>
   <script src="../js/manage.js"></script>
   <script src="../js/app.js"></script>
 <pre id="out"></pre>
@@ -169,6 +172,15 @@ try {
   log('due filter', $$('#view-list .word-item').length === 1 && $('#btn-filter').classList.contains('active'));
   Filter.preset({}); App.show('list');
   log('preset reset', $$('#view-list .word-item').length === 14);
+  App.show('summary');
+  log('summary due count', $('#view-summary .hero-num').textContent.trim().startsWith('1'), $('#view-summary .hero-num').textContent.trim());
+  log('summary stats', $$('#view-summary .stat-value')[0].textContent.startsWith('1') && $$('#view-summary .stat-value')[1].textContent.startsWith('1'), $$('#view-summary .stat-value').map(x => x.textContent).join(' / '));
+  log('summary charts', $$('#view-summary .chart').length === 3 && $$('#view-summary .unit-rows li').length === 3);
+  $$('#view-summary .col')[0].click();
+  log('column caption', $('#view-summary .chart-caption').textContent.startsWith('今日'), $('#view-summary .chart-caption').textContent);
+  $('#view-summary [data-action="review"]').click();
+  log('review → card', !$('#view-card').hidden && $('#view-card .progress-text').textContent.trim() === '1 ／ 1', $('#view-card .progress-text')?.textContent);
+  Filter.preset({});
   App.show('manage');
   log('manage renders', !!$('#reset-all'));
 } catch (e) { errs.push('EXC ' + e.stack); }

@@ -158,6 +158,7 @@ const Store = (() => {
     wordList, word, upsertWords,
     state, viewCard, setMemory, answerQuiz,
     logCount: () => logs.length,
+    logs: () => logs, // 読むだけに使う（書き換えない）
     pref, setPref,
     exportData, importData, rebuildStates, resetAll, usageBytes,
   };

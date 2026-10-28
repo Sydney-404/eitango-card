@@ -567,6 +567,96 @@ select {
 
 .miss-list { margin: 0; padding-left: 20px; }
 
+/* ===== まとめ ===== */
+.panel h3 { font-size: .85rem; color: var(--muted); margin: 18px 0 8px; }
+.note { margin: 8px 0 0; font-size: .8rem; }
+
+/* いちばん大事な1つの数字（今日の復習） */
+.hero-num { font-size: 3.2rem; font-weight: 700; line-height: 1.1; margin: 4px 0 12px; }
+.hero-num small { font-size: 1rem; font-weight: 400; color: var(--muted); }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 8px; }
+.stat { display: flex; flex-direction: column; padding: 8px 10px; background: var(--bg); border-radius: 10px; }
+.stat-label { font-size: .78rem; color: var(--muted); }
+.stat-value { font-size: 1.5rem; font-weight: 600; line-height: 1.3; }
+.stat-value small { font-size: .85rem; font-weight: 400; color: var(--muted); }
+
+/* 縦棒グラフ：棒は細め（最大 24px）、先端だけ丸め、根元は1本の基準線から */
+.chart-plot {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 120px;
+  padding-top: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.chart-max {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: .72rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  width: 100%;
+  padding-top: 1px;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.col-bar { width: 100%; max-width: 24px; background: var(--accent); border-radius: 4px 4px 0 0; }
+.col.selected .col-bar { background: var(--text); }
+.col.selected { background: var(--bg); }
+.col:active { transform: none; }
+
+.chart-axis { display: flex; gap: 2px; margin-top: 4px; }
+.chart-axis span { flex: 1; text-align: center; font-size: .7rem; color: var(--muted); white-space: nowrap; }
+
+.chart-caption { margin: 6px 0 0; font-size: .85rem; min-height: 1.4em; }
+
+.chart-table { margin-top: 4px; font-size: .82rem; color: var(--muted); }
+.chart-table table { border-collapse: collapse; margin-top: 4px; }
+.chart-table th, .chart-table td { padding: 2px 12px 2px 0; text-align: left; font-weight: 400; }
+
+/* 記憶度の積み上げ帯：区切りは線ではなく 2px のすき間 */
+.stack { display: flex; gap: 2px; height: 20px; }
+.stack.thin { height: 10px; flex: 1; }
+.seg:first-child { border-radius: 4px 0 0 4px; }
+.seg:last-child { border-radius: 0 4px 4px 0; }
+.seg:only-child { border-radius: 4px; }
+
+.mem-bg-1 { background: var(--mem-1); }
+.mem-bg-2 { background: var(--mem-2); }
+.mem-bg-3 { background: var(--mem-3); }
+.mem-bg-4 { background: var(--mem-4); }
+
+.legend { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px 12px; margin: 10px 0 0; padding: 0; list-style: none; font-size: .88rem; }
+.legend li { display: flex; align-items: center; gap: 6px; }
+.legend b { margin-left: auto; font-weight: 600; }
+.swatch { flex: none; width: 10px; height: 10px; border-radius: 3px; }
+
+.unit-rows { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.unit-rows li { display: flex; align-items: center; gap: 10px; font-size: .85rem; }
+.unit-name { flex: none; width: 52px; }
+.unit-done { flex: none; width: 92px; text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.weak-list { margin: 0; padding: 0; list-style: none; }
+.weak-list li { display: flex; align-items: baseline; gap: 8px; padding: 4px 0; border-bottom: 1px solid var(--line); }
+.weak-list li:last-child { border-bottom: none; }
+.weak-word { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; gap: 0 8px; }
+.weak-word span { color: var(--muted); font-size: .88rem; }
+
 /* ===== データ管理 ===== */
 .file-btn { margin: 8px 0; }
 .row .file-btn { margin: 0; }

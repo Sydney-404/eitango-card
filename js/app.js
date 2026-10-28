@@ -1,7 +1,7 @@
 // 画面の切り替えと起動
 const App = (() => {
-  const TITLES = { list: '単語一覧', card: 'カード', quiz: '四択', manage: 'データ管理' };
-  const views = { list: ListView, card: CardView, quiz: QuizView, manage: ManageView };
+  const TITLES = { list: '単語一覧', card: 'カード', quiz: '四択', summary: 'まとめ', manage: 'データ管理' };
+  const views = { list: ListView, card: CardView, quiz: QuizView, summary: SummaryView, manage: ManageView };
   let current = 'list';
 
   function show(name) {
