@@ -29,19 +29,28 @@ const App = (() => {
     show(current);
   }
 
-  // リポジトリに words.xlsx があれば、起動時に自動で取り込む（方法B）
+  // リポジトリに置いた単語ファイルを、起動時に自動で取り込む（方法B）。
+  // 取り込みは追加と更新だけなので、学習状態は残る
+  const AUTO_FILES = ['words.xlsx', 'word/TSL_単語リスト.csv'];
+
   async function autoLoad() {
-    try {
-      const res = await fetch('words.xlsx', { cache: 'no-cache' });
-      if (!res.ok) return;
-      const result = Importer.analyze(Importer.parse(await res.arrayBuffer(), 'words.xlsx'));
-      const n = result.added.length + result.updated.length;
-      if (!n) return;
-      Importer.apply(result);
-      UI.toast(`words.xlsx から ${n} 件を取り込みました`);
+    let total = 0;
+    for (const name of AUTO_FILES) {
+      try {
+        const res = await fetch(encodeURI(name), { cache: 'no-cache' });
+        if (!res.ok) continue;
+        const result = Importer.analyze(Importer.parse(await res.arrayBuffer(), name));
+        const n = result.added.length + result.updated.length;
+        if (!n) continue;
+        Importer.apply(result);
+        total += n;
+      } catch {
+        // ファイルがない・ファイルを直接開いている場合は何もしない
+      }
+    }
+    if (total) {
+      UI.toast(`単語ファイルから ${total} 件を取り込みました`);
       dataChanged();
-    } catch {
-      // words.xlsx がない・ファイルを直接開いている場合は何もしない
     }
   }
 

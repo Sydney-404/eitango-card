@@ -43,7 +43,7 @@ const ManageView = (() => {
 
       <section class="panel">
         <h2>全リセット</h2>
-        <p class="muted">単語・学習状態・ログ・設定をすべて消します。元に戻せません。（words.xlsx を置いている場合、辞書だけは次の起動で読み直されます）</p>
+        <p class="muted">単語・学習状態・ログ・設定をすべて消します。元に戻せません。（リポジトリの単語ファイルは、次の起動で読み直されます）</p>
         <button type="button" class="btn danger block" id="reset-all">すべて消す</button>
       </section>`;
 
