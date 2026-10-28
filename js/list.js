@@ -19,6 +19,7 @@ const ListView = (() => {
     const sort = Store.pref('listSort', 'unit');
     const words = App.targetWords();
     if (SORTS[sort].compare) words.sort(SORTS[sort].compare); // 同点は Unit 順のまま残る
+    else words.sort((a, b) => a.unit - b.unit || compareTag(firstTag(a), firstTag(b))); // Unit → タグ。同点は ID 順のまま
 
     el.innerHTML = `
       <div class="list-head">
@@ -29,7 +30,7 @@ const ListView = (() => {
         </select>
       </div>
       ${words.length
-        ? `<ul class="word-list">${words.map(itemHtml).join('')}</ul>`
+        ? `<ul class="word-list">${sort === 'unit' ? groupedHtml(words) : words.map(itemHtml).join('')}</ul>`
         : '<p class="empty">条件に合う単語がありません</p>'}`;
 
     el.querySelector('#list-sort').addEventListener('change', e => {
@@ -37,6 +38,36 @@ const ListView = (() => {
       render();
     });
     el.querySelector('.word-list')?.addEventListener('click', onClick);
+  }
+
+  // タグが複数ある単語は、1つ目のタグの区切りに入れる（同じ単語を2回並べないため）
+  const firstTag = w => w.tags[0] || '';
+
+  // タグなしは最後に回す
+  function compareTag(a, b) {
+    return (a === '') - (b === '') || a.localeCompare(b, 'ja');
+  }
+
+  // Unit順のときは、Unit ごと・さらに分類タグごとに区切りを入れる
+  function groupedHtml(words) {
+    const unitCount = {};
+    words.forEach(w => { unitCount[w.unit] = (unitCount[w.unit] || 0) + 1; });
+    let html = '';
+    let unit = null;
+    let tag = null;
+    for (const w of words) {
+      if (w.unit !== unit) {
+        unit = w.unit;
+        tag = null;
+        html += `<li class="group-unit">Unit ${UI.esc(unit)}<span>${unitCount[unit]} 語</span></li>`;
+      }
+      if (firstTag(w) !== tag) {
+        tag = firstTag(w);
+        html += `<li class="group-tag">${tag ? `#${UI.esc(tag)}` : 'タグなし'}</li>`;
+      }
+      html += itemHtml(w);
+    }
+    return html;
   }
 
   function itemHtml(w) {

@@ -513,3 +513,33 @@ body.no-scroll { overflow: hidden; }
 }
 
 .word-item.open .word-def { display: block; }
+
+/* 一覧の区切り（Unit は画面上部に貼りつく） */
+.word-list { overflow: clip; }
+
+.group-unit {
+  position: sticky;
+  top: calc(var(--bar-h) + var(--safe-top));
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 8px 12px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-weight: 700;
+}
+
+.group-unit span { font-size: .8rem; font-weight: 400; }
+
+.group-tag {
+  padding: 4px 12px;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.group-tag + .word-item { border-top: none; }
