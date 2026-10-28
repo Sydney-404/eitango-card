@@ -470,7 +470,22 @@ select {
 .card-foot .muted { margin: 0 0 8px; }
 
 /* ===== 定義四択 ===== */
+/* カードと同じく画面を縦に埋め、選択肢を下側（親指の届く位置）に置く。
+   下の「次へ」の枠（.quiz-next）の分だけ短くする */
+.quiz-stage {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--bar-h) - var(--tab-h) - 36px - 64px);
+  min-height: calc(100dvh - var(--bar-h) - var(--safe-top) - var(--tab-h) - var(--safe-bottom) - 36px - 64px);
+}
+
 .quiz-prompt {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 160px;
   padding: 20px 16px;
   margin-bottom: 12px;
   background: var(--surface);
@@ -478,8 +493,24 @@ select {
   border-radius: 16px;
 }
 
+.quiz-prompt .card-word { font-size: 2.6rem; }
 .quiz-prompt .muted { margin: 0 0 4px; }
-.quiz-en { font-size: 1.25rem; margin: 0; }
+.quiz-en { font-size: 1.3rem; margin: 0; }
+
+/* 「次へ」：スクロールしても画面の下に残る */
+.quiz-next {
+  position: sticky;
+  bottom: calc(var(--tab-h) + var(--safe-bottom) + 8px);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  margin-bottom: 12px;
+}
+
+.quiz-next .btn { min-height: 52px; box-shadow: 0 4px 12px rgb(0 0 0 / .15); }
+.quiz-next .muted { margin: 0; }
 
 .options { display: grid; gap: 8px; margin-bottom: 12px; }
 
@@ -498,9 +529,19 @@ select {
 .option.correct { border-color: var(--good); color: var(--good); font-weight: 600; opacity: 1; }
 .option.wrong { border-color: var(--bad); color: var(--bad); opacity: 1; }
 
-.verdict { font-size: 1.2rem; font-weight: 700; text-align: center; margin: 4px 0 12px; }
-.verdict.good { color: var(--good); }
-.verdict.bad { color: var(--bad); }
+/* 正誤は問題の枠の左上に出す */
+.verdict {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 2px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  color: var(--accent-text);
+}
+
+.verdict.good { background: var(--good); }
+.verdict.bad { background: var(--bad); }
 
 .score { font-size: 1.1rem; margin: 0; }
 .score b { font-size: 2rem; }

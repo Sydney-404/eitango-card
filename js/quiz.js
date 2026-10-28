@@ -109,24 +109,30 @@ const QuizView = (() => {
       return `<button type="button" class="option${cls}" data-option="${i}" ${answered ? 'disabled' : ''}>${UI.esc(o.text)}</button>`;
     }).join('');
 
-    const after = answered ? `
-      <p class="verdict ${chosen === q.answer ? 'good' : 'bad'}">${chosen === q.answer ? '正解！' : '不正解'}</p>
-      <div class="panel">
-        <div class="card-word small">${UI.esc(w.word)}</div>
-        ${UI.wordDetail(w)}
-      </div>
-      ${UI.memoryButtons(Store.state(w.id).memory)}
-      <button type="button" class="btn primary block gap" data-action="next">${qi + 1 < questions.length ? '次へ' : '結果を見る'}</button>` : '';
+    const verdict = answered
+      ? `<span class="verdict ${chosen === q.answer ? 'good' : 'bad'}">${chosen === q.answer ? '正解！' : '不正解'}</span>`
+      : '';
 
+    // 答えても問題と選択肢の位置は変えない。詳細は下に足し、「次へ」は画面下に貼りつける
     el.innerHTML = `
-      <div class="list-head">
-        <button type="button" class="btn small" data-action="quit">やめる</button>
-        <span class="progress-text">${qi + 1} ／ ${questions.length}</span>
+      <div class="quiz-stage">
+        <div class="list-head">
+          <button type="button" class="btn small" data-action="quit">やめる</button>
+          <span class="progress-text">${qi + 1} ／ ${questions.length}</span>
+        </div>
+        <div class="progress"><span style="width:${(qi / questions.length) * 100}%"></span></div>
+        <div class="quiz-prompt">${verdict}${prompt}</div>
+        <div class="options">${options}</div>
       </div>
-      <div class="progress"><span style="width:${(qi / questions.length) * 100}%"></span></div>
-      <div class="quiz-prompt">${prompt}</div>
-      <div class="options">${options}</div>
-      ${after}`;
+      <div class="quiz-next">
+        ${answered
+          ? `<button type="button" class="btn primary block" data-action="next">${qi + 1 < questions.length ? '次へ' : '結果を見る'}</button>`
+          : '<p class="muted center">答えを選んでください</p>'}
+      </div>
+      ${answered ? `
+        <div class="panel">${UI.wordDetail(w)}</div>
+        <p class="muted center">覚え具合</p>
+        ${UI.memoryButtons(Store.state(w.id).memory)}` : ''}`;
   }
 
   function renderResult() {
