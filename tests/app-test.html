@@ -45,6 +45,7 @@
   <script src="../js/ui.js"></script>
   <script src="../js/store.js"></script>
   <script src="../js/sound.js"></script>
+  <script src="../js/review.js"></script>
   <script src="../js/importer.js"></script>
   <script src="../js/filter.js"></script>
   <script src="../js/list.js"></script>
@@ -158,6 +159,16 @@ try {
   document.querySelector('.tabbar [data-view="list"]').click();
   document.querySelector('.tabbar [data-view="card"]').click();
   log('sounds called', ['shu', 'pon', 'kachi', 'maru', 'batsu'].every(n => played.includes(n)) || (['shu', 'pon', 'kachi'].every(n => played.includes(n)) && (played.includes('maru') || played.includes('batsu'))), [...new Set(played)].join(','));
+  const tenDaysAgo = new Date(Date.now() - 10 * 864e5).toISOString();
+  Store.importData({ logs: [
+    { at: tenDaysAgo, id: '1', type: 'memory_change', detail: { from: 1, to: 2 } },
+    { at: new Date().toISOString(), id: '2', type: 'card_view', detail: null },
+  ] });
+  log('review due', Review.isDue('1') && !Review.isDue('2') && Review.dueDay('3') === null, `1=${Review.dueDay('1')} 2=${Review.dueDay('2')}`);
+  Filter.preset({ due: true }); App.show('list');
+  log('due filter', $$('#view-list .word-item').length === 1 && $('#btn-filter').classList.contains('active'));
+  Filter.preset({}); App.show('list');
+  log('preset reset', $$('#view-list .word-item').length === 14);
   App.show('manage');
   log('manage renders', !!$('#reset-all'));
 } catch (e) { errs.push('EXC ' + e.stack); }

@@ -1,6 +1,6 @@
 // 絞り込み（≡）。3機能すべての対象範囲を決める。次回起動時も残す
 const Filter = (() => {
-  const DEFAULT = { tags: [], seen: 'all', memory: [], pos: [], units: [] };
+  const DEFAULT = { tags: [], seen: 'all', memory: [], pos: [], units: [], due: false };
   const POS_ORDER = ['名詞', '動詞', '形容詞', '副詞'];
   const SEEN = { all: 'すべて', yes: '見た', no: 'まだ' };
 
@@ -15,6 +15,7 @@ const Filter = (() => {
     if (f.memory.length && !f.memory.includes(s.memory)) return false;
     if (f.pos.length && !f.pos.includes(w.pos)) return false;
     if (f.units.length && !f.units.includes(w.unit)) return false;
+    if (f.due && !Review.isDue(w.id)) return false;
     return true;
   }
 
@@ -61,7 +62,9 @@ const Filter = (() => {
   function chips(group, values, label = v => v) {
     if (!values.length) return '<p class="muted">（なし）</p>';
     return `<div class="chips">${values.map(v => {
-      const on = group === 'seen' ? draft.seen === v : draft[group].includes(v);
+      const on = group === 'seen' ? draft.seen === v
+        : group === 'due' ? draft.due
+        : draft[group].includes(v);
       return `<button type="button" class="chip" data-group="${group}" data-value="${UI.esc(v)}" aria-pressed="${on}">${UI.esc(label(v))}</button>`;
     }).join('')}</div>`;
   }
@@ -75,6 +78,7 @@ const Filter = (() => {
         <button type="button" class="icon-btn" data-action="close" aria-label="閉じる">×</button>
       </div>
       <div class="sheet-scroll">
+        <h3>復習</h3>${chips('due', ['on'], () => '今日の復習だけ')}
         <h3>既見</h3>${chips('seen', Object.keys(SEEN), v => SEEN[v])}
         <h3>記憶度</h3>${chips('memory', opts.memory, m => `${m} ${UI.MEMORY_LABELS[m]}`)}
         <h3>Unit</h3>${chips('units', opts.units, u => `Unit ${u}`)}
@@ -99,6 +103,8 @@ const Filter = (() => {
       const group = chip.dataset.group;
       if (group === 'seen') {
         draft.seen = chip.dataset.value;
+      } else if (group === 'due') {
+        draft.due = !draft.due;
       } else {
         const value = ['memory', 'units'].includes(group) ? Number(chip.dataset.value) : chip.dataset.value;
         const list = draft[group];
@@ -119,6 +125,14 @@ const Filter = (() => {
     }
   }
 
+  // まとめページなどから、決まった条件だけにして当てる（例：{ due: true } で今日の復習だけ）
+  function preset(conditions) {
+    current = { ...structuredClone(DEFAULT), ...conditions };
+    Store.setPref('filter', current);
+    updateIndicator();
+    App.dataChanged();
+  }
+
   // 絞り込み中は ≡ に印をつける
   function updateIndicator() {
     document.getElementById('btn-filter').classList.toggle('active', isActive());
@@ -133,5 +147,5 @@ const Filter = (() => {
     updateIndicator();
   }
 
-  return { init, matches };
+  return { init, matches, preset };
 })();

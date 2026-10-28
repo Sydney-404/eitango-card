@@ -9,6 +9,7 @@ const APP_FILES = [
   'js/ui.js',
   'js/store.js',
   'js/sound.js',
+  'js/review.js',
   'js/importer.js',
   'js/filter.js',
   'js/list.js',
