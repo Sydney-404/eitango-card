@@ -4,7 +4,9 @@
 
 ## 流し方
 - 手で：`app-test.html` をブラウザで開く。いちばん下に結果が出る
-- コマンドで（PowerShell、リポジトリのフォルダで実行）：
+- コマンド一つで（Git Bash、リポジトリのフォルダで実行）：`bash tests/run.sh`
+  - `OK: 41 / FAIL: 0 / ERRORS: []` のように数をまとめて出す。FAIL があればその行も出し、終了コード 1 で終わる
+- PowerShell で直接（結果の HTML がそのまま出る）：
   ```powershell
   $page = "file:///" + ((Resolve-Path tests\app-test.html).Path -replace '\\', '/')
   & "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless=new --disable-gpu --no-first-run `
