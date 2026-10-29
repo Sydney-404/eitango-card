@@ -1,0 +1,2 @@
+# Bash の台本は改行を LF のままにする（CRLF になると Git Bash で動かない）
+*.sh text eol=lf
